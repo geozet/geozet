@@ -1,0 +1,35 @@
+﻿/**
+ * @project Overheid.nl
+ * @author	Stichting ICTU, e-Overheid voor Burgers
+ * @since	march 2010
+ * @name	Contrast css
+ * @version	1
+ */
+
+
+/* Fontcolor #000 */
+h1, h3, h2, legend, h3, button, input, .active > a, caption, th, .tabs a, a.date-select, .theme a:hover, .theme a:focus, .linklist span, .paging li, .a-z li, .paging .active, .a-z .active, .paging .active a, .a-z .active a, .active > a, strong.active, .active strong, .sorting dd, .tabs a:hover, .tabs a:focus, .tabs .active a, #left-column a:visited, #right-column a:visited, #main-column a:visited, #functie a:visited, #context a:visited, #content a:visited, .inactive, .column h2 a, .header p, .footer *, .breadcrumb li a, #left-column form a, .buttons a, .results *, .inlog, .inlog *
+{
+    color: #000 !important;
+}
+
+/* Excepties */
+.buttons button:first-child, .buttons input:first-child
+{
+	color: #fff !important;
+}
+
+button, #content input[type="submit"], .main .active a
+{
+	background-color: #ccc !important;
+}
+
+body
+{
+	background-image: url(images/header-light.png) !important;
+}
+
+#functie form
+{
+	background-image: url(images/form-light.png);
+}

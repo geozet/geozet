@@ -1,0 +1,438 @@
+﻿/**
+ * @project Overheid.nl
+ * @author	Stichting ICTU, e-Overheid voor Burgers
+ * @since	march 2010
+ * @name	Forms css
+ * @version	1
+ */
+
+form
+{
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+}
+
+fieldset
+{
+	border: none;
+}
+	
+form div
+{
+	min-height: 0;
+	padding-bottom: 8px;
+}
+
+fieldset ul
+{
+	clear: both;
+	padding: 0;
+	margin-bottom: 10px;
+}	fieldset li input + label, fieldset li input
+	{
+		border: none !important;
+		width: auto !important;
+		display: inline !important;
+		float: none !important;
+		margin: 0;
+	}
+	fieldset li label
+	{
+		border: none !important;
+		width: auto !important;
+		margin: 0;
+	}
+	fieldset li li, fieldset li p, fieldset li dl
+	{
+		padding-left: 22px;
+		margin-bottom: 0;
+	}
+	fieldset li input[type="radio"] + label
+	{
+		padding-left: 0px;
+	}
+	fieldset li p
+	{
+		display: block !important;
+		color: #666;
+		padding-bottom: 5px;
+		margin-bottom: 0;
+	}
+	fieldset input + ul, fieldset input + a + ul, fieldset label + ul + ul
+	{
+		padding-left: 177px;
+	}
+	fieldset ul li
+	{
+		list-style: none;
+		list-style-image: none;
+	}	
+	fieldset div > ul + ul
+	{
+		border-top: 1px solid #D8DBE0;
+		padding-top: 10px;
+	}
+
+fieldset div, fieldset p
+{
+	clear: both;
+}
+
+fieldset p + ul
+{
+	margin-top: -12px;
+}	fieldset p.info + ul, fieldset p.error + ul {margin-top: 0;}
+
+.double-column fieldset
+{
+	border-top: 0px !important;
+}
+
+form h2, form legend
+{
+	padding-bottom: 5px;
+	border-bottom: 3px solid #FF8A00;
+}
+
+
+form h3
+{
+	border: none;
+	margin-bottom: 5px;
+}
+
+h3 + form > fieldset
+{
+	border-top: none !important;
+} 
+	
+input, textarea, select
+{
+	margin-bottom: 10px;
+	padding: 3px;
+	font-size: .95em;
+}
+	fieldset .small   {width: 75px !important;}
+	fieldset .xsmall  {width: 40px !important;}
+	fieldset .xxsmall {width: 20px !important;}
+	fieldset .xlarge  {width: 410px !important; margin-left: 20px;}
+	label.small, label.xsmall, label.xxsmall {margin-right: 5px !important;}
+	
+	input[type="checkbox"] {width: auto !important;}
+	input[type="checkbox"], input[type="radio"]
+	{
+		border: none !important;
+		height: 15px;
+		margin-right: 5px !important;
+	}
+	input[type="hidden"] {display: none !important;}
+
+ button
+{
+	border: none;
+	background: url(images/button.gif) right top no-repeat;
+	padding: 0 25px 3px 0;
+	text-align: right;
+	display: block;
+	font-size: .95em;
+	width: 100%;
+	height: 20px;
+	cursor: pointer;
+	font-weight: bold;
+	clear: both;
+}	button:hover, button:focus
+	{
+		background-position: right bottom;
+	}
+
+/* Special forms */
+
+form.small
+{
+	background: #eaecef;
+	padding: 8px 12px 12px 8px !important;
+	margin-bottom: 25px;
+}	form.small h3
+	{
+		color: #000;
+		border: none;
+	}
+
+.small label, .small input, .xsmall label, .xsmall input, .xxsmall label, .xxsmall input
+{
+	display: inline !important;
+	width: 15em !important;
+}
+
+.small label
+{
+	border: none !important;
+}
+
+.small fieldset
+{
+	border: none !important;
+}
+ 
+/* Forms in right column */
+
+#context form
+{
+	padding-bottom: 0;
+}
+ 
+/* Forms in left column */
+
+#functie form
+{
+	background-color: #8c9db1;
+	padding: 20px 10px;
+	margin: -20px -10px 15px;
+}	#functie form:first-child
+	{
+		margin-top: -72px;
+		background: #8c9db1 url(images/form-bg.png) top left no-repeat;
+	}
+
+#functie form h2, #functie form legend
+{
+	border: none;
+	color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 1.6em;
+	margin-bottom: 5px;
+	white-space: normal; /* FF-bug: legend nowrap*/
+}
+
+#functie input
+{
+	width: 200px;
+	display: block;
+	float: left;
+	border: 1px solid #999;
+	background: #fff url(images/input-bg.gif) 0 0 repeat-x;
+}
+
+#functie button
+{
+	color: #fff;
+}
+
+#functie fieldset>a
+{
+	color: #fff;
+	text-decoration: none;
+	background: url(images/links/link-wit.png) -293px -1px no-repeat;
+	padding-right: 20px;
+	display: block;
+	text-align: right;
+	margin-top: 5px;
+}	#functie fieldset>a:hover, #functie fieldset>a:focus
+	{
+		text-decoration: underline;	
+		background-position: 192px -1px;
+	}
+
+/* Forms in content & double column */
+
+#content form, .double-column form
+{
+	padding-bottom: 0;
+}
+
+#content fieldset, .double-column  fieldset
+{
+	border-top: 1px solid #ff8a00;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}	#content h2 + fieldset, #content h2 + .info + fieldset, #content legend + fieldset, #content legend + .info + fieldset, #content .steps + fieldset
+	{
+		padding-top: 0;
+		border: none;
+	}
+	.double-column fieldset:first-child
+	{
+		border-top: none;
+		padding: 0;
+	}
+
+#content label, .double-column label
+{
+	width: 157px;
+	display: block;
+	float: left;
+	clear: both;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	border-top: 1px solid #d8dbe0;
+}	#content input[type="checkbox"] + label, .double-column input[type="checkbox"] + label
+	{
+		width: auto;
+		border: none;
+	}
+	#content input[type="checkbox"] + label + a
+	{
+		border: none;
+		margin-left: 18px;
+		text-decoration: underline;
+		background: none;
+		color: #154273;
+	}	#content input[type="checkbox"] + label + a:hover, #content input[type="checkbox"] + label + a:focus
+		{
+			color: #000;
+		}
+
+#content input, .double-column input, #content textarea, .double-column textarea, #content select, .double-column select, #popup input, #popup textarea
+{
+	float: left;
+	border: 1px solid #aaa;
+	width: 250px;
+	margin-right: 5px;
+	margin-bottom: 4px;
+}	#content select, #popup select
+	{
+		width: 258px;
+	}
+
+#content label + ul, label + p.info + ul, .double-column label + ul
+{
+	float: left;
+	clear: none;
+}
+
+#content input[type="checkbox"] + label, .double-column input[type="checkbox"] + label
+{
+	clear: none;
+}
+
+#content input[type="checkbox"] + label + ul, .double-column input[type="checkbox"] + label + ul, .double-column div[id|="popup"] + ul, .double-column label + div
+{
+	margin-left: 25px;
+	clear: both;
+}
+
+#content form>p, form#content>p
+{
+	padding: 0;
+}
+
+body>form>p
+{
+	padding: 5px 20px;
+}
+
+/* Button fieldset */
+
+.buttons
+{
+	padding: 10px 0 !important;
+	clear: both;
+	border-bottom: 3px solid #ff8a00;
+	border-top: none !important;
+}	.double-column + .buttons
+	{
+		margin: 0 20px;
+		border-bottom: 3px solid #ff8a00;
+		border-top: none;
+	}
+
+.buttons input, .buttons button, .buttons a
+{
+	display: block;
+	float: right !important;
+	background: #6d7f97 !important;
+	color: #fff;
+	overflow: visible;
+	width: auto !important;
+	border: none !important;
+	margin: 0 0 0 5px;
+	padding: 2px 10px 3px;
+	cursor: pointer;
+	text-decoration: none;
+}	.buttons a
+	{
+		font-size:0.95em;
+	}
+
+.buttons input:first-child, .buttons button:first-child
+{
+	padding-right: 20px;
+	margin-right: 0 !important;
+	background: #000 url(images/button.gif) right 0 no-repeat !important;
+}	.buttons input:hover, .buttons input:focus, .buttons button:hover, .buttons button:focus
+	{
+		background: #ff8a00 right -21px no-repeat !important;
+		color: #fff;
+	}
+	.buttons input:first-child:hover, .buttons button:first-child:hover, .buttons input:first-child:focus, .buttons button:first-child:focus
+	{
+		background-image: url(images/button.gif) !important;
+	}
+
+/* Specific form styles */
+
+.radio-group
+{
+}	.radio-group li
+	{
+		display: inline;
+	}
+
+/* Specific input styles */
+
+input.date
+{
+	width: auto !important;
+}
+
+input.hidden
+{
+	display:none !important;
+}
+
+label.hidden
+{
+	display:none !important;
+}
+
+input.functie
+{
+    width: 185px;
+}
+
+/* Error */
+p.error
+{
+	color: #ff2800;
+	font-weight: bold;
+	background: url(images/error.png) -12px 3px no-repeat;
+	padding-left: 15px;
+	margin-bottom: 0px;
+}	p.error + ul, input + p.error, label + p.error, p.info + p.error, fieldset input + p.error + ul, fieldset label + p.error + input, fieldset p.info + p.error + input, fieldset label + p.error + select, label + p.info
+	{
+		margin-left: 177px;
+		clear: none !important;
+	}
+	input + p.error
+	{
+		clear: both !important;
+	}
+	p.error + .xsmall, p.error + .xxsmall
+	{
+		margin-left: 0px !important;
+	}
+	p.error + ul
+	{
+   		margin-top: 4px !important;
+	} 
+	input.error, select.error, textarea.error, ul li input.error
+	{
+		border-color: #ff2800 !important;
+	}
+
+/* Required fields */
+label strong, .buttons p strong
+{
+	color: #7F8181;
+}

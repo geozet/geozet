@@ -1,0 +1,151 @@
+	 -----
+	 Release notes GEOZET webapp
+	 -----
+	 prinsmc@minlnv.nl
+	 -----
+	 29 juni 2010
+	 -----
+
+~~ http://maven.apache.org/doxia/references/apt-format.html
+
+
+${project.name} ${project.version} Release Notes
+
+  Dit zijn de release notes van ${project.name} versie ${project.version}. 
+  Alle details zijn te vinden in het {{{./mantis-report.html}Mantis rapport}} 
+  
+%{toc|section=1|fromDepth=0|toDepth=1}
+
+* {${project.version} Release Notes}
+
+** Nieuw
+
+  * 
+  
+  []
+
+** Verbetering
+~~zie pom.xml
+  * upgrade naar GeoTools 2.7.3
+  
+  []
+
+* {1.1 Release Notes}
+
+** Nieuw
+
+  * 
+  
+  []
+
+** Verbetering
+
+  * upgrade naar GeoTools 2.7-rc1
+  
+  []
+
+* {1.0 Release Notes}
+
+** Nieuw
+
+  *
+  
+  []
+
+** Verbetering
+
+  * uitbreiding van de documentatie
+  
+  []
+
+* {0.6 Release Notes}
+
+** Nieuw
+
+  * error pagina voor de webapp
+  
+  []
+
+** Verbetering
+
+  * bugfixes
+  
+  * verwerking accessibility issues
+  
+  []
+
+* {0.5 Release Notes}
+
+** Nieuw
+
+  * vlakgerichte bekendmakingen
+  
+  * gebruik PDOK gazetteer
+  
+  * url parametrisatie / aansluitspecificaties
+  
+  []
+
+** Verbetering
+
+  * bugfixes
+  
+  []
+
+* {0.4 Release Notes}
+
+** Nieuw
+ 
+  * gebruik PDOK achtergrond kaart
+  
+  * gebruik PDOK bekendmakingen services
+   
+  []
+ 
+** Verbetering
+ 
+  * bug fixes
+   
+  []
+
+* {0.3 Release Notes}  
+
+** Nieuw
+
+  * Detail scherm voor bekendmakingen in core
+  
+  * Paginering in core
+  
+  []
+
+** Verbetering
+
+  * ontwikkel documentatie uitgebreidt
+
+* {0.2.1 Release Notes}  
+
+** Verbetering
+ 
+  * bug fixes
+   
+   []
+  
+* {0.2 Release Notes}
+
+** Nieuw
+
+  * Alle functionalieit werkt in de enhanced versie behalve zaken mbt. vlak ge�rienteerde bekendmakingen
+  
+  * Basis functie in core versie werken
+  
+  []
+
+** Verbetering
+
+  * verbeteringen in documentatie.  
+
+* {0.1 Release Notes}
+
+** Nieuw
+
+  * Eerste pre-release oplevering met de basis functionaliteit aanwezig.

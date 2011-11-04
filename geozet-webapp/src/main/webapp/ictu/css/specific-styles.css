@@ -1,0 +1,918 @@
+﻿ /**
+ * @project Overheid.nl
+ * @author	Stichting ICTU, e-Overheid voor Burgers
+ * @since	march 2010
+ * @name	Specific stylesheet for objects
+ * @version	1
+ */
+
+/* Link styles*/
+a.disabled
+{
+	color: #555;
+}	a.disabled:hover, a.disabled:focus
+	{
+		color: #555;
+		cursor: default;
+	}
+
+a.date-select
+{
+	color: #e67c00;
+	padding-left: 10px;
+}
+
+/* NL map */
+form.nl
+{
+	background: #ccc url(images/nl.jpg) top left no-repeat !important;
+	padding-top: 15px !important;
+	padding-bottom: 15px !important;
+	min-height: 250px;
+	position: relative;
+}	form.nl img
+	{
+		border: none;
+		position: absolute;
+		top: 39px;
+		left: 39px;
+	}
+	form.nl h3
+	{
+		color: #000;
+		border: none;
+		font-size: 1.05em;
+		margin-bottom: 190px;
+	}
+	form.nl button
+	{
+		color: #000 !important;
+	}
+
+/* Theme list */
+.theme
+{
+	float: left;
+	width: 200px;
+	padding: 0;
+	margin-right: 20px;
+}	.theme li
+	{
+		display: block;
+		height: auto;
+		list-style-image: none;
+	}
+	.theme a
+	{
+		background: 15px center no-repeat;
+		display: block;
+		text-decoration: none;
+		min-height: 35px;
+		padding: 10px 0 10px 60px;
+		border-bottom: 1px solid #e5e5e5;
+		font-weight: bold;
+		color: #333;
+		font-size: 1.1em;
+	}	.theme li:first-child a
+		{
+			border-top: 1px solid #e5e5e5;
+		}
+		.theme a:hover, .theme a:focus
+		{
+			border-color: #e5e5e5;
+			color: #e67c00;
+			background-position: 15px center;
+		}
+	.buitenland	a		{background-image: url(images/icons/buitenland.gif);}
+	.consumentenzaken a	{background-image: url(images/icons/consumentenzaken.gif);}
+	.familie a			{background-image: url(images/icons/familie.gif);}
+	.immigratie a		{background-image: url(images/icons/immigratie.png);}
+	.jezelf a			{background-image: url(images/icons/jezelf.png);}
+	.media a			{background-image: url(images/icons/media.gif);}
+	.natuur a			{background-image: url(images/icons/natuur.gif);}
+	.onderwijs a		{background-image: url(images/icons/onderwijs.gif);}
+	.overheid a			{background-image: url(images/icons/overheid.gif);}
+	.recht a			{background-image: url(images/icons/recht.gif);}
+	.uitkeringen a		{background-image: url(images/icons/uitkeringen.gif);}
+	.uitreksels a		{background-image: url(images/icons/uitreksels.png);}
+	.verkeer a			{background-image: url(images/icons/verkeer.gif);}
+	.werk a				{background-image: url(images/icons/werk.gif);}
+	.wonen a			{background-image: url(images/icons/wonen.gif);}
+	.zorg a				{background-image: url(images/icons/zorg.gif);}
+	
+	.filter img
+	{
+		margin: -3px 1px -5px -10px;
+	}
+
+/* info block */
+
+h2 + p.info, legend + p.info, h2 + div.info, legend + div.info
+{
+	margin-top: -15px;
+}
+fieldset div p.info, fieldset div.info
+{
+	margin-bottom: 0;
+}
+
+.js p.info, .js div.info
+{
+	line-height: 1.5em;
+	display: none;
+	position: absolute;
+	background: #6d7f97;
+	color: #fff;
+	padding: 8px !important;
+	width: 225px;
+	margin: 2px 0 0 0;
+	z-index: 1300;
+}	p.info, div.info
+	{
+		color: #6D7F97;
+	}
+
+a.info
+{
+	background: url(images/info.gif) left 2px no-repeat !important;
+	padding: 0px 6px !important;
+	vertical-align: top !important;
+    text-indent: -99em !important;
+	display: inline-block !important;
+	margin-left: 5px !important;
+}	a.info:hover, a.info:focus
+	{
+		background-position: right 2px;
+		border: none !important;
+	}
+    h2 a.info, legend a.info, dd a.info
+    {
+        margin-top: 3px;
+    }
+
+/* Result summary above search results */
+.results
+{
+	border: none;
+}
+
+.results>*
+{
+	border: none;
+	width: auto;
+	margin: 0;
+	line-height: 1.5em;
+}
+
+.results dd
+{
+	font-weight: bold;
+	color: #E67C00;
+}
+
+.results dd a
+{
+	color: #E67C00 !important;
+	text-decoration: underline !important;
+	background: none !important;
+	border: none !important;
+}
+
+/* Linklists */
+.linklist, #context ul, #functie ul, .column ul
+{
+	padding: 0;
+}	.linklist li, #context li, #functie li, .column li
+	{
+		list-style: none;
+		list-style-image: none;
+	}	.linklist li:first-child a, #context li:first-child a, #functie li:first-child a, a.linklist, .column li:first-child a
+		{
+			border-top: 1px solid #e5e5e5;
+		}		
+		.linklist a, #context li a, #functie li a, a.linklist, .column li a, td a, #content dl a
+		{
+			border-bottom: 1px solid #e5e5e5;
+			text-decoration: none;
+			display: block;
+			color: #000;
+			padding: 2px 15px 2px 2px;
+			background: url(images/links/link.png) right bottom no-repeat;
+		}	#content dd a
+			{
+				padding: 0 15px 0 2px;
+			}
+		.linklist a:hover, .linklist a:focus, #context li a:hover, #context li a:focus, #functie li a:hover, #functie li a:focus, a.linklist:hover, .column li a:hover, a.linklist:focus, .column li a:focus, #content dd a:hover, #content dd a:focus
+		{
+			border-bottom-color: #000;
+			background-position: 425px bottom;
+			color: #000;
+		}	#content dd a:hover, #content dd a:focus
+			{
+				background-position: 203px bottom;
+			}
+		.linklist a:visited
+		{
+			color: #555;
+		}
+		.linklist a span
+		{
+			display: block;
+			color: #e67c00;
+		}
+		a.linklist
+		{
+			clear: both;
+			margin-bottom: 15px;
+		}	p + a.linklist
+			{
+				margin-top: -10px !important;
+			}
+
+		#functie li a:hover, a.linklist:hover, #functie li a:focus, a.linklist:focus
+		{
+			background-position: 194px bottom !important;
+		}
+		.column li a:hover, .column li a:focus, .column a.linklist:hover, .column a.linklist:focus
+		{
+			background-position: 185px bottom !important;
+		}			
+		.double-column a.linklist:hover, .double-column a.linklist:focus
+		{
+			background-position: 425px bottom !important;
+		}
+		#context li a:hover, #context p.linklist a:hover, #context a.linklist:hover, td a:hover, #context li a:hover, #context p.linklist a:hover, #context a.linklist:hover, td a:hover
+		{
+			background-position: 201px bottom !important;
+		}
+		.print>a		{background-image: url(images/links/print.png) !important;}
+		.email>a		{background-image: url(images/links/email.png) !important;}
+		.extern>a		{background-image: url(images/links/extern.png) !important;}
+		.download>a		{background-image: url(images/links/download.png) !important;}
+		.rss a			{background-image: url(images/links/rss.png) !important;}
+		.pdf a			{background-image: url(images/links/pdf.png) !important;}
+		.active>a		{color: #e67c00 !important; font-weight:bold;}
+		
+		/* Print */
+		.print
+		{
+			display: none;
+		}	.js .print
+			{
+				display: block;
+			}
+		
+		/* Print */
+		.open_popup
+		{
+			display: none;
+		}	.js .open_popup
+			{
+				display: block;
+			}
+		
+		/* Download */
+		.download img
+		{
+			border: none !important;
+			margin: 0 0 -3px 0;
+		}
+	
+.linklist strong:first-child
+{
+	display: block;
+}
+
+/* Uitzonderingen op externe link */
+p a.extern
+{
+	background: url(images/links/extern.gif) right no-repeat;
+	padding-right: 12px;
+}
+
+/* Block for focus */
+.focus
+{
+	background: #eaecef;
+	padding: 8px;
+	display: block;
+}
+
+/* Filter */
+.filter
+{
+	background: #eaecef;
+	padding: 0 12px 0 8px;
+	margin-bottom: 15px;
+}
+
+.filter h3
+{
+	color: #000;
+	padding-top: 5px;
+	border: none;
+}
+
+.filter p, .filter ul:first-child li
+{
+	margin: 0 -12px 0 -8px;
+	width: 189px;
+	padding: 5px 12px 5px 8px;
+	border-bottom: 1px solid #ff8a00;
+	background: #fff;
+	position: relative;
+}	.filter ul:first-child li
+	{
+		margin-left: 0;
+	}
+
+.filter p a, .filter ul:first-child a /* closebutton */
+{
+	background: url(images/links/close.png) left 5px no-repeat !important;
+	text-decoration: none;	
+	position: absolute;
+	top: 2px;
+	right: -3px;
+	text-indent: -999em;
+	border: none !important;
+	width: 0;
+	padding: 2px 8px 2px 15px !important;
+}	.filter p a:hover, #functie .filter ul:first-child a:hover, .filter p a:focus, .filter ul:first-child a:focus
+	{
+		text-decoration: none !important;
+		background-position: left -131px !important;
+	}
+
+.filter ul
+{
+	margin: 0 -12px 0 -8px;
+	padding: 0 12px 8px 0;
+	border-bottom: 1px solid #fff;
+}	.filter ul:first-child
+	{
+		width: 197px;
+		border-bottom: none !important;
+	}
+
+.filter span
+{
+	color: #7f8181;
+	margin-left: 15px;
+	display: block;
+}
+
+.filter a
+{
+	color: #000;
+	border: none !important;
+	padding: 2px 8px 2px 15px;
+	background: url(images/links/small.png) left 5px no-repeat;
+}	.filter a:hover, .filter a:focus
+	{
+		text-decoration: underline;
+		background-position: left -131px !important;
+	}
+	
+.filter form
+{
+    background: none !important;
+	border-bottom: 1px solid #fff;
+    color: #000;
+	margin: 0 -12px 0 -8px !important;
+    padding: 0 8px 8px !important;
+}	
+
+.filter input, .filter fieldset
+{
+    width: 180px !important;
+}
+
+.filter input
+{
+	background: #FFF !important;
+}	
+
+.filter button
+{
+    background-position: 165px top;
+	color: #000 !important;
+	width: 187px;
+}	.filter button:hover, .filter button:focus
+	{
+	    background-position: 165px bottom;
+	}
+
+.filter p.error
+{
+    padding: 0 0 0 15px;
+    margin: 0 0 4px 9px;
+    border-bottom-style: hidden;
+    overflow: hidden;
+    width: 180px;
+}
+	
+/* Paging and alfabet list */	
+.paging, .a-z
+{
+	padding: 5px 0;
+	margin: 0;
+	clear: both;
+	min-height: 1.5em;
+}	.paging
+	{
+		border-bottom: 3px solid #ff8a00;
+	}
+	.a-z
+	{
+		border-bottom: 1px solid #E5E5E5;
+	}
+	.paging + ul li:first-child a, .a-z + ul li:first-child a
+	{
+		border-top: none;
+	}
+	.linklist + .paging
+	{
+		border-bottom: none;
+		border-top: 3px solid #ff8a00;
+		margin-bottom: 15px;
+	}
+
+.paging li, .a-z li
+{
+	display: block;
+	float: left;
+	list-style: none;
+	color: #e67c00;
+}	.a-z li
+	{
+		padding: 0;
+		width: 3.7%; /* 100% / 26 letters = 3.7% per letter */
+		color: #7f7f7f;
+		font-weight: bold;
+	}
+	.paging li
+	{	
+		border-left: 1px solid #ff8a00;
+		padding: 0 7px;
+	}
+	.paging li:first-child
+	{
+		border: none;
+	}
+
+.paging a, .a-z a
+{
+	text-decoration: none;
+	color: #000;
+}	.a-z a
+	{
+		font-weight: bold;
+	}
+	.paging a:hover, .a-z a:hover, .paging a:focus, .a-z a:focus
+	{
+		text-decoration: underline;
+	}
+
+.paging .active, .a-z .active, .paging .active a, .a-z .active a
+{
+	font-weight: bold;
+	color: #e67c00;
+}	.paging .active a:hover, .a-z .active a:hover, .paging .active a:focus, .a-z .active a:focus
+	{
+		text-decoration: none;
+		cursor: default;
+	}
+
+.paging .next {padding-right: 0;}
+.paging .prev {padding-left: 0;}
+.paging .next a, .paging .prev a
+{
+	font-weight: bold;
+}	.paging .next a
+    {
+		padding-right: 17px;
+        background: url(images/links/small.png) right -135px no-repeat;
+    }
+	.paging .prev a
+    {
+		padding-left: 17px;
+        background: url(images/links/small-back.png) left -135px no-repeat;
+    }
+
+table + .paging
+{
+	border-bottom: none;
+	border-top: 3px solid #ff8a00;
+	margin-bottom: 15px;
+}
+
+/* Pop-up */	
+#popup, .popup, .popupshow
+{		
+	position: absolute;
+	padding: 0;
+	overflow: auto;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	background: url(images/popup-bg.png);
+	z-index: 9999;
+	top: 0;
+	left: 0;		
+}	#popup>*, .popup>*, .popupshow>*
+	{
+		width: 500px;
+		padding: 10px 20px;
+		background: #fff;
+		margin: 70px 0 0 230px;
+		position: relative;
+	}
+	body#popup
+	{
+		background: none !important;
+		overflow: hidden;
+	}
+
+#popup label, .popup label, .popupshow label
+{
+	width: 125px;
+	display: block;
+	float: left;
+	clear: both;
+	margin-right: 20px;
+	border-top: 1px solid #d8dbe0;
+}
+
+#popup h2, .popup h2, .popupshow h2, #popup legend, .popup legend, .popupshow legend
+{
+	font-size: 1.05em;
+	border-bottom: 3px solid #FF8A00;
+	font-family: inherit;
+	font-weight: bold;
+	margin-bottom: 0;
+	padding-bottom: 5px;
+}	
+
+.popup fieldset 
+{
+  border-top: medium none;
+}
+
+
+/* steps */
+.steps
+{
+	padding: 0;
+	margin-bottom: 0;
+	text-align: right;
+	border-bottom: 3px solid #FF8A00;
+}	h2 + .steps, h2 + .info + .steps, legend + .steps, legend + .info + .steps {margin-top: -2em;}
+	h3 + .steps {margin-top: -1.75em;}
+	form .steps {margin-bottom: 15px;}
+
+.steps li
+{
+	list-style: none;
+	display: inline;
+}
+
+.steps a, .steps strong
+{
+	padding: 2px 5px;
+	text-decoration: none;
+	background: #FF8A00;
+	color: #000;
+}	.steps strong
+	{
+		background: #000;
+		color: #fff;
+		font-weight: normal;
+	}
+
+/* Left */
+ul.left
+{
+	float: left !important;
+}
+
+ul.left + a
+{
+	margin: 25px;
+}
+
+/* bij u in de buurt */
+ul.provincies
+{
+    float: left;
+}
+
+div#kaart
+{
+    float: right;
+}
+
+div#kaart img
+{
+    border: 0;
+}
+
+div.kaart-label
+{
+    position: absolute;
+    height: 20px;
+    padding: 4px 15px 0px 10px;
+    background: #ff8a00;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1em;
+    top: -50px;
+    left: -500px;
+}
+
+/* bij u in de buurt: provincie pagina's */
+#map_drente img, #map_flevoland img, #map_friesland img, #map_gelderland img, #map_groningen img, #map_limburg img, #map_brabant img, #map_noordholland img, #map_overijsel img, #map_utrecht img, #map_zeeland img, #map_zuidholland img
+{
+	border: none;
+}
+
+#map_drente, #map_flevoland, #map_friesland, #map_gelderland, #map_groningen, #map_limburg, #map_brabant, #map_noordholland, #map_overijsel, #map_utrecht, #map_zeeland, #map_zuidholland
+{
+	background-repeat: no-repeat;
+	width: 492px;		
+}
+
+#map_drente 		{background-image: url("../images/kaart/gemeenten/map_dr.gif");}
+#map_flevoland 		{background-image: url("../images/kaart/gemeenten/map_fl.gif");}
+#map_friesland 		{background-image: url("../images/kaart/gemeenten/map_fr.gif");}
+#map_gelderland 	{background-image: url("../images/kaart/gemeenten/map_gl.gif");}
+#map_groningen 		{background-image: url("../images/kaart/gemeenten/map_gr.gif");}
+#map_limburg 		{background-image: url("../images/kaart/gemeenten/map_lb.gif");}
+#map_brabant 		{background-image: url("../images/kaart/gemeenten/map_nb.gif");}
+#map_noordholland 	{background-image: url("../images/kaart/gemeenten/map_nh.gif");}
+#map_overijsel 		{background-image: url("../images/kaart/gemeenten/map_ov.gif");}
+#map_utrecht 		{background-image: url("../images/kaart/gemeenten/map_ut.gif");}
+#map_zeeland 		{background-image: url("../images/kaart/gemeenten/map_zl.gif");}
+#map_zuidholland 	{background-image: url("../images/kaart/gemeenten/map_zh.gif");}
+
+/* Calendar */
+#calendar
+{
+	position: absolute;
+	background: #fff;
+	border: 1px solid #FF8A00;
+	margin: 21px 0 0 -299px;
+	padding: 5px;
+	width: 300px;
+	text-align: center;
+}
+
+#calendar div
+{
+	position: relative;
+}
+
+#calendar div a
+{
+	position: absolute;
+	display: block;
+	width: 15px;
+	height: 15px;
+	top: 5px;
+}	#prev
+	{
+		left: 25px;
+		background: url(images/links/back.png) left !important;
+	}
+	#next
+	{
+		right: 25px;
+		background: url(images/links/link.png) left !important;
+	}
+	#quit
+	{
+		right: 0px;
+		text-align: center;
+	}
+
+#calendar a
+{
+	cursor: pointer;
+}
+
+#calendar table
+{
+	border-collapse: collapse;
+	margin: 0;
+	width: 100%;
+}	#calendar table *
+	{
+		text-align: center;
+	}
+
+#calendar td, #calendar th
+{
+	padding: 0;
+}
+
+#calendar td a
+{
+	padding: 2px;
+	margin: 0;
+	background: none;
+	width: auto;
+	border: none;
+	text-decoration: none !important;
+}	#calendar td a:hover, #calendar td a:focus
+	{
+		background: #aaa;
+	}
+
+.calendarbutton
+{
+	display: block !important;
+	float: left !important;
+	width: 21px !important;
+	height: 21px;
+	cursor: pointer;
+	background: url(images/buttons/kalender.png) top left no-repeat;
+}	.calendarbutton:hover, .calendarbutton:focus, .calendarbutton.active
+	{
+		background-position: -21px top;
+	}
+	.calendarbutton.active
+	{
+		background-position: top right;
+	}
+
+/* Sorting: ascending (ASC) || descending (DESC) */
+.sorting
+{
+	border: none;
+}	.sorting *
+	{
+		display: inline !important;
+		border: none !important;
+		margin: 0;
+		line-height: 1.3em;
+	}
+	.sorting dt
+	{
+		float: none;
+		font-weight: bold;
+	}
+	.sorting dd
+	{
+		padding-right: 5px;
+		width: auto;
+		float: none;
+		border-right: 1px solid #ff8a00 !important;
+		color: #E67C00;
+		font-weight: bold;
+	}	.sorting dd:last-child
+		{
+			border: none;
+		}
+	.sorting a
+	{
+		text-decoration: none;
+		color: #000;
+		background: none;
+		padding: 0 2px;
+		font-weight: normal;
+	}	.sorting a:hover, .sorting a:focus
+		{
+			text-decoration: underline;
+		}
+	.sorting .asc, .sorting .desc
+	{
+		background: right 0 url(images/sort_asc_desc.png) no-repeat;
+		padding-right: 15px !important;
+	}
+	.sorting .asc			{background-position: right -120px;}
+	.sorting .desc			{background-position: right -40px;}
+	.sorting a.asc:hover, .sorting a.asc:focus 		{background-position: right -80px;}
+	.sorting a.desc:hover, .sorting a.desc:focus	{background-position: right -0;}
+
+/* Home specific styles */
+.home #content>h3
+{
+	border: none;
+	color: #000;
+}
+
+.home #content>p
+{
+	width: 440px;
+}
+
+.home #content, .overheidsinformatie #content
+{
+	width: 680px;
+}
+
+.home .column h2
+{
+	border-bottom: 3px solid #FF8A00;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+}
+
+/* Datepicker: calendar pop-up */
+.datepicker
+{
+	width: 75px !important;
+	float: left;
+}
+
+li .datepicker
+{
+	border: 1px solid #aaa !important;
+	float: left !important;
+	display: block !important;
+}	
+
+/* square listitem */
+li.square 
+{
+	list-style-image: url(images/bullet.png) !important;
+}
+
+/* Inactive */
+.inactive
+{
+	color: #7f8181 !important;
+}
+
+/* Edit & delete button */
+a.edit, a.del
+{
+	border: none;
+	display: block;
+	float: left;
+	padding: 0;
+	width: 21px;
+	height: 21px;
+	overflow: hidden;
+	background: none;
+}	a.edit:hover img, a.del:hover img, a.edit:focus img, a.del:focus img
+	{
+		margin-left: -21px;
+	}
+	a.edit img, a.del img
+	{
+		border: none !important;
+	}
+	
+/* Verzorgt de styling van een input type=submit
+ zodanig dat deze eruit zit als een a-element tbv doorsturen. */
+.doorsturen 
+{
+	background: transparent url(images/links/email.png) no-repeat scroll right bottom;
+	border-top: medium none !important;
+	border-right: medium none !important;
+	border-bottom: 1px solid #E5E5E5;
+	border-left: medium none !important;
+	color: #000000;
+	display: block;
+	padding: 2px 15px 2px 0px;
+	text-align: left;
+	text-decoration: none;
+	clear: both;
+	cursor: pointer;
+	width: 100%;
+	margin: 0px;
+}
+.doorsturen:hover
+{
+	border-bottom-color: #000;
+	background-position: 201px bottom;
+	color: #000;
+}
+
+/* breaks a list */
+.breaker
+{
+	border-top: 3px solid #FF8A00;
+	margin: 10px 0;
+	display: block;
+	padding-top: 10px;
+}	h2 + .breaker
+	{
+		margin-top: -10px;
+	}
+	h3 + .breaker
+	{
+		border: none;
+	}
+
+/* Noshow initial label */
+.js .vulling
+{
+	display: none;
+	margin: 0;
+}
+
+.gemeente 
+{
+  	padding-top: 10px; /* Zorgt voor een border rond de selectie van gemeenten */
+}

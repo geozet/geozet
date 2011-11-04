@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd"
+	lang="NL-nl" dir="ltr">
+
+	<properties>
+		<title>Vlakgerichte bekendmakingen sequence diagram</title>
+		<author email="prinsmc@minlnv.nl">Mark Prins</author>
+		<date>4 okt 2010</date>
+	</properties>
+	<body>
+		<section name="Vlakgerichte bekendmakingen ophalen">
+			<p>Onderstaand het sequence diagram voor het opvragen van
+				vlakgerichte
+				bekendmakingen.</p>
+			<p>
+				Het request voor dit diagram is:
+				<code>
+					<a
+						href="http://localhost:8080/geozetviewer/vlakbekendmakingen?bbox=161464,447368,170711,454760">
+						http://localhost:8080/geozetviewer/vlakbekendmakingen?bbox=161464,447368,170711,454760
+					</a>
+				</code>
+			</p>
+			<object data="seq-vlakgericht.svg" type="image/svg+xml"
+				height="100%" width="100%" title="sequence diagram" />
+		</section>
+	</body>
+</document>

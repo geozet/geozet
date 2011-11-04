@@ -1,0 +1,27 @@
+	 -----
+	 Overzicht GEOZET webapp
+	 -----
+	 prinsmc@minlnv.nl
+	 -----
+	 29 juni 2010
+	 -----
+
+~~ http://maven.apache.org/doxia/references/apt-format.html 
+
+{Overzicht}
+
+%{toc|section=2|fromDepth=0|toDepth=3}
+
+{Samenvatting}
+
+  Dit is de documentatie voor de GEOZET webapp.
+  
+*{Informatie}
+  
+  Belangrijke informatie is te vinden in de {{{./releasenotes.html}releasenotes}} en de 
+  {{{./meldingen.html}FAQ}}. Andere documenten zijn beschikbaar via de lijst hiernaast.
+
+*{Installatie}
+
+  De installatie procedure voor de module is beschreven in de 
+  {{{./installatiehandleiding.html}installatiehandleiding}}.

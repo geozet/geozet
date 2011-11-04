@@ -1,0 +1,4 @@
+/* selectie kaders IE8 */
+.olHandlerBoxZoomBox { -ms-filter: "alpha(opacity=50)"; }
+.olControlOverviewMapExtentRectangle,
+.olControlOverviewMapRectReplacement  { -ms-filter: "alpha(opacity=45)"; }

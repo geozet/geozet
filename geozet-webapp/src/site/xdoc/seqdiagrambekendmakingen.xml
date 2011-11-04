@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd"
+	lang="NL-nl" dir="ltr">
+
+	<properties>
+		<title>Bekendmakingen ophalen sequence diagram</title>
+		<author email="prinsmc@minlnv.nl">Mark Prins</author>
+		<date>5 okt 2010</date>
+	</properties>
+	<body>
+		<section name="Bekendmakingen ophalen">
+			<p>Onderstaand het sequence diagram voor het opvragen van
+				bekendmakingen.</p>
+			<p>
+				Het request voor dit diagram is:
+				<code>
+					<a
+						href="http://localhost:8080/geozetviewer/bekendmakingen?filter=consument&amp;filter=overheid&amp;filter=rechtspraak&amp;filter=verkeer&amp;filter=wonen&amp;straal=500&amp;xcoord=148188.0&amp;ycoord=469279.0&amp;gevonden=baarn+%28plaats%29&amp;usefilter=true">
+						http://localhost:8080/geozetviewer/bekendmakingen?filter=consument&amp;filter=overheid&amp;filter=rechtspraak&amp;filter=verkeer&amp;filter=wonen&amp;straal=500&amp;xcoord=148188.0&amp;ycoord=469279.0&amp;gevonden=baarn+%28plaats%29&amp;usefilter=true
+					</a>
+				</code>
+			</p>
+			<!-- <object data="seq-bekendmakingen.svg" type="image/svg+xml" height="100%" 
+				width="100%" title="sequence diagram" /> -->
+		</section>
+	</body>
+</document>

@@ -1,0 +1,15 @@
+﻿/**
+ * @project Overheid.nl
+ * @author	Stichting ICTU, e-Overheid voor Burgers
+ * @since	march 2010
+ * @name	IE 8 only stylesheet
+ * @version	1
+ */
+
+input[type="checkbox"], input[type="radio"]
+{
+	margin-left: -5px;
+	vertical-align:top;
+	height: 14px;
+	margin-top: -2px;
+}

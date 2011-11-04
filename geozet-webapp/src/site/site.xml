@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="${project.name} ${project.version}" xmlns="http://maven.apache.org/DECORATION/1.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/DECORATION/1.0.0 http://maven.apache.org/xsd/decoration-1.0.0.xsd">
+	<publishDate position="left" format="dd-MMMM-yyyy" />
+	<version position="left" />
+	<skin>
+		<groupId>org.apache.maven.skins</groupId>
+		<artifactId>maven-default-skin</artifactId>
+		<version>1.0</version>
+	</skin>
+	<bannerLeft>
+		<name>Geonovum</name>
+		<src>images/logo.png</src>
+		<href>http://geonovum.nl/</href>
+	</bannerLeft>
+	<bannerRight>
+		<name>GEOZET</name>
+	</bannerRight>
+	<poweredBy>
+		<logo name="Geotools" href="http://www.geotools.org/" img="images/geotools.png" />
+	</poweredBy>
+	<body>
+		<head>
+			<meta name="faq" content="geozet" />
+		</head>
+		<links>
+			<item name="Wiki" href="#" />
+			<!-- <item name="Hudson dashboard" href="#" /> -->
+			<item name="Mantis issue tracker" href="http://standaardbeheer.geonovum.nl/" />
+		</links>
+		<menu name="Links">
+			<item name="Wiki" href="#" />
+			<!-- <item name="Trunk Build results" href="#" /> -->
+			<!-- <item name="Hudson dashboard" href="#" /> -->
+			<!-- <item name="Trunk Build deployment" href="#" /> -->
+		</menu>
+		<menu name="Overview">
+			<item name="Release notes" href="/releasenotes.html" />
+			<item name="Ontwikkel handleiding" href="/ontwikkelhandleiding.html" />
+			<item name="Technisch Ontwerp Core" href="/technisch_ontwerp.html" />
+			<item name="Technisch Ontwerp Enhanced" href="/techdoc_geozet_viewer.odt" />
+			<item name="Functioneel Ontwerp" href="/functioneel_ontwerp.html" />
+			<item name="FAQ meldingen" href="/meldingen.html" />
+			<item name="FAQ algemeen" href="/faq.html" />
+		</menu>
+		<menu name="Installatie">
+			<item name="Release notes" href="/releasenotes.html" />
+			<item name="Installatie handleiding" href="/installatiehandleiding.html" />
+		</menu>
+		<menu name="Deployed Builds">
+			<item name="GEOZET webapp"
+				href="http://test.geodata.nationaalgeoregister.nl/apps/geozetviewer/" />
+		</menu>
+		<menu ref="modules" />
+		<menu ref="parent" />
+		<menu ref="reports" />
+	</body>
+</project>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd"
+	lang="NL-nl" dir="ltr">
+
+	<properties>
+		<title>Adres zoeken sequence diagram</title>
+		<author email="prinsmc@minlnv.nl">Mark Prins</author>
+		<date>5 okt 2010</date>
+	</properties>
+	<body>
+		<section name="Adres zoeken">
+			<p>Onderstaand het sequence diagram voor het opzoeken van een adres.
+			</p>
+			<p>
+				Het request voor dit diagram is:
+				<code>
+					<a href="http://localhost:8080/geozetviewer/geozet?adres=de+bilt">
+					http://localhost:8080/geozetviewer/geozet?adres=de+bilt
+					</a>
+				</code>
+			</p>
+			<!-- <object data="seq-adreszoeken.svg" type="image/svg+xml" height="100%" 
+				width="100%" title="sequence diagram" /> -->
+		</section>
+	</body>
+</document>

@@ -1,0 +1,78 @@
+body      { font-family:univers,helvetica,arial,sans-serif; font-size:11px; color: #000; background-color: #fff; }
+h1     { font-size: 140%; font-weight:bold;}
+h2     { font-size: 110%; font-weight:bold; margin:0; padding:0;}
+h3,h4  { font-size: 100%; font-weight:bold; margin:0; padding:0;}
+h5     { font-size: 100%; font-weight:normal; margin:0; padding:0;}
+#geozetContent a      { text-decoration: none; color: #000;}
+img    { border: none; }
+p      { margin:0;padding:0 0 1.2em;}
+abbr, acronym {font-style: normal;border: none;}
+
+
+
+/* RESTYLING LAYOUT */
+#geozetContent,
+#geozetArticle,
+#geozetAside { width: 100%; padding: 0; margin: 0; border: 0; }
+
+#geozetArticle { float: none; }
+body.geozetMax #geozetContent { height: auto !important; }
+body.geozetMax #geozetArticle { margin: 0; }
+
+/* VERBERGEN LAYOUT CONTAINERS */
+#directnaar,
+#melding .close,
+#geozetMap #geozetPanZoomBar,
+.geozetFilter li.cluster,
+html.js #geozetMiniMap,
+#geozetMap #toggleMapSize,
+#geozetFilter,
+#geozetPopover,
+#geozetPopup .geozetNeedle,
+#geozetPopup .geozetClose,
+#geozetStart .geozetClose,
+#geozetPopup p.btn,
+#geozetStart p.btn,
+#geozetAlert { display:none; }
+
+
+/* KLEUREN HERZIEN */
+#featureInfo,
+#featureInfo h2 { color: #000; }
+
+
+/* PRINTBARE MAP */
+#versie-kaart #geozetEnhancedArticle { width: 100%; float: left }
+
+#geozetMap { margin: 10px 0; }
+#geozetMap a,
+#geozetMap a:visited { color: #000 } /* zwart wit print resultaten en kleur beter met zwarte tekst */
+
+#geozetMap a.active { border: 1px solid #000; } /* TODO: voor cluster anders doen */
+
+
+
+#geozetScale div { float: none; }
+
+.geozetFilter { width: 400px; }
+.geozetFilter li label { padding-left: 0px; }
+.geozetFilter li input { display: none; }
+
+
+
+#geozetPopup,
+#geozetStart { position: relative !important; left: auto !important; top: auto !important; background-image: none; background-color: #fff; width: 500px; }
+#geozetPopup ul.cluster { overflow: hidden; height: auto; width: 100%; border: 0; }
+#geozetPopup ul.cluster li.active { display: block; border-bottom: 1px solid #000; }
+
+#geozetPopup div,
+#geozetPopup ul.cluster li div { width: auto; }
+
+#geozetPopup a.extern:after,
+#geozetStart a.extern:after { content:" [" attr(href) "] "; font-size:11px; }
+
+#geozetContent a.extern { background-image: none; border: 0; color: #000; }
+
+
+
+

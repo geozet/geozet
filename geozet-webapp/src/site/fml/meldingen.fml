@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faqs xmlns="http://maven.apache.org/FML/1.0.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/FML/1.0.1 http://maven.apache.org/xsd/fml-1.0.1.xsd"
+	title="Frequently Asked Questions" toplink="true" id="Meldingen FAQ">
+	<!-- zie: http://maven.apache.org/doxia/references/fml-format.html -->
+	<part id="WARNING">
+		<title>waarschuwingen</title>
+		<faq id="where">
+			<question>MathTransformProvider</question>
+			<answer>
+				<code>WARNING: Can't load a service for category
+					"MathTransformProvider". Cause is "NoClassDefFoundError:
+					javax/media/jai/WarpAffine".</code>
+				<p>Voor het renderen van bitmaps kan de onderliggende GeoTools API
+					gebruik maken van Java Advanced Imaging, echter binnen deze
+					applicatie wordt deze functie niet gebruikt. Derhalve
+					kan deze
+					melding genegeerd worden.</p>
+			</answer>
+		</faq>
+	</part>
+
+	<part id="ERROR">
+		<title>fouten</title>
+	</part>
+</faqs>
+
+

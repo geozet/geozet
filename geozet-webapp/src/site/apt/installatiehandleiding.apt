@@ -1,0 +1,104 @@
+	 -----
+	 Installatiehandleiding AAN Class Extensies
+	 -----
+	 prinsmc@minlnv.nl
+	 -----
+	 8 april 2010
+	 -----
+
+~~ http://maven.apache.org/doxia/references/apt-format.html
+
+Installatiehandleiding
+
+%{toc|section=1|fromDepth=0|toDepth=3}
+
+* {Algemeen}
+
+  <<Het is sterk aangeraden de {{{./faq.html}FAQ}}
+  en de {{{./releasenotes.html}releasenotes}} te lezen voordat je verder gaat>>.
+  
+* {Systeemeisen}
+
+  De belangrijkste systeemeisen op een rij:
+ 
+  * Tomcat 6.0.22 of jonger
+  
+  * Java 1.6, bij voorkeur 1.6.0_20 of jonger
+  
+  []
+
+* {Installatie} en Configuratie
+
+** {Installatie} 
+
+  * Zet de geozetviewer.war file in <TOMCAT_HOME>\webapps. Tomcat zal de .war file uitpakken, 
+  eventueel na herstart of pak de .war file met de hand uit in de geozetviewer directory.
+    
+  * Pas de configuratie bestanden aan zoals hieronder beschreven.
+  
+  []
+
+** {De-installatie}
+      
+  De-installatie volgt door de war file en/of de uitgepakte directory te verwijderen; 
+  bij de eerstvolgende herstart zal tomcat de resten van de applicatie opruimen. 
+
+  
+** {Configuratie}
+
+  Er zijn een aantal configuratie bestanden voor deze applicatie te weten (<NB.
+  paden verwijden naar de locatie binne de webapplicatie>):
+  
+*** {web.xml}
+
+  Dit bestand (<<<\WEB-INF\web.xml>>>) bevat de servlet configuratie, oa. de urls naar 
+  de WFS en OLS en andere runtime parametrisatie. 
+  
+  [context parameters] De context parameters worden gebruikt voor algemene applicatiebrede
+  configuratie. Hieronder vallen de servlet mappings (welke servlet heeft welke naam),
+  paginering, bekendmakingen WFS capabilities URL. De verschillnde parametrs zijn 
+  uitgebreid beschreven in het bestand.
+  
+  [servlet parameters] Per servlet zijn de parameters beschreven die nodig zijn 
+  voor die specifiek servlet, hieronder vallen bijvoorbeeld de WFS timeout, 
+  de WFS max features, het object type van de WFS features, de boundingbox definities
+  voor de vlakgerichte bekendmakingen, de openls service url. Alle parameters zijn 
+  uitgebreid beschreven middels de description tags.
+  
+  []
+  
+*** {core-resources.properties}
+
+  Dit bestand (<<<\WEB-INF\classes\core-resources.properties>>>) bevat de teksten voor 
+  het core deel van de applicatie. Per component is in het bestand aangegeven
+  waar welke tekst terecht komt. De gebruikte sleutels zijn zelfbeschrijvend.
+
+*** {core-datacategorieen.properties}
+
+  Dit bestand (<<<\WEB-INF\classes\core-datacategorieen.properties>>>) bevat de thema 
+  indeling voor het core deel van de applicatie.
+  Van belang is dat de volgorde in dit bestand ook de uiteindelijke weergave op
+  het scherm is. Als er aanpassingen in dit bestand worden gedaan die verder gaan
+  dan het aanpassen van de beschrijving is het mogelijk ook nodig dat de css en
+  de daarin beschreven sprites en bitmaps worden aangepast. 
+  
+*** {log4j.xml}  
+
+  Dit bestand (<<<\WEB-INF\classes\log4j.xml>>>) bevat de logging configuratie voor de 
+  serverside van de applicatie. DE werking en configuratie van LOG4J is beschreven 
+  op de {{{http://logging.apache.org/log4j/}Log4J website}}. De GEOZET applicatie
+  heeft alle klassen onder het <<<nl.geozet>>> package; andere packages die van 
+  belang zouden kunnen zijn voor trouble shooting zijn genoemd in het bestand.
+  
+*** {settings.js}
+
+  Dit bestand (<<<\static\js\settings.js>>>) bevat de configuratie voor de Javascript 
+  client, oa. de urls naar de WFS en OLS en categorie indeling.
+  Dit bestand is verder beschreven in het document:{{{#}...}}.
+  
+*** {proxy.jsp}
+
+  Voor de XHR communicatie met services vanuit de JavaScript client is een proxy 
+  toegevoegd. In dit bestand (<<<proxy.jsp>>>) dienen de toegestane urls te worden toegevoegd. 
+  
+~~einde

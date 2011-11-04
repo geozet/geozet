@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl" lang="nl">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>DEMO - IE6</title>
+
+
+
+<style type="text/css">
+
+	body { margin: 0; padding: 0; font: 12px verdana; }
+
+	h3 { margin: 0; padding: 0; }
+
+	#aap span  { display: block; width: 240px; height: 20px;  }
+
+	#aap span.overheid { background-color: red;  } 
+
+	#aap span.wonen { background-color: green;  }
+
+
+</style>
+
+	
+
+</head>
+<body>
+
+
+<div id="aap" class="wonen">
+	<h3>Titel</h3> 
+	<span class="wonen">.overheid moet rood zijn, .wonen moet groen zijn</span>
+</div>
+
+<p>
+In IE6 wordt alleen de eerste declaratie '#Popover.overheid' gebruikt en de overige tellen niet meer mee, als je omwisselt geldt alleen de eerste declaratie....
+</p>
+
+			
+			<form action="#" method="post">
+
+
+
+			<p>
+				<label for="locatie">Zoek locatie</label>
+				<select id="locatie" name="locatie">
+					<option value="wonen">Wonen</option>
+					<option value="overheid">Overheid</option>
+				</select>
+			</p>
+
+
+			</form>
+
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript">
+
+$('form').change( function(){
+
+	var aap = $('#locatie').val();
+	$('#aap span').removeClass().addClass(aap);
+	$('#aap span').html('class:'+aap);
+
+return false;
+});
+
+
+</script>
+
+</body>
+</html>

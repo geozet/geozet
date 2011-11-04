@@ -1,0 +1,159 @@
+	 -----
+	 Ontwikkelhandleiding GEOZET webapp
+	 -----
+	 prinsmc@minlnv.nl
+	 -----
+	 14 juni 2010
+	 -----
+
+~~ http://maven.apache.org/doxia/references/apt-format.html
+
+
+Ontwikkel handleiding
+
+%{toc|section=1|fromDepth=0|toDepth=2}
+
+* {Broncode ophalen}
+
+  De broncode is opgeslagen in het Subversion systeem. De toegang is beschreven in het 
+  {{{./source-repository.html}Source Repository}} document.
+  Om gebruik te maken van het eclipse project is het van belang dat je uitpakt naar 
+  <<<C:\workspace\nl.geozet.geozet-webapp-TRUNK>>>.
+
++----+
+  svn checkout http://www.duif.net/geozet/trunk/geozet-webapp C:\workspace\nl.geozet.geozet-webapp-TRUNK
++----+
+  
+* {Beginnen met bouwen}
+
+  Het project gebruikt Maven 2 als build tool en eclipse 3.5 met de Subversive en Maven 
+  Integration plugins als ide; alle Maven commando's moeten in de root van het project worden uitgevoerd; 
+  in pricipe zorgt de m2eclipse plugin voor de afhandeling van de maven commando's voor oa. build.
+  Het project is opgezet als een war artifact. Voor het maken van een .war of release is 
+  alleen een juist geconfigureerde Maven installatie nodig. Als je <<<dot>>> of <<<Graphviz>> 
+  hebt geinstalleerd kunj je javadoc met UML klasse diagrammen genereren; dit doe je door 
+  op de commandline <<<-Dhavedot=true>>> mee te geven zoals in onderstaand voorbeeld 
+  om de documentatie te genereren
+  
++----+
+mvn -Dhavedot=true site
++----+  
+  
+  In het standaard scenario wordt er periodiek een build en deploy van de webapp gedaan naar 
+  de  {{{http://localhost:8020/geozetviewer}ontwikkel server}} met behulp van de 
+  {{{http://localhost:8020/dashboard/tab/build/detail/geozetviewer}Hudson server}}.
+  De locatie is beschreven on de POM file.
+  Van belang hierbij is dat in de <<<settings.xml>>> een server entry staat voor de duif.net 
+  repository zoals hieronder.
+
++----+
+<server>
+  <id>duif-repo</id>
+  <username>jouw subversion gebruikersnaam</username>
+  <password>jouw subversion wachtwoord</password>
+</server>
++----+  
+
+  Zonder deze entry kun je geen releases doen en ook de gerelateerde maven artifacten niet ophalen.  
+
+**{Maven commando's}  
+  
++----+
+mvn package
++----+  
+  
+  Dit draait alle unit tests en maakt de artifact(en) bestanden aan die 
+  direct naar de ontwikkelserver kunnen worden gerold voor deploy. 
+
++----+
+mvn clean scm:update site-deploy install
++----+  
+  
+  Dit doet een clean en update actie waarna de volledige build en packaging wordt uitgevoerd en 
+  de documentatie wordt gegenereerd.
+  
+** {live show}
+
+  De webapp kan mbv. jetty live worden gebracht met het commando:
+
++----+
+mvn jetty:run
++----+
+  
+  Dit brengt de webapp in de lucht op adres <<<http://localhost:8020/geozetviewer>>>
+  Stoppen gaat dan via stoppen met <cntrl-c> of vanuit een andere terminal met commando <<<mvn jetty:stop>>>.
+  Meer hierover op de wiki {{http://docs.codehaus.org/display/JETTY/Maven+Jetty+Plugin}}
+ 
+* {Issue's oplossen}
+
+  In principe worden alle issues in {{{./issue-tracking.html}Mantis}} vastgelegd; optioneel kun je de 
+  echte highlights in de {{{./releasenotes.html}releasenotes}} vastleggen. 
+  
+* {Versie nummering}
+
+  Opleveringen hebben versienummers beginnend bij 1.0, bij bugfixes wordt het cijfer achter de punt opgehoogd.
+  Optioneel kunnen er pre-releases worden opgeleverd, die worden aangegeven met 0.1, 0.2 etc.
+  Alle versies kunnen worden bekeken in Mantis?? Hudson?? 
+  ({{{http://????????????:9090/}Versions}})
+
+* {Release bouwen}
+
+  Met de volgende stappen kun je een release bouwen mbv Maven 
+  ({{{http://maven.apache.org/plugins/maven-release-plugin/introduction.html}meer hierover}}).
+  In principe worden alleen <<<tags>>> gebruikt omdat iedere nieuwe oplevering een tag krijgt (<in tags mag je dus niets meer inchecken!>
+  maak daar een branch voor aan). 
+  Voordat je verder gaat zorg je dat alles is ingechecked in subversion en dat de release is vrijgegeven 
+  in ?Jira?. Ga pas daarna verder!
+
+   [mvn -Prelease clean scm:update] update van de broncode in de werkdirectory
+
+   [mvn -Prelease release:prepare -DdryRun=true] maakt een properties file aan met 
+      informatie voor de volgende stap; de dry run is een oefening om je voor
+      te bereiden op de gestelde vragen.
+
+   [mvn -Prelease release:clean release:prepare] Verwijderd evt. de eerder 
+        gemaakte maven-release-plugin properties (van de dry run) en
+        maakt een tag aan in de repository en update de snapshot versie.
+
+   [mvn -Prelease release:perform] commit en deploy de release; maven maakt een 
+       tag aan in de source repository voor deze release en deployed de release 
+       naar de gedefinieerde maven repository. 
+       
+       <<LET OP:>> als je geen schrijfrechten hebt in de gedefinieerde maven repository 
+       (duif.net svn repository <<<duif-repo>>>) kun je dus geen release maken! 
+       zie ook {{{#Beginnen_met_bouwen}hierboven}}
+
+   []
+
+  opties tijdens <<<release:prepare>>> fase:
+
+   * <<<-DpreparationGoals=clean>>> om bijv. prep goals zoals unit test over te slaan.
+
+   * <<<-DdryRun=true>>> doet een dry run van het comando; er worden geen 
+   veranderingen in de source repository gemaakt.
+   
+   []
+   
+  Met behulp van de release notes functie in Jira kunnen release notes worden aangemaakt 
+  in verschillende formaten.   Zie: 
+  {{{http://????????????????/secure/ConfigureReleaseNote.jspa?projectId=10220}hier}}. 
+  Dit moet gedaan worden voordat de release met maven wordt gemaakt zodat eea ook 
+  netjes in subversion terecht komt. Tevens moet na het maken van de release met 
+  Maven de release worden gedaan in Jira, dit vlagt de artifacts en componenten 
+  als released. Na het maken van een release is er nog geen fileset voor 
+  distributie/installatie, dat is 
+  {{{./ontwikkelhandleiding.html#Distributie_fileset_bouwen}hieronder}} beschreven.
+   
+* {Distributie fileset bouwen}
+
+  Er is een apart profiel aangemaakt voor het bouwen van een distributie fileset (zip) met daarin 
+  alle bestanden en documentatie die nodig zijn voor de installatie.
+  
+   [mvn -Pdistribution,release clean scm:update install site-deploy assembly:assembly] 
+        Dit zorgt voor een up-to-date fileset die als zipfile gepackaged wordt, 
+        inclusief alle sites van de modules.
+        
+   []
+  
+  Dit commando kun direct na het maken van een release uitvoeren op de broncode zoals die onder de 
+  <<</target/checkout/>>> directory is te vinden.

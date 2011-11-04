@@ -1,0 +1,455 @@
+﻿/**
+ * @project Overheid.nl
+ * @author	Stichting ICTU, e-Overheid voor Burgers
+ * @since	march 2010
+ * @name	IE6 only stylesheet
+ * @version	1
+ */
+
+/* main elements */
+
+code, pre
+{
+    font-size: 1em;
+}
+
+dl
+{
+    border-top: none;
+    border-bottom: 1px solid #d8dbe0;
+
+}
+
+dt
+{
+    border-top: 1px solid #d8dbe0;
+    border-bottom: none;
+    width: 200px;
+}
+
+dd
+{
+    padding-left: 0;
+    border-top: 1px solid #d8dbe0;
+    border-bottom: none;
+  * float: none;
+  * margin-left: 222px;
+    width: 215px;
+}
+
+#main-column h3
+{
+	max-width: 470px;	
+}
+
+
+/* framework elements */ 
+.footer p
+{
+    float: left;
+    width: 50%;
+}
+
+#left-column .filter
+{
+    width: 166px;
+}
+
+#main-column
+{
+    padding-right: 0px;
+}
+
+#right-column
+{
+    width: 216px;
+    margin-left: 0 !important;
+    padding-left: 0;
+    padding-right: 10px !important;
+    float: right;
+}
+
+.column
+{
+    margin-right: 10px;
+}
+
+#main-column .active strong, #main-column .active a
+{
+    color: #e67c00 !important;
+}
+
+
+/* navigation elements */ 
+#left-column
+{
+	padding-top: 0px !important;
+}
+
+
+.submenu
+{
+	margin-top:15px !important;
+}
+
+.main, .meta
+{
+    height: 29px;
+    margin-bottom: -1px;
+}
+
+#left-column .submenu
+{
+    width: 187px;
+}
+
+#left-column .submenu ul
+{
+    border: none;
+    margin: 0;
+}
+
+#left-column li.active a
+{
+    background-color: #000;
+    color: #fff !important;
+    font-weight:normal;
+}
+
+#left-column li.active li a
+{
+    background-color: #fff;
+    color: #000 !important;
+    font-weight:normal;
+}
+
+#left-column li li.active a
+{
+    background-color: #000;
+    color: #fff !important;
+    font-weight:normal;
+}
+
+#left-column li li.active li a
+{
+    background-color: #fff;
+    color: #000 !important;
+    font-weight:normal;
+}
+
+.tabs
+{
+    border-bottom: none;
+    background: url(images/streepgrijs.png) bottom;
+    padding-bottom: 0;
+}
+
+/* specific-styles elements */  
+.theme li
+{
+    margin-bottom: -15px;
+}
+
+.theme a
+{
+    margin-top: 1em;
+    height: 3em;
+}
+
+a.info
+{
+    width: 0px;
+}
+
+a.info:hover
+{
+    background-position: 5px 2px;
+    z-index:9999;
+}
+
+.linklist li, #right-column li, #left-column li, .column li
+{
+    width: 100%;
+}
+
+.linklist a, #right-column li a, #left-column li a, a.linklist, .column li a, td a
+{
+    padding: 2px 0;
+    width: 100%;
+    height: 1em;
+}
+
+#right-column li a:hover, #right-column p.linklist a:hover, #right-column a.linklist:hover, td a:hover
+{
+    background-position: 185px bottom;
+}
+
+.print a
+{
+    background-image: url(images/links/print.png) !important
+}
+
+.email a
+{
+    background-image: url(images/links/email.png) !important
+}
+
+.extern a
+{
+    background-image: url(images/links/extern.png) !important
+}
+
+.download a
+{
+    background-image: url(images/links/download.png) !important
+}
+
+.active a
+{
+	color: #e67c00 !important; font-weight:bold;
+}
+
+dd.extern a
+{
+    background-image: url(images/links/extern.png);
+}
+
+dd.extern a:hover
+{
+    background-position: 273px 5px;
+}
+
+#popup, .popup
+{
+    height: 2000px;
+    width: 2000px;
+    background: url(images/form-ie-bg.png);
+}
+
+#popup form, .popup form
+{
+    margin-left: 200px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 10px;
+    width: 500px;
+    background: #fff;
+}
+
+/* calendar */ 
+#prev
+{
+    left: -70px;
+}
+
+/* fix dubbele kolommen naast elkaar (bekendmakingen) */
+
+.double-column 
+{
+    padding-right:0px
+}
+
+/* partial bug fix for word-wrap */
+legend,
+legend span {float:left;}
+
+/* cross eyed map of Netherlands */
+form.nl img 
+{
+  left:29px;
+}
+
+/* shift back elements on map */
+form.nl fieldset ul input
+{
+    margin-left: 5px;
+}
+
+form.nl p.error
+{
+    margin-left: 5px;
+}
+
+form.nl input.error
+{
+    margin-left: 5px;
+}
+
+/* fixes position of text */
+.paging, .a-z 
+{
+    height:1em;
+}
+
+/* uitgebreid zoeken */
+#left-column fieldset a 
+{
+    color:#ffffff;
+    text-decoration: none;
+}
+
+#left-column fieldset a:hover, #left-column fieldset a:focus 
+{
+    text-decoration: underline;
+    background-position: 192px -1px;
+}
+
+/* Remove border at start paging */
+.prev
+{
+	border:0px !important;
+}
+
+/* Remove contrast link. Does not work in IE6 */
+.header #contrast
+{
+	visibility:hidden !important;
+}
+
+/* Remove tekstgrootte. Does not work in IE6*/
+.header dl
+{
+	visibility:hidden !important;
+}
+	
+/* move the search box up */	
+#left-column
+{
+	padding-top: 0px !important;
+}
+
+/* form elements */  
+#left-column form
+{
+    margin: -22px -10px 15px;
+}
+
+fieldset ul input
+{
+    margin-left: 175px;
+}
+
+fieldset li 
+{
+  	width:100%;
+  	margin-left:0px;
+  	margin-top: -4px;
+}
+
+fieldset li input 
+{
+    width:auto !important;
+    border:0px !important;
+    margin-left:0px;
+    margin-top: 6px;
+}
+
+fieldset li label 
+{
+	margin-top: -23px;
+	margin-left: 15px;
+	padding-bottom: 0px; 
+}
+
+fieldset li p 
+{
+	padding-bottom: 5px;
+	margin-top: -10px;
+	margin-left: 8px; 
+}
+
+fieldset li .results 
+{
+	padding-bottom: 5px;
+	margin-top: -10px;
+	margin-left: 8px; 
+}
+
+table input 
+{
+    width:auto !important;
+    border:0px !important;
+}
+
+.buttons input
+{
+	margin-right: 10px;
+}
+
+/* Form elements: Errors in form */
+fieldset ul li p.error
+{
+	margin-left: 0px !important;
+}
+
+fieldset p.error input 
+{
+    margin-left:177px;
+}
+
+select.error
+{
+	background-color: #FF8080;
+	margin-left:177px;
+}
+
+option.error
+{
+ 	background-color:white;
+}
+
+p.error
+{	
+	margin-top: -4px;
+    margin-left: 175px;
+}
+
+.small p.error
+{
+    margin-left: 0;
+}
+
+input.error
+{
+    margin-left: 175px;
+}
+
+.small input.error
+{
+    margin-left: 0px;
+}
+
+/* Form elements: Display the selected items in search form */
+.results dd
+{
+	border:0px !important;
+	margin-left: 0px;
+}
+	
+.results dt
+{
+	border:0px !important;
+	width: 120px;
+}
+
+/* Form elements: Fix groups */
+.radio-group li 
+{
+  display: block !important;
+  margin-top: -10px;
+}
+
+.radio-group li 
+{
+  width: auto !important;
+}
+
+.radio-group li input, .radio-group li label 
+{
+  clear:both !important;
+  float: left;
+  margin-left: 0px;
+  padding-left: 25px;
+  width: auto !important;
+}
+

@@ -1,0 +1,60 @@
+	 -----
+	 Technisch Ontwerp GEOZET webapp
+	 -----
+	 prinsmc@minlnv.nl
+	 -----
+	 29 juni 2010
+	 -----
+
+~~ http://maven.apache.org/doxia/references/apt-format.html
+
+Technisch Ontwerp
+
+%{toc|section=1|fromDepth=0|toDepth=2}
+
+* {Introductie}
+
+  De GEOZET applicatie bestaat uit een CORE en een ENHANCED versie; de core versie 
+  bestaat uit een aantal serverside WFS en OLS client servlets welke HTML pagina's 
+  renderen. De enhanced versie biedt een uitgebreide Javascript client welke
+  dezelfde service biedt. Zie verder het {{{./20100519_PvE_GEOZET_v1-0.pdf}PvE}}.
+  De servlets zijn allen volledig stateless.
+  
+  Om de vereiste functie te kunnen bieden zijn er vijf servlets gedefinieerd die 
+  overerven van een ouder, {{{./apidocs/nl/geozet/common/ServletBase.html}ServletBase}}.
+  
+[./apidocs/nl/geozet/common/ServletBase.png] Klasse diagram servlet overerving
+
+  Om zowel POST als GET operaties te ondersteunen is alleen de <<<service()>>> methode 
+  geimplementeerd; andere methoden (HEAD, TRACE, ed.) worden niet ondersteund.
+  In de sequece diagrammen worden de typische requests getoond, primair zijn dit dus 
+  {{{http://download.oracle.com/javaee/5/api/javax/servlet/http/HttpServlet.html#service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)}service(request,response)}} 
+  afhandelingen.
+  
+* {Sequence diagrammen}
+  
+  De sequence diagramman tonen de algemene applicatie stroom voor de verschillende 
+  ingangen/servlets. In principe is voor idere applicatie actie (zoeken van een adres, 
+  ophalen van bekendmakingen, ophalen van vlak bekendmakinen, ophalen van bekendmaking 
+  details) een servlet gebouwd, daarnaast is er een dispatcher servlet voor de 
+  standaard ingang (zoeken)
+  
+  * {{{./seqdiagramadreszoeken.html}sequence diagram adres zoeken}}
+  
+  * {{{./seqdiagrambekendmakingen.html}sequence diagram bekendmakingen ophalen}}
+  
+  * {{{./seqdiagrambekendmaking.html}sequence diagram bekendmaking details ophalen}}
+  
+  * {{{./seqdiagramvlakgericht.html}sequence diagram vlak gerichte bekendmakingen ophalen}}
+  
+  []
+  
+
+* {Klasse diagrammen}
+
+  De {{{./apidocs/index.html}javadoc}} is aangereikt met klassediagrammen welke de 
+  onderlinge verhoudingen en klasse opmaak tonen.  
+
+~~einde
+  
+  

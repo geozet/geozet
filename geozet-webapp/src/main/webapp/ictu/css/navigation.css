@@ -1,0 +1,353 @@
+﻿/**
+ * @project Overheid.nl
+ * @author	Stichting ICTU, e-Overheid voor Burgers
+ * @since	march 2010
+ * @name	Navigation stylesheet
+ * @version	1
+ */
+
+#menu
+{
+	height: 29px;
+	margin-bottom: 58px;
+	position: absolute;
+	top: 84px;
+	width: 960px;
+	background: #000;
+}
+
+#menu *
+{
+	display: inline;
+}
+
+#menu h2, #menu h3
+{
+	display: none;
+}
+
+#menu ul li:first-child a
+{
+	border: none;
+}
+
+#menu li
+{
+	list-style: none;
+}
+
+#menu a
+{
+	border: none;
+	text-decoration:none;
+}
+
+/* Two menus on top of page */
+
+#menu .main, #menu .meta
+{
+	padding: 0;
+	height: 30px;
+}
+
+#menu .main
+{
+	float: left;
+}
+
+#menu .meta
+{
+	float: right;
+	white-space: nowrap;
+}
+
+#menu .main a, #menu .meta a
+{
+	color: #fff;
+	display: inline-block;
+	height: 23px;
+	padding: 6px 12px 0 11px;
+}	#menu .main a:hover, #menu .meta a:hover, #menu .main a:focus, #menu .meta a:focus
+	{
+		background: #505960;
+		color: #fff;
+	}
+	#menu .main .active a
+	{
+		background: #8C9DB1;
+		color: #000 !important;
+	}
+	#menu .meta .active a
+	{
+		color: #fff !important;
+		text-decoration: underline;
+	}
+	#menu .main a
+	{
+		font-weight: bold;
+	}
+	#menu .meta li:last-child a
+	{
+		padding-right: 20px;
+	}
+
+/* Breadcrumb */
+
+.breadcrumb
+{
+
+}	#content .breadcrumb
+	{
+		position: static;
+		padding: 0;
+	}
+	.header .breadcrumb
+	{
+		background: #8c9db1 url(images/header.png) -229px -113px no-repeat;
+		width: 706px;
+		position: absolute;
+		left: 249px;
+		top: 113px;
+		padding-top: 7px;
+		height: 51px;
+	}
+	.breadcrumb h2
+	{
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 1.85em;
+		color: #fff;
+		display: block;
+		margin: 7px 0 0;
+	}
+	.breadcrumb li
+	{
+		list-style: none;
+		display: inline;
+		margin-right: 15px;
+	}
+	.breadcrumb a
+	{
+		color: #fff;
+		padding: 0 0 0 9px;
+		background: url(images/bc-wit.png) left center no-repeat;
+		text-decoration: none;
+	}	#content .breadcrumb li a
+		{
+			color: #000;
+			background-image: url(images/bc-zwart.png);
+		}
+		.breadcrumb a:hover, .breadcrumb a:focus
+		{
+			color: #fff;
+			text-decoration: underline;
+		}
+
+/* Instellingen */
+
+.options
+{
+	margin: 150px 0 0 640px;
+	top: 0;
+	left: 0;
+	position: absolute;
+	text-align: right;
+	width: 300px;
+}
+
+.options li
+{
+	display: inline;
+}
+
+.options a
+{
+	color: #fff;
+	padding: 0 0 0 10px;
+	background: url(images/bc-wit.png) left no-repeat;
+}	.options a:hover, .options a:focus
+	{
+		color: #fff;
+		text-decoration: underline;
+		background: url(images/bc-wit.png) left no-repeat;
+	}
+
+/* Submenu in functie */
+
+#functie .submenu
+{
+	margin: 0 -10px 15px;
+	padding: 0;
+}	#functie .submenu li a
+	{
+		padding: 2px 12px 2px 22px;
+		text-decoration: none;
+		display: block;
+		border: none !important;
+		color: #000;
+		background: url(images/links/link.png) -478px 0 no-repeat;
+	}	#functie .submenu li
+		{
+			list-style: none;
+		}
+		#functie .submenu li a:hover, #functie .submenu li a:focus
+		{
+			background-position: 6px 0 !important;
+			border-bottom-color: #000;
+			color: #000;
+		}
+		/* sub-submenu */
+		#functie .submenu ul a
+		{
+			padding-left: 32px;
+			background-position: -470px 0;
+		}
+		#functie .submenu ul a:hover, #functie .submenu ul a:focus
+		{
+			background-position: 15px 0 !important;
+		}
+		/* sub-sub-submenu */
+		#functie .submenu ul ul a
+		{
+			padding-left: 42px;
+			background-position: -460px 0;
+		}
+		#functie .submenu ul ul a:hover, #functie .submenu ul ul a:focus
+		{
+			background-position: 25px 0 !important;
+		}
+	#functie .submenu .active>a, #functie .submenu .active>a:hover, #functie .submenu .active>a:focus
+	{
+		background-color: #000;
+		color: #fff;
+	}
+	#functie .submenu ul
+	{
+		border: none;
+		margin: 0;
+	}
+	#functie .submenu li.open>a			{background-image: url(images/links/open.png);}
+	#functie .submenu li.open.active>a	{background-image: url(images/links/link-wit.png);}
+	#functie .submenu li.active>a		{color: #fff !important; font-weight: normal;}
+
+/* Tabs */
+
+.tabs
+{
+	width: 925px;
+	height: 20px;
+	border-bottom: 1px solid #acb9ca;
+	padding: 10px 0;
+	margin: 0 12px 5px 20px;
+}	.tabs li
+	{
+		list-style: none;
+		float: left;
+		list-style-image: none;
+	}
+	.tabs a
+	{
+		text-decoration: none;
+		float: left;
+		padding: 5px 17px 8px;
+		border: none;
+		color: #6d7f97;
+		font-weight: bold;
+	}	.tabs .active a
+		{
+			border: 1px solid #acb9ca;
+			border-bottom: none;
+			background: #fff;
+		}
+		.tabs a:hover, .tabs a:focus, .tabs .active a
+		{
+			color: #e67c00;
+		}
+	
+	#functie + .tabs
+	{
+		margin-left: 252px !important;
+		width: 688px;
+	}
+	
+	#content .tabs
+	{
+		margin: 0 0 12px 0;
+		width: 440px;
+	}
+	
+/* Options */
+
+#contrast
+{
+	position: absolute;
+	top: -55px;
+	left: 710px;
+	background: url(images/links/small.png) -6px 3px no-repeat;
+	color: #000;
+	padding: 1px 1px 1px 13px;
+	line-height: 15px;
+}	#contrast:hover, #contrast:focus
+	{
+		text-decoration: underline;
+		background-position: -5px -133px;
+	}
+
+#menu dl
+{
+	position: absolute;
+	top: -55px;
+	left: 830px;
+	overflow: visible;
+	border: none;
+	display: none;
+}	#menu dl a
+	{
+		display: block;
+		float: left;
+		text-decoration: none;
+		border: 1px solid #bdbdbd;
+		color: #000;
+		text-align: center;
+		width: 15px;
+		margin-right: -1px;
+	}	.header dl a:hover, .header dl a:focus,
+		#menu dl a:hover, #menu dl a:focus
+		{
+			background: #000;
+			color: #fff;
+		}
+	 #menu dd, #menu dt
+	{
+		line-height: normal;
+		border: none;
+		padding: 1px 0;
+		margin: 0;
+		width: auto;
+		display: block;
+		float: left;
+		clear: none;
+	}
+	#menu dt
+	{
+		font-weight: normal;
+		padding-right: 10px;	
+	}
+	.js #menu dl
+	{
+		display: block !important;
+	}
+
+/* Inlog */
+
+.inlog
+{
+	position: absolute;
+	top: 135px;
+	width: 940px;
+	text-align: right;
+}	.inlog *, .inlog
+	{
+		border: none;
+		color: #fff;
+		font-weight: normal;
+	}

@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl" lang=nl>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Geonovum - Entreepagina</title>
+<meta name="description" content="demo" />
+
+
+
+<!-- BEGIN BENODIGDE HEAD SECTIE VOOR DE APPLICATIE -->
+	<link rel="stylesheet" href="static/css/style.css" type="text/css" media="all" />
+
+	<!--[if lte IE 7]>
+		<link rel="stylesheet" href="static/css/ie.css" type="text/css" media="all" />
+	<![endif]-->
+	<!--[if gte IE 8]>
+		<link rel="stylesheet" href="static/css/ie-8.css" type="text/css" media="all" />
+	<![endif]-->
+
+	<link rel="stylesheet" href="static/css/print.css" type="text/css" media="print" />
+
+	<script type="text/javascript">
+		document.documentElement.className += ' js';
+	</script>
+<!-- EINDE BENODIGDE HEAD SECTIE VOOR DE APPLICATIE -->
+
+</head>
+<body>
+
+
+
+
+<div id="geozetContent" class="start">
+
+		<div id="geozetArticle">
+
+			<div id="geozetCore">
+
+
+			<!-- BEGIN ZOEKFORMULIER -->
+
+
+			<h1 class="title-main"> Lokale bekendmakingen op de kaart</h1>
+
+                	<p>
+                    Op deze kaart worden bekendmakingen van aangevraagde vergunningen van de afgelopen 8 weken getoond. Dit zijn bijvoorbeeld bouwvergunningen, kapvergunningen of besluiten over bestemmingsplannen. <a href="#">Lees verder</a>
+                	</p>
+					
+				
+
+				
+				<form class="geozetCoreEntree" action="#">
+					<h2 class="title-sub">Zoek op locatie</h2>
+					<p>
+						<label for="locatie">Postcode of plaatsnaam</label> <strong class="geozetError">Locatie niet gevonden.</strong> 
+					</p>
+					<p>
+					<input type="text" id="adres" title="Postcode of plaatsnaam" class="error" value="gezochte term" />
+					</p>
+				
+				<h2 class="geozetError">Bedoelde u:</h2>
+				<ul class="geozetRecommends">
+					<li><a href="#">Baarn</a></li>
+					<li><a href="#">Barneveld</a></li>
+					<li><a href="#">Molenweg, Nijkerk</a></li>
+					<li><a href="#">Nijkerk</a></li>
+				</ul>
+				
+					<p class="button">
+						<button type="submit"><span>Zoek locatie</span></button>
+					</p>
+
+				</form>
+
+
+
+			<!-- EIND ZOEKFORMULIER -->
+
+			</div>
+			
+			<div id="geozetEnhanced" class="hidden">
+				<div id="geozetMap"></div>
+			</div>
+
+
+
+
+
+			
+
+		</div>
+
+		<div id="geozetAside">
+
+			
+			
+			<div id="geozetAsideEnhanced" class="hidden">
+			
+				<div id="geozetMiniMap"></div>
+
+				<div id="geozetFilter"></div>	
+			
+			</div>
+
+		</div>
+
+</div>
+
+
+
+
+<!--
+
+Library: alles uiteindelijk minify en packen
+
+-->
+
+
+<script type="text/javascript" src="static/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="static/js/ext.js"></script>
+<script type="text/javascript" src="static/js/init.js"></script>
+	
+<script type="text/javascript" src="static/js/OpenLayers.js"></script>
+<script type="text/javascript" src="static/js/ol_overrides.js"></script>
+<script type="text/javascript" src="static/js/GeoExt.js"></script>
+<script type="text/javascript" src="static/js/LoadingPanel.js"></script>
+<script type="text/javascript" src="static/js/ScaleBar.js"></script>
+
+<script type="text/javascript" src="static/js/lib/Geozet.js"></script>
+<script type="text/javascript" src="static/js/settings.js"></script>
+
+
+<script type="text/javascript" src="static/js/kaart.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+﻿/**
+ * @project Overheid.nl
+ * @author	Stichting ICTU, e-Overheid voor Burgers
+ * @since	march 2010
+ * @name	IE 7 only stylesheet
+ * @version	1
+ */
+
+dl
+{
+	overflow: visible;
+}
+
+dd
+{
+	float: none;
+}
+
+fieldset li li, fieldset li p
+{
+	padding-left: 30px;
+}
+
+input[type="checkbox"], input[type="radio"]
+{
+	border-top: 4px solid #fff !important; /* align input and label */
+	margin-left: -3px;
+}
+
+/*Displays error in dropdown */
+select.error
+{
+	background-color: #FF8080;
+}
+option.error
+{
+	background-color:white;
+}

@@ -1,0 +1,214 @@
+﻿/**
+ * @project Overheid.nl
+ * @author	Stichting ICTU, e-Overheid voor Burgers
+ * @since	march 2010
+ * @name	Framework stylesheet
+ * @version	1
+ */
+
+ /* Header */
+ 
+.header
+{
+	font-size: 11px;
+	height: 73px;
+	margin-bottom: 12px;
+}	.header h1 a
+	{
+		top: 33px;
+		left: 27px;
+		position: absolute;
+	}
+	.header img
+	{
+		border: none !important;
+	}
+	.header p
+	{
+		padding: 12px 0 0 12px;
+		color: #6D7F97;
+	}
+	
+	.content
+	{
+		margin-top: 92px;
+	}
+
+/* Footer */
+
+.footer
+{
+	background: #D8DBE0 url(images/footer.png) 100px 0 no-repeat;
+	clear: both;
+	color: #679;
+	height: 125px;
+}	.footer p
+	{
+		padding: 10px 0 30px;
+		text-align: right;
+		float: left;
+		clear: none;
+		width: 480px;
+	}
+	.footer p:first-child
+	{
+		text-align: left;
+	}
+	.footer a
+	{
+		color: #679;
+		text-decoration: underline;
+	}	.footer a:hover, .footer a:focus
+		{
+			color: #000;
+		}
+
+/* Intro before double columns */
+
+div.intro
+{
+	padding: 20px 20px 0 20px;
+}
+
+/* Columns */ 
+
+#functie, #content, #context, .double-column
+{
+	padding: 20px 10px;
+	float: left;
+	word-wrap: break-word;
+}
+
+#functie
+{
+	width: 209px;
+}
+
+#content
+{
+	padding: 20px 20px 20px 25px;
+	width: 440px;
+}
+
+.double-column
+{
+	padding: 20px;
+	width: 440px;
+}
+
+#context
+{
+	width: 216px;
+	padding-right: 20px;
+}
+
+.column
+{
+	width: 200px;
+	float: left;
+	margin-right: 20px;
+	padding-left: 0;
+}
+
+/* Rows */
+
+.row
+{
+	clear: both;
+}
+
+/* Column headers */
+
+#functie legend, #context legend, .double-column legend, #popup legend, #functie h2, #context h2, .double-column h2, #popup h2, .column h3
+{
+	font-size: 1.05em;
+	border-bottom: 3px solid #FF8A00;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	margin-bottom: 0;
+	padding-bottom: 5px;
+}
+
+#functie h2 + ul li:first-child a, #context h2 + ul li:first-child a, #content h3 + ul li:first-child a, #content p.info + ul li:first-child a, .double-column h3 + ul li:first-child a
+{
+	border-top: none !important;
+}
+
+#content h4, #content h5, #content h6
+{
+	color: inherit;
+}
+
+.double-column h2, #popup h2, .double-column legend, #popup legend
+{
+	padding-bottom: 3px;
+	margin-bottom: 8px;
+	font-size: 1.1em;
+}
+
+/* Column specific styles */
+
+#context dl
+{
+	border: none;
+}
+
+#context dd, #context dt
+{
+	margin: 0;
+	padding: 0;
+	width: auto;
+	float: none;
+	line-height: 1.5em;
+	border: none;
+	height: auto;
+}
+
+#context dt
+{
+	font-weight: bold;
+	margin-top: 5px;
+}
+
+.column h2 a
+{
+	text-decoration: none;
+	color: #e67c00;
+}
+
+/* Back link */
+
+a.back
+{
+    color: #000;
+    border: 1px solid #e5e5e5;
+    border-width: 1px 0;
+	display: block;
+	padding: 2px 2px 2px 20px;
+	text-decoration: none;
+	margin-bottom: 15px;
+	background: url(images/links/back.png) -489px 1px no-repeat;
+}	a:hover, a:focus
+	{
+		background-position: -4px 1px;
+	}
+
+/* Generic styles */
+
+.hidden
+{
+	display: none !important;
+}
+
+.active > a, strong.active, .active strong
+{
+    color: #e67c00;
+}	p.active a
+	{
+		font-weight: bold;
+	}
+
+body.inactive
+{
+	overflow: hidden;
+}

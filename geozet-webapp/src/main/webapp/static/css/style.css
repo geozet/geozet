@@ -1,0 +1,545 @@
+/*  author: M. van Oudenniel - juli 2010
+	work: basistemplate GEONOVUM
+	purpose: stand-alone versie applicatie en klant-specifieke versie in 1
+-------------------------------------------- */
+
+/* nodig indien als stand-alone versie */
+body { font: 0.7em verdana,helvetica,arial,sans-serif; }
+
+.title-main { color: #000; font-family:Arial,Helvetica,sans-serif; font-weight: normal; }
+h2 { color: #000;font-weight: normal; margin: 0; padding: 0; }
+h3 { font-weight: bold; margin: 0; padding: 0;}
+h4 { font-weight: normal; margin: 0; padding: 0;}
+
+/* specifieke reset van geschreven css */
+#geozetContent { line-height: 1.5; margin: 0 0 20px 0; }
+#geozetContent ul, #geozetContent li { margin:0;padding:0; }
+#geozetContent li { list-style: none; }
+#geozetContent button, #geozetContent fieldset { border: 0; margin: 0; padding: 0; }
+
+
+/*  Basisdefinities (klant specifieke startpunten en overruling bestaande css van klant)
+-------------------------------------------- */
+
+	#functie { float: none; padding: 20px 10px 0; }
+	#functie form { margin-bottom: 10px; }
+	#geozetArticle { padding-top: 20px; }
+	#geozetContent li { list-style-image: none; }
+	#geozetPopover h3,
+	#geozetPopup h3  { border: 0; }
+	#geozetCore form .title-sub { border: 0; }
+
+	#geozetFilter li input { width: auto !important; }
+	dl.geozetResults { border: 0; }
+	dl.geozetResults dt { width: auto; margin: 0; }
+	dl.geozetResults dt,
+	dl.geozetResults dd { border: 0; }
+	
+	#geozetAsideCore h3 { color: #000; }
+
+	
+	
+/*  Algemene classes
+-------------------------------------------- */
+.hidden {display:none;}
+
+
+/*  Hoofdindeling site
+    Layout 
+    eerst CORE element, dan ENHANCED. Dus geen progressive enhancement maar echt twee versies
+    Voordat de body is geplaatst weten we al of de bezoeker javascript aan heeft staan, voorkomt verspringen van content
+	De Geozetviewer gebruikt unieke containers met prefix geozet zodat integratie voorspoedig zal gaan
+	De breedtematen zijn bepaald op basis van site van integratie, staan dus niet vast.
+-------------------------------------------- */
+
+
+#geozetContent { width: 960px; }
+	/* de oplossing voor het maximaliseren is afhankelijk van website klant, (de class geozetMax is alleen mogelijk door javascript dus wdat weten we ieg al), die bepaalt hoe we de bouwblokken gaan herzien bij maximaliseren, wellicht ook nog eventuele wrappers maximaliseren dus */	
+	body.geozetMax #geozetContent { position: relative;  }
+	body.geozetMax #geozetArticle { margin: 0 0 0 255px; float: none; } 
+	body.geozetMax #geozetAside { position: absolute; left: 0; top: 0; } 
+	/* indien men geen linkerkolom wil tonen */
+		body.geozetMax #geozetContent.mapOnly { position: relative;  }
+		body.geozetMax #geozetContent.mapOnly #geozetAside { display: none; }
+		body.geozetMax #geozetContent.mapOnly #geozetArticle { margin: 0; float: none; }
+	
+	
+	#geozetContent.geozetMapOnly #geozetAside { display: none; }
+	#geozetContent.geozetMapOnly #geozetArticle { width: 960px; float: none;  }
+	#geozetContent.geozetMapOnly #geozetMap { width: 950px; }
+		body.geozetMax #geozetContent.geozetMapOnly #geozetArticle { margin: 0; float: none; } 
+	
+	
+	#geozetArticle { float: right; width: 705px; }
+		/* bezoekers met javascript gaan naar de enhanced versie, zonder naar de core */
+		html.js #geozetEnhanced,
+		html.js #geozetAsideEnhanced { display: block !important; } /* important vanwege hidden important bij site klant, normaal niet gewenst dit */
+		html.js #geozetCore,
+		html.js #geozetAsideCore { display: none; }
+		/* bezoeker met javascript maar bv zonder CSS moet ook naar de CORE versie kunnen, de link nemen we op middels javascript. In die link zit een parameter en op basis daarvan zet de core een class wel of niet en laat stuk javascript weg of niet */
+		html.js #geozetContent.coreOnly #geozetCore,
+		html.js #geozetContent.coreOnly #geozetAsideCore { display: block; }
+		html.js #geozetContent.coreOnly #geozetEnhanced { display: none !important; }
+		html.js #geozetContent.coreOnly #geozetEnhanced.nothidden { display: block !important; } /* link naar java versie in de Core versie indien JS aanstaat */
+		html.js #geozetContent.coreOnly #geozetArticle { float: right; width: 705px; } /* wel javascript maar toch core versie willen inzien */
+	#geozetEnhanced { padding-right: 15px; position: relative; }
+	#geozetAside { float: left; width: 229px; }
+
+
+
+
+
+
+
+/*  THEME
+    Specifieke layout voor klant
+-------------------------------------------- */
+
+#menu { z-index: 1; }
+#geozetContent { z-index: 5; }
+
+#geozetContent h1,
+#geozetContent h2 { font-family: arial; }
+
+#geozetContent p {margin: 0 0 1.4em 0;line-height: 1.4;}
+
+#geozetContent a {color: #154273;}
+#geozetContent a:visited { color: #696969; }
+#geozetContent a:hover { color: #0162cd; }
+
+#geozetContent a.extern,
+#geozetPopup a.extern { display: block; color: #ff8a00; text-decoration: none; padding: 2px 0; background: url(img/extern.gif) no-repeat right bottom; border-bottom: 1px solid #e5e5e5; padding-right: 12px;}
+#geozetContent a.extern:hover,
+#geozetPopup a.extern:hover  { border-color: #000; background: url(img/extern-hover.gif) no-repeat right bottom; }
+
+#geozetContent .geozetFilter li label { display: block !important; }
+
+#geozetAside #geozetFilter h3 span{ font-size:1em; font-weight: bold; color:#e67c00; }
+
+
+
+
+
+
+
+
+
+/*  KAART
+    CORE versie (drempelvrij)
+	
+-------------------------------------------- */
+
+#geozetCore { width: 440px; }
+#geozetCore .title-main { font-size:1.6em; color: #ff8a00; margin: 0 0 8px 0; padding: 4px 0; color: #e67c00; font-family: Arial,Helvetica,sans-serif; border: 0; }
+
+#geozetContent button	{
+	background: url(img/button.gif) right top no-repeat;	
+	padding: 0 25px 0 0; text-align: right; display: block;font-size: .95em; width: 100%; height: 21px; line-height: 21px; cursor: pointer;font-weight: bold; }	
+	/* BUTTON KOMT VAN ICTU */
+#geozetContent button:hover, #geozetCore button:focus { background-position: right bottom; }
+#geozetCore p.button { margin-bottom: 0; }
+
+#geozetCore p input, #geozetCore p textarea, #geozetCore p select  { border:1px solid #aaa; margin-bottom:4px; width:250px; padding: 3px; }
+#geozetCore p input.error { border-color: #ff2800; }
+#geozetContent form.geozetRefine legend { border: 0; padding: 4px 0 6px 8px; margin: 0; font-size: 1.2em; color: #000; font-weight: bold; }
+
+a.back { background:url("img/back.png") no-repeat -489px 1px;border-color:#e5e5e5;border-style:solid;border-width:1px 0;color:#000000;display:block;margin-bottom:15px;padding:2px 2px 2px 20px;text-decoration:none; }
+
+
+
+#geozetContent ul.geozetRecommends { padding: 0 0 20px 0; }
+ul.geozetRecommends li { padding: 2px 0; }
+#geozetContent ul.geozetRecommends a { border-bottom:1px solid #e5e5e5; color:#000;display:block;padding:2px 15px 2px 2px;text-decoration:none; background: url(img/link.gif) no-repeat right bottom; }
+#geozetContent ul.geozetRecommends a:hover { color: #000; background: url(img/link-hover.gif) no-repeat right bottom; border-color: #000; }
+
+
+/* ZOEKFORMULIER ENTREEPAGINA */
+form#geozetCoreEntree { background-color: #EAECEF; padding: 8px 12px 12px 8px; margin: 0 0 20px 0; }
+form#geozetCoreEntree label { display: block; float: left; width: 174px; }
+form#geozetCoreEntree #adres { width: 15em; }
+form#geozetCoreEntree #adres.error { width: 15em; margin-left: 174px; border-color: #ff2800; }
+
+#geozetCore .geozetError,
+#geozetCore .title-sub { margin: 0 0 0.2em 0; font-weight: bold; font-size: 1em; color: #000; font-family: Verdana,Geneva,Arial,Helvetica,sans-serif; }
+
+#geozetCore strong.geozetError,
+#geozetEnhancedSearch p.geozetError,
+#geozetStart p.geozetError { color: #ff2800; font-weight: bold; padding-left: 16px; background:url("img/error.png") no-repeat -12px 1px; }
+#geozetCore p.geozetError { color: #ff2800; font-weight: bold; padding-left: 16px; background:url("img/error.png") no-repeat -12px 1px; margin-top: 1em;  }
+
+
+
+#geozetAsideCore { margin: 0 10px; }
+#geozetAsideCore form.geozetRefine { background-color: #EAECEF; }
+#geozetAsideCore input.meter { width: 50px; }
+#geozetAsideCore h3,
+#geozetAsideCore p,
+#geozetAsideCore fieldset label { padding: 0 8px; }
+#geozetAsideCore fieldset label { display: block; }
+#geozetAsideCore p.button { padding: 10px 8px 10px 0; }
+#geozetAsideCore h3.last-title { padding-top: 4px; }
+#geozetAsideCore fieldset ul { padding-top: 6px; }
+#geozetAsideCore fieldset ul input { margin: 0px 4px 0px 0; }
+#geozetAsideCore .geozetFilter { border-top: 1px solid #ff8a00; }
+
+
+
+/* ZOEKRESULTATEN LIJST */
+#geozetCore .title-results { border-bottom:3px solid #FF8A00; color: #E67C00; font-size:1em; font-family: Verdana,Geneva,Arial,Helvetica,sans-serif; font-weight: bold; }
+
+dl.geozetResults dt { clear:left; float:left; padding-right:4px; }
+dl.geozetResults dd { color:#e67c00; font-weight:bold; float: none; width: auto; }
+
+#geozetResultsList { margin: 4px 0 20px 0; padding: 0; line-height: 1.3em; }
+#geozetResultsList li { border-bottom:1px solid #e5e5e5; padding: 2px 0; }
+#geozetResultsList a,
+#geozetResultsList a.extern { color:#000;display:block;padding:0 15px 0 0;text-decoration:none; }
+#geozetResultsList a { background: url(img/link.gif) no-repeat right -4px; }
+#geozetResultsList a:hover { color: #000; background: url(img/link-hover.gif) no-repeat right -4px; }
+#geozetResultsList span { display: block; color: #E67C00; }
+
+legend.last-title { border-top: 1px solid #fff; }
+
+
+/* PAGINERING ZOEKRESULTATEN */
+#geozetContent .geozetPaging { clear:both;margin:0;min-height:1.5em;padding:5px 0;border-bottom:3px solid #ff8a00; }
+#geozetContent .geozetPaging li { display: block; float: left; list-style: none; color: #e67c00; border-left: 1px solid #ff8a00;	padding: 0 7px; }
+
+	#geozetContent .geozetPaging li:first-child,
+	#geozetContent .geozetPaging li.first { border: none;	}
+
+#geozetContent .geozetPaging a { text-decoration: none; color: #000; }	
+	.geozetPaging a:hover, .geozetPaging a:focus	{text-decoration: underline; }
+.geozetPaging .active, 
+.geozetPaging .active a { font-weight: bold; color: #e67c00; }
+.geozetPaging .active a:hover, .geozetPaging .active a:focus { text-decoration: none;cursor: default;}
+
+.geozetPaging .next { padding-right: 0; }
+	.geozetPaging .next a   {	padding-right: 17px; font-weight: bold; background: url(img/nav-paging.gif) right -135px no-repeat; }
+.geozetPaging .prev { padding-left: 0; }
+	.geozetPaging .prev a    {	padding-left: 17px; font-weight: bold; background: url(img/nav-paging.gif) left 1px no-repeat; }
+	
+#geozetResultsList + .geozetPaging  {	border-bottom:0; border-top:3px solid #ff8a00; margin-bottom:15px; }
+	
+/* LIJST KENMERKEN OP DETAILPAGINA */
+#geozetCore ul.geozetDetails { padding-left:25px; margin-bottom: 15px; }
+#geozetCore ul.geozetDetails li { list-style-image:url(img/bullet.png); }
+	
+
+
+
+/* LINK NAAR DE CORE VERSIE VANUIT DE ENHANCED VERSIE: toegankelijk indien CSS uitstaat en JS aan, of middels tabs */
+a.geozetCSS { position: absolute; top: -100px; left: 0; }
+#geozetMap a.geozetCSS:focus { top: 0px; background-color: #fff; width: 100%; }
+
+
+
+
+/*  KAART
+    ENHANCED versie
+-------------------------------------------- */
+
+/* ONDERWERPEN OPENLAYERS */
+/* de map is in te stellen op een bepaalde hoogte en breedte in de css, ook in settings */
+/* de features zijn niet meer door css geplaatst, anders niet voldaan aan webrichtlijnen en ook printversie. NIR methodiek ondersteunde helaas IE6 en IE7 niet...  */
+/* kaart is te besturen middels tab, toetsenbord en muis */
+
+#geozetMap { width: 688px; height: 550px; margin: 0 auto; position: relative; background-color: #eff0f2; border: 1px solid #ccc; }
+#geozetMap .olControlLoadingPanel { background:url('img/loading.gif') no-repeat 0 0; position: absolute; left: 50%; top: 50%; margin: 0 0 0 -100px; width: 197px; height: 14px; display: none; }
+
+.olImageLoadError {
+    display: none;
+}
+
+/* #geozetMap a:focus { outline: none;  border: 1px dotted #000; } */ /* WCAG: met tab op scherm laten zien waar men zich bevindt, dus niet alleen in FF */
+#geozetMap a.hidden { display: none; }
+#geozetMap a.x-slider-focus { width: 0; height: 0; border: 0; background-image: none; } /* ongewenste html element wordt gezet door plugin slider */
+
+
+/* MINIMAP: gehele ENHANCED versie zelfs zoekscherm niet voor non-js versie */
+#geozetMiniMap { display: none; }
+	html.js  #geozetMiniMap  { display: block; width: 229px; overflow: hidden; }
+#geozetMiniMap h2 { margin: 0; padding: 10px 0 6px 10px; background-color: #eff0f2; color: #000; font-weight: bold; font-size:1.05em;}
+	/* minikaartje van open layers */
+	#geozetMiniMap .geozetMiniBG { background-color: #eff0f2; width: 229px; height: 199px; background: url('img/bg-minimap.gif') no-repeat 0 0; position: relative; }
+	#geozetMiniMap #geozetMiniNL { width: 145px; height: 171px; position: absolute; left: 36px; top: 12px; }
+	/* zoekscherm */
+	#geozetContent #geozetEnhancedSearch { width: 209px; padding: 6px 10px 10px 10px; margin: 0; background-color: #d0d3da; }
+	#geozetEnhancedSearch input { border: 1px solid #aaa; padding: 3px; margin: 0 0 6px 0; width: 201px; }
+	#geozetEnhancedSearch input.default { color: #7f8181; }
+	#geozetEnhancedSearch p { margin: 0; }
+	#geozetEnhancedSearch p.geozetError { margin: 0 0 4px 0; }
+	#geozetEnhancedSearch p.btn { display: block; margin: 0; }
+
+	
+/* LOCATIE NIET GEVONDEN */
+#locatie-enhanced.error { border-color: #ff2800}
+h3.geozetSuggestions { font-size:1em; color: #000; margin-bottom: 5px; }
+#geozetContent ul.geozetSuggestions	{ border-top: 1px solid #e5e5e5; padding: 0 0 10px 0; }
+ul.geozetSuggestions	li { padding: 3px 0;  }
+#geozetEnhancedSearch ul.geozetSuggestions a,
+#geozetStart ul.geozetSuggestions a { display: block; padding: 2px 15px 2px 3px; text-decoration: none;  background: url(img/link.gif) no-repeat right bottom; border-bottom: 1px solid #e5e5e5; background: url(img/link-hover.gif) no-repeat right bottom; }
+#geozetEnhancedSearch ul.geozetSuggestions a,
+#geozetEnhancedSearch ul.geozetSuggestions a:visited,
+#geozetStart ul.geozetSuggestions a,
+#geozetStart ul.geozetSuggestions a:visited { color: #000; }
+#geozetEnhancedSearch ul.geozetSuggestions a:hover,
+#geozetStart ul.geozetSuggestions a:hover { color: #000; background: url(img/link-hover.gif) no-repeat right bottom; border-color: #000; }
+#geozetEnhancedSearch ul.geozetSuggestions span,
+#geozetStart  ul.geozetSuggestions span { display: none; }
+
+
+
+/* ONDERWERPEN FILTER */
+
+#geozetFilter  { padding: 10px 0 0 10px; }
+fieldset#geozetFilter { padding: 0; }
+#geozetAside #geozetFilter h3 { border-bottom:3px solid #ff8a00; font-size:1em;color:#e67c00; margin: 0 0 3px 0; padding: 0 0 3px 0; }
+#geozetAside #geozetFilter h3 span,
+#geozetAside #geozetFilter h3 a { float: left; }
+	/* Info popover */
+	a.geozetInfo { background: url(img/bg-sprite-trans.png) no-repeat -386px -134px; display: block; float: left; width: 12px; height: 12px; margin: 2px 0 0 5px;text-indent:-99em; }
+	a.geozetInfo:hover { background-position: -398px -134px; }
+	html.js p.geozetInfo { position: absolute; z-index: 1000; display: none; width: 225px; background-color: #6D7F97; color: #fff; padding: 8px; margin: 4px; }
+	
+#geozetContent .geozetFilter { padding: 0; background-color: #fff; }
+#geozetContent .geozetFilter li { border-bottom: 1px solid #ff8a00; padding: 2px 24px 2px 2px; position: relative; background-image: url('img/icons-map.png'); background-repeat: no-repeat; }
+#geozetContent .geozetFilter li label{  display: block; padding: 4px 0 4px 24px;   }
+#geozetContent .geozetFilter li input { position: absolute; right: 0; top: 6px; margin: 0;  }
+
+
+	
+	
+	
+
+
+
+
+/*  KAART
+    controls kaart
+	scale bar
+	toggle size
+	vlakgerichte bekendmakingen
+	select view
+    geozetPopup
+    geozetPopover
+	different feature sizes
+-------------------------------------------- */
+
+/* KAART CONTROLS: ook met toetsenbord te doen, en benaderbaar middels tab */
+#geozetMap #geozetPanZoomBar { left:18px;position:absolute;top:18px;z-index:1007; }
+#geozetMap #geozetPanZoomBar ul { padding: 0; margin: 0; }
+
+#geozetMap #geozetPanZoomBar ul li { position: absolute; width: 16px; height: 16px;  }
+	#geozetMap #geozetPanZoomBar ul li.up { left: 15px; top:0px; }
+	#geozetMap #geozetPanZoomBar ul li.left { left:0px; top:15px; }
+	#geozetMap #geozetPanZoomBar ul li.right { left:30px; top:15px; }
+	#geozetMap #geozetPanZoomBar ul li.down { left:15px; top:30px; }
+	#geozetMap #geozetPanZoomBar ul li.zoom-plus { left:13px; top:54px; width: 20px; height: 26px; }
+	#geozetMap #geozetPanZoomBar ul li.zoom-min { left:13px; top:207px; width: 20px; height: 26px; }
+
+#geozetMap #geozetPanZoomBar ul li a { background:url('img/bg-sprite-trans.png') no-repeat 0 0; display: block; width: 16px; height: 16px; text-indent: -9999px;  }
+	#geozetMap #geozetPanZoomBar ul li.up a { background-position: -463px -214px; }
+		#geozetMap #geozetPanZoomBar ul li.up a:focus { background-position: -405px -214px; }
+	#geozetMap #geozetPanZoomBar ul li.left a { background-position: -448px -229px;  }
+		#geozetMap #geozetPanZoomBar ul li.left a:focus { background-position: -388px -229px;  }
+	#geozetMap #geozetPanZoomBar ul li.right a { background-position: -478px -229px; }
+		#geozetMap #geozetPanZoomBar ul li.right a:focus { background-position: -418px -229px; }
+	#geozetMap #geozetPanZoomBar ul li.down a { background-position: -463px -244px; }
+		#geozetMap #geozetPanZoomBar ul li.down a:focus { background-position: -405px -244px; }
+	#geozetMap #geozetPanZoomBar ul li.zoom-plus a { background-position: -461px -265px; width: 20px; height: 26px; }
+	#geozetMap #geozetPanZoomBar ul li.zoom-plus a:focus { background-position: -403px -265px;}
+	#geozetMap #geozetPanZoomBar ul li.zoom-min a { background-position: -461px -421px; width: 20px; height: 26px; }
+	#geozetMap #geozetPanZoomBar ul li.zoom-min a:focus { background-position: -403px -421px; }
+	
+#geozetMap #geozetPanZoomBar .x-slider-vert { background: url('img/bg-sprite-trans.png') no-repeat -461px -293px; z-index:900; left: 13px; top: 80px; width: 20px; height: 118px; position: absolute; }
+#geozetMap #geozetPanZoomBar .x-slider-thumb { background: url('img/bg-sprite-trans.png') no-repeat -461px -452px; width: 20px; height: 15px; position: absolute;  }
+	#geozetMap #geozetPanZoomBar .x-slider-thumb-drag { background-position: -403px -452px; }
+
+
+
+/* SCALE BAR, staat absoluut en afstanden kunnen niet in em, ext kan hoogte niet berekenen. Label kan nu honderdtal km aan */
+#geozetScale { width: 120px; left:0; bottom:15px; position:absolute; z-index:1007; }
+#geozetScale .olControlScaleBarWrapper { float: right; }
+	.olControlScaleBar { bottom:10px;color:#000; left:10px; }
+	.olControlScaleBarBar { background: #00294e url(img/bg-sprite-trans.png) no-repeat -386px -162px; border: 1px solid #00294e; height:10px; top:17px; }
+	.olControlScaleBarBarAlt { background: #fff url(img/bg-sprite-trans.png) no-repeat -386px -157px; border: 1px solid #00294e;height:10px;top:17px; }
+	.olControlScaleBarNumbersBox { font-size:1em;height:13px;font-weight:bold;top:0; width:55px; }
+
+
+/* KAART VERGROTEN/VERKLEINEN */
+#geozetMap #toggleMapSize { background:url('img/bg-sprite-trans.png') no-repeat -406px -42px; right:-22px;top:-1px;display:block;height:21px;position:absolute;width:21px;} 
+#geozetMap #toggleMapSize:hover,
+#geozetMap #toggleMapSize:focus  { background-position: -406px -63px; }
+#geozetMap #toggleMapSize.max { background-position: -386px -42px; right: -1px; }
+#geozetMap #toggleMapSize.max:hover,
+#geozetMap #toggleMapSize.max:focus { background-position: -386px -63px; }
+
+/* VLAKGERICHTE BEKENDMAKINGEN */
+
+#geozetAlert { background:#fff; border-color:#FF8A00 #ccc #ccc; border-right:1px solid #ccc; border-style:solid; border-width:3px 1px 1px; bottom:15px; color:#000; cursor:pointer; margin:0; overflow:visible; padding:5px 10px; position:absolute; right:15px; text-decoration:none; width:210px; z-index:1100; }
+#geozetMap #geozetAlert a { font-size:1.5em; margin-bottom:5px; font-family:Arial,Helvetica,sans-serif; font-weight:normal; color:#E67C00; display: block; width: auto; height: auto; position: relative; text-align: left; }
+#geozetMap #geozetAlert a:visited { color:#E67C00; }
+#geozetMap #geozetAlert a:focus { color: #000; }
+#geozetAlert p { margin: 0; }
+
+ul#geozetFlatList { margin-bottom: 20px; }
+#geozetFlatList a {  margin-top:7px; border-bottom:1px solid #E5E5E5; display:block; padding:2px 15px 2px 2px; text-decoration:none;  }
+#geozetFlatList a span { color:#E67C00; display:block; }
+	#geozetStart .geozetStart #geozetFlatList a { display: block; text-decoration: none; text-align: left;  }
+    #geozetStart .geozetStart #geozetFlatList a,
+    #geozetStart .geozetStart #geozetFlatList a:visited { color: #000 !important}
+#geozetFlatList a:hover,
+#geozetFlatList a:focus { border-color: #000; }
+
+#geozetFlatList li { display: none; list-style: none; padding: 5px; }
+#geozetFlatList li.active { display: block;}
+
+
+
+/* IN DE KAART IS KLEINE SELECTIE TE MAKEN */
+.olHandlerBoxZoomBox { border: 1px dotted #000; position: absolute; background-color: #fff; opacity: 0.50; font-size: 1px; }
+.olControlOverviewMapExtentRectangle,
+.olControlOverviewMapRectReplacement  { overflow: hidden; background-color: #fff;opacity: .45; cursor: move; border: 1px solid #000; }
+
+
+/* POPOVER KAART MET CLUSTER OF FEATURE INFORMATIE */
+#geozetPopup { left: -99999px;z-index: 1199; position: absolute;background: url('img/bg-sprite-trans.png') no-repeat 0 bottom; width: 350px; padding: 0 15px 10px 12px; }
+	#geozetPopup h2 { border-top: 3px solid #ff8a00; margin: 0 -9px 0 -11px; padding: 2px 25px 10px 10px;font-size: 1.3em;color: #e67c00; }
+	#geozetPopup .extern a { margin-top: 7px; }
+
+#geozetPopup .close,
+#geozetPopup .close:focus, 
+#geozetContent a.geozetClose { display:block;width:21px;height:21px;position:absolute;right:6px;top:3px;background: url('img/bg-sprite-trans.png') no-repeat -386px -105px; text-indent:-999em;}
+	#geozetPopup .close:hover,
+	#geozetContent a.geozetClose:hover,
+	#geozetContent a.geozetClose:focus { background-position: -407px -105px; }
+
+#geozetPopup .geozetNeedle { background: url('img/bg-sprite-trans.png') no-repeat -380px 0; position: absolute; left: 18px; bottom: -21px; width: 20px; height: 30px; display: block; }
+
+
+#geozetPopup div { width: 323px; overflow: hidden; word-wrap: break-word; } /* geen controle over inhoud dus hidden voor verstoringen ul;tra lange woorden */
+#geozetPopup ul.cluster { width: 348px; margin: 0; padding: 0; border: 1px solid #e5e5e5; }
+#geozetPopup ul.cluster li { display: none; list-style: none; padding: 5px; }
+#geozetPopup ul.cluster li.active { display: block;}
+#geozetPopup ul.cluster li div { overflow: hidden; width: 338px; }
+#geozetPopup ul.cluster h3 { font-size:1.25em;  margin: 0 0 4px 0; padding: 0; color:#ff8a00; }
+
+/* TODO: in het startscherm kan ook paginering voorkomen, voorlopig even zelfde als clusters maar dit kan nog veranderen. Beter was unieke class op p.btn geweest */
+#geozetPopup p.btn,
+#geozetStart p.btn { position: relative; line-height: 21px; height: 21px; padding: 4px 0 4px 4px; margin: 0; }
+#geozetPopup p.btn a,
+#geozetStart p.btn a { display: block; width: 21px; height: 21px; background: url('img/bg-sprite-trans.png') no-repeat -386px -42px; position: absolute; top: 4px; text-indent: -99999px;  }
+	#geozetPopup p.btn a#geozetPopupBack,
+	#geozetStart p.btn a#geozetStartBack{ right: 30px; }
+	#geozetPopup p.btn a#geozetPopupBack:hover,
+	#geozetPopup p.btn a#geozetPopupBack:focus,
+	#geozetStart p.btn a#geozetStartBack:hover,
+	#geozetStart p.btn a#geozetStartBack:focus	{ background-position: -386px -63px; }
+	#geozetPopup p.btn a#geozetPopupBack.inactive,
+	#geozetStart p.btn a#geozetStartBack.inactive { background-position: -386px -84px; cursor: default; }
+	#geozetPopup p.btn a#geozetPopupForward,
+	#geozetStart p.btn a#geozetStartForward	{ background-position: -406px -42px; right: 0; }
+	#geozetPopup p.btn a#geozetPopupForward:hover,
+	#geozetPopup p.btn a#geozetPopupForward:focus,
+	#geozetStart p.btn a#geozetStartForward:hover,
+	#geozetStart p.btn a#geozetStartForward:focus		{ background-position: -406px -63px; }
+	#geozetPopup p.btn a#geozetPopupForward.inactive,
+	#geozetStart p.btn a#geozetStartForward.inactive	{ background-position: -406px -84px; cursor: default; }
+
+
+/* MOUSEOVER KAART: simpele feature weergave bij mouseover */
+#geozetPopover { z-index:1200; background-color: #fff; border:1px solid #ccc;color:#333;line-height:1.2em; position:absolute;text-decoration:none;left:-99999px; cursor: pointer; padding: 2px 5px 2px 25px; margin: -5px 0 0 -1px; }
+
+	#geozetPopover h3 { font-family: arial; font-size: 1.25em; line-height: 1em; color: #e67c00; margin: 0; font-weight: normal; display: block; white-space: nowrap; }
+	#geozetPopover strong { white-space: nowrap; font-weight: normal; font-size: 0.9em; }
+	#geozetPopover strong em { text-transform:capitalize; font-style: normal; font-weight: bold;}
+	
+	#geozetPopover span { left: 0px; top: 4px; width: 21px; height: 21px; display: block; position: absolute; background: #fff url('img/icons-map.png') no-repeat 0 0; }
+	#geozetPopover span.consument { background-position: 0 -40px;  } 
+	#geozetPopover span.maatschappij { background-position: 0 -120px;  } 
+	#geozetPopover span.natuur { background-position: 0 -200px; } 
+	#geozetPopover span.overheid { background-position: 0 -280px; }
+	#geozetPopover span.rechtspraak { background-position: 0 -360px;} 
+	#geozetPopover span.verkeer { background-position: 0 -440px; } 
+	#geozetPopover span.wonen { background-position: 0 -520px; }
+	#geozetPopover span.cluster { background-position: 0 -600px;  }
+	#geozetPopover span.gezin { background-position: 0 -680px;  } 
+
+	.geozetFilter li.consument { background-position: 0 -38px; }
+	.geozetFilter li.maatschappij { background-position: 0 -118px; }
+	.geozetFilter li.natuur { background-position: 0 -198px; }
+	.geozetFilter li.overheid { background-position: 0 -278px; }
+	.geozetFilter li.rechtspraak { background-position: 0 -358px; }
+	.geozetFilter li.verkeer { background-position: 0 -438px; }
+	.geozetFilter li.wonen { background-position: 0 -518px; }
+	#geozetContent .geozetFilter li.cluster { background-position: 0 -598px; padding:6px 0 6px 24px; }
+	.geozetFilter li.gezin { background-position: 0 -678px; }
+
+
+/* FEATURES OP DE KAART, CLUSTERS HEBBEN ANDERE AFMETINGEN */
+#geozetMap a { position: absolute; display: block; width: 21px; height: 21px; z-index: 900; font-weight: bold; overflow:hidden; }
+#geozetMap a img { border: 0; }
+		#geozetMap a { text-indent: 0; text-align: center; color: #fff; text-decoration: none; line-height: 21px; width: 21px; }
+		#geozetMap a:visited, #geozetMap a:hover { color: #fff; }
+		
+				#geozetMap a.cluster-1 span { position: absolute; display: block; top: 0px; left: 5px; }
+				#geozetMap a.cluster-2 { width: 24px; height: 24px; line-height: 24px;  }
+				#geozetMap a.cluster-2 span { position: absolute; display: block; top: 0px; left: 2px; }
+				#geozetMap a.cluster-3 { width: 31px; height: 31px; line-height: 31px; }
+				#geozetMap a.cluster-3 span { position: absolute; display: block; top: 0px; left: 2px; }
+				#geozetMap a.cluster-4 { width: 41px; height: 41px; line-height: 41px; }
+				#geozetMap a.cluster-4 span { position: absolute; display: block; top: 0px; left: 2px; }
+				#geozetMap a.cluster-5 { width: 51px; height: 51px; line-height: 51px; }
+				#geozetMap a.cluster-5 span { position: absolute; display: block; top: 0px; left: 2px; }
+		#geozetMap a:focus { color: #000; }
+
+
+
+/* TODO: EVENTUEEL STARTSCHERM OVER DE KAART MET ZOEK FORMULIER */
+#geozetStart { position: absolute; width: 100%; height: 100%; left: 0; top: 0; z-index: 1100; background: url('img/bg-startup.png') repeat 0 0; }
+.geozetStart { margin: 50px auto 0; width: 440px; background-color: #fff; position: relative; padding: 10px 20px; }
+.geozetStart h2 { color: #ff8a00; border-bottom: 3px solid #ff8a00; margin: 0; padding: 0 0 5px 0; }
+#geozetStart .geozetStart a {  line-height:1.4; height: auto; width: auto; position: relative; display: inline; color: #154273; font-weight: normal; text-decoration: underline; }
+#geozetStart .geozetStart a:visited { color: #154273; }
+#geozetStart .geozetStart a.geozetClose { right: 0; top: 0; width: 21px; height: 21px; text-indent: -99999px; display: block; position: absolute; }
+#geozetStart ul.geozetSuggestions a { text-align: left; }
+
+#geozetStart .title-main { border-bottom:3px solid #ff8a00; color:#e67c00; font-size:1em; margin: 0 0 3px; padding: 0 0 3px; font-family: verdana,helvetica,arial,sans-serif; font-weight: bold; }
+#geozetStart .title-sub,
+#geozetStart h3.geozetSuggestions { font-weight: bold; margin: 0 0 8px 0; padding: 0; font-size:1em; }
+#geozetStart form#geozetCoreEntree label { display: none; }
+#geozetStart form#geozetCoreEntree #adres { border:1px solid #aaa; margin:0 0 6px;padding:3px;width:201px; }
+#geozetStart form#geozetCoreEntree p.button { margin-bottom: 0; }
+#geozetStart input.default { color: #7f8181; }
+
+
+/* copyright map */
+
+#geozetSource { position: absolute; left: 5px; bottom: 5px; }
+
+/* NIET GELADEN TILES */
+
+	
+	
+	
+	
+	
+	
+	
+
+/*  CLEARFIX
+    Clearing van containers met floating childs
+-------------------------------------------- */
+
+#geozetContent:after,
+#geozetScale:after,
+#geozetAside #geozetFilter h3:after { content:".";display:block;height:0;clear:both;visibility:hidden; }
+
+* html #geozetContent,
+* html #geozetScale,
+* html #geozetAside #geozetFilter h3  { height:1%;overflow:visible; }
+
+*:first-child+html #geozetContent,
+*:first-child+html #geozetScale,
+*:first-child+html #geozetAside #geozetFilter h3 { min-height:1px; }

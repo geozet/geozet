@@ -1,0 +1,110 @@
+﻿/**
+ * @project Overheid.nl
+ * @author	Stichting ICTU, e-Overheid voor Burgers
+ * @since	march 2010
+ * @name	Print stylesheet
+ * @version	1
+ */
+ 
+@media print
+{
+	/* general */	
+	*
+	{
+		font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	}
+	body
+	{
+		font-size: .8em;
+	}
+	
+	h1
+	{
+		display: none;
+	}
+	
+	h2
+	{
+		font-family: Arial, Helvetica, sans-serif;
+	}	
+	
+	.hidden
+	{
+		display: none;
+	}
+	
+	/* navigation & header */
+		
+	.menu h2, .menu h3, .menu > .main, .menu > .meta, .options, .header dl, .header #contrast, .menu #Salutation
+	{
+		display: none;
+	}
+	
+	.header h1
+	{
+		display: block;	
+		float:left;
+	}
+	
+	.header
+	{
+		padding: 0px;
+		border-bottom: none;
+	}
+	
+	#content
+	{
+		padding:0px;
+		position: absolute;
+		top: 120px;
+		left: 30px;
+		width: 100%;
+	}
+	
+	#content > .breadcrumb
+	{
+	    display: none;
+	}	
+	
+    .breadcrumb
+	{
+		padding: 0;
+		top: 80px;
+		left: 10px;		
+	}
+	
+	.breadcrumb a
+	{
+		color: black;
+	}
+	
+	.breadcrumb *
+	{
+		display: inline !important;	
+		margin-left: 20px;
+		color: black;
+	}	
+    
+    .breadcrumb li:before
+	{
+		color: black;
+		content: ">";
+	}
+	
+	/* columns */
+	#functie, #context
+	{
+		display: none;
+	}	
+	
+	#test-informatie
+	{
+	    display: none;   
+	}
+	
+	/* footer */
+	.footer
+	{
+		display: none;
+	}	
+}

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5" id="geozet">
+
+	<display-name>GEOZET</display-name>
+	<description>GEOZET Viewer Applicatie configuratie</description>
+
+	<context-param>
+		<description>aantal items (zoekresultaat) op een pagina</description>
+		<param-name>paginalengte</param-name>
+		<param-value>10</param-value>
+	</context-param>
+	<context-param>
+		<description>de url voor de WFS capabilities van de bekendmakingen
+		</description>
+		<param-name>wfscapabilitiesurl</param-name>
+		<param-value>http://test.geodata.nationaalgeoregister.nl/pdok/wfs?request=GetCapabilities</param-value>
+	</context-param>
+	<context-param>
+		<description>resourcebundle stam naam</description>
+		<param-name>resourcebundle</param-name>
+		<!-- zonder .properties hier, maar wel aan het bestand zelf -->
+		<param-value>core-resources</param-value>
+	</context-param>
+	<context-param>
+		<description>Naam van de (_alle_) bekendmakingen zoeken servlet
+			mapping (WFSClientServlet)</description>
+		<param-name>bekendmakingen_url-pattern</param-name>
+		<param-value>bekendmakingen</param-value>
+	</context-param>
+	<context-param>
+		<description>Naam van de bekendmaking _detail_ servlet mapping
+			(WFSDetailsServlet)</description>
+		<param-name>bekendmaking_url-pattern</param-name>
+		<param-value>bekendmaking</param-value>
+	</context-param>
+	<context-param>
+		<description>Naam van de _vlakgerichte_ bekendmakingen zoeken servlet
+			mapping (WFSClientServlet)</description>
+		<param-name>bekendmakingvlak_url-pattern</param-name>
+		<param-value>vlakbekendmakingen</param-value>
+	</context-param>
+	<context-param>
+		<description>Naam van de locatie servlet mapping (OpenLSClientServlet)
+		</description>
+		<param-name>locatie_url-pattern</param-name>
+		<param-value>locatie</param-value>
+	</context-param>
+	<context-param>
+		<description>Naam van de geozet dispatcher servlet mapping
+			(GeozetServlet)</description>
+		<param-name>geozet_url-pattern</param-name>
+		<param-value>geozet</param-value>
+	</context-param>
+
+	<servlet>
+		<description>WFSclient voor de core functie</description>
+		<display-name>WFSClientServlet</display-name>
+		<servlet-name>WFSClientServlet</servlet-name>
+		<servlet-class>nl.geozet.wfs.WFSClientServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+		<init-param>
+			<description>response timeout voor communcatie met de bekendmakingen
+				WFS in seconden</description>
+			<param-name>wfstimout</param-name>
+			<param-value>20</param-value>
+		</init-param>
+		<init-param>
+			<description>maximum op te halen features in een request, deze
+				instelling is onafhankelijk van de configuratie van de WFS
+			</description>
+			<param-name>wfsmaxfeatures</param-name>
+			<param-value>500</param-value>
+		</init-param>
+		<init-param>
+			<description>het wfs object type van deze bekendmakingen
+			</description>
+			<param-name>typename</param-name>
+			<param-value>pdok:bekendmakingen_punt</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet>
+		<description>WFS client voor de bekendmaking details</description>
+		<display-name>WFSDetailsServlet</display-name>
+		<servlet-name>WFSDetailsServlet</servlet-name>
+		<servlet-class>nl.geozet.wfs.WFSDetailsServlet</servlet-class>
+		<load-on-startup>3</load-on-startup>
+		<init-param>
+			<description>response timeout voor communcatie met de bekendmakingen
+				WFS in seconden</description>
+			<param-name>wfstimout</param-name>
+			<param-value>10</param-value>
+		</init-param>
+		<init-param>
+			<description>maximum op te halen features in een request, deze
+				instelling is onafhankelijk van de configuratie van de WFS
+			</description>
+			<param-name>wfsmaxfeatures</param-name>
+			<param-value>2</param-value>
+		</init-param>
+		<init-param>
+			<description>het wfs type van deze bekendmakingen</description>
+			<param-name>typename</param-name>
+			<param-value>pdok:bekendmakingen_punt</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet>
+		<description>WFS client voor de vlakgerichte bekendmakingen
+		</description>
+		<display-name>WFSVlakgerichtServlet</display-name>
+		<servlet-name>WFSVlakgerichtServlet</servlet-name>
+		<servlet-class>nl.geozet.wfs.VlakGerichteWFSClientServlet
+		</servlet-class>
+		<load-on-startup>2</load-on-startup>
+		<init-param>
+			<description>response timeout voor communcatie met de bekendmakingen
+				WFS in seconden</description>
+			<param-name>wfstimout</param-name>
+			<param-value>20</param-value>
+		</init-param>
+		<init-param>
+			<description>maximum op te halen features in een request, deze
+				instelling is onafhankelijk van de configuratie van de WFS
+			</description>
+			<param-name>wfsmaxfeatures</param-name>
+			<param-value>500</param-value>
+		</init-param>
+		<init-param>
+			<description>het wfs type van de vlak bekendmakingen</description>
+			<param-name>typename</param-name>
+			<param-value>pdok:bekendmakingen_vlak</param-value>
+		</init-param>
+		<init-param>
+			<description>Factor (percentage) van de oppervlakte van de
+				boundingbox die de relevatie aangeeft</description>
+			<param-name>relevantiefactor</param-name>
+			<param-value>0.00025</param-value>
+		</init-param>
+		<init-param>
+			<description>Factor (percentage) van de breedte/hoogte van de bbox
+				die wordt gebruikt voor bepalen van AOI centrum, bijvoorbeeld
+				0.05</description>
+			<param-name>centrum_gebied</param-name>
+			<param-value>0.05</param-value>
+		</init-param>
+		<init-param>
+			<description>Factor (percentage) van de breedte/hoogte van de bbox
+				die wordt gebruikt voor bepalen van AOI midden, moet groter zijn
+				dan centrum_gebied (hierboven), bijvoorbeeld 0.4</description>
+			<param-name>midden_gebied</param-name>
+			<param-value>0.4</param-value>
+		</init-param>
+		<init-param>
+			<description>Factor (percentage) van de breedte/hoogte van de bbox
+				die wordt gebruikt voor bepalen van AOI rand, moet groter zijn
+				dan midden_gebied (hierboven), bijvoorbeeld 0.8</description>
+			<param-name>rand_gebied</param-name>
+			<param-value>0.8</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet>
+		<description>OpenLS client servlet voor de core functie</description>
+		<servlet-name>OpenLSClientServlet</servlet-name>
+		<servlet-class>nl.geozet.openls.servlet.OpenLSServlet</servlet-class>
+		<init-param>
+			<description>url voor de gazetteer</description>
+			<param-name>openlsserverurl</param-name>
+			<param-value>http://test.geodata.nationaalgeoregister.nl/geocoder/Geocoder</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet>
+		<description>dispatcher servlet voor WFS en OpenLS client
+		</description>
+		<display-name>GeozetServlet</display-name>
+		<servlet-name>GeozetServlet</servlet-name>
+		<servlet-class>nl.geozet.GeozetServlet</servlet-class>
+		<load-on-startup>0</load-on-startup>
+		<!-- geen initialisatie parameters -->
+	</servlet>
+
+	<!-- onderstaande servlet-mappings (url-pattern) moeten overeen komen met 
+		die in de context parameters (XXX_url-pattern) -->
+	<servlet-mapping>
+		<servlet-name>WFSClientServlet</servlet-name>
+		<url-pattern>/bekendmakingen</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>WFSDetailsServlet</servlet-name>
+		<url-pattern>/bekendmaking</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>WFSVlakgerichtServlet</servlet-name>
+		<url-pattern>/vlakbekendmakingen</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet-mapping>
+		<servlet-name>OpenLSClientServlet</servlet-name>
+		<url-pattern>/locatie</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>GeozetServlet</servlet-name>
+		<url-pattern>/geozet</url-pattern>
+	</servlet-mapping>
+
+	<error-page>
+		<exception-type>java.lang.Throwable</exception-type>
+		<location>/error.jsp</location>
+	</error-page>
+</web-app>
+

@@ -1,0 +1,27 @@
+/* features iconen IE6*/
+* html #geozetPopover span,
+* html #geozetContent .geozetFilter li { background-image: url('img/ie6-icons-map.gif'); }
+
+
+/* controlbar voor IE6 */
+* html #geozetMap .geozetPanZoomBar ul li a,
+* html #geozetMap .geozetPanZoomBar .x-slider-vert,
+* html #geozetMap .geozetPanZoomBar .x-slider-thumb,
+* html #geozetPopup,
+* html #geozetPopup .geozetNeedle  { background-image: url('img/ie6-bg-sprite-trans.gif');  }
+
+
+/* selectie kaders IE6 en IE7 */
+.olHandlerBoxZoomBox { filter: alpha(opacity=50); }
+.olControlOverviewMapExtentRectangle,
+.olControlOverviewMapRectReplacement  { filter: alpha(opacity=45); }
+
+
+#geozetStart { background-image: url('img/ie6-bg-startup.gif'); }
+#geozetMap #toggleMapSize.max { right: -2px; }
+
+
+
+
+
+

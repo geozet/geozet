@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl" lang=nl>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Geonovum - Entreepagina</title>
+<meta name="description" content="demo" />
+
+
+	<link rel="stylesheet" href="static/css/style.css" type="text/css" media="all" />
+
+	<!--[if lte IE 7]>
+		<link rel="stylesheet" href="static/css/ie.css" type="text/css" media="all" />
+	<![endif]-->
+
+	<link rel="stylesheet" href="static/css/print.css" type="text/css" media="print" />
+
+	<script type="text/javascript">
+		document.documentElement.className += ' js';
+	</script>
+
+
+</head>
+<body>
+
+
+<p id="directnaar">Direct naar (in deze pagina): <a href="#content">inhoud</a>, <a href="#zoeken">zoekveld</a> of <a href="#menu">menu</a>.</p>
+
+
+<div id="geozetContent" class="start">
+
+		<div id="geozetArticle">
+
+			<div id="geozetCore">
+
+				<div class="section section-content">
+
+				<!-- BEGIN ZOEKFORMULIER -->
+
+				<h2 class="title">Zoek lokale bekendmakingen</h2>
+
+<!-- 
+KISS: niet te uitgebreid zoekformulier, wat zegt straal als je bv zoekt op straat of plaats of streek, dan beperkt de straal wellicht op datgene waar je naar op zoek bent. Stel ik zoek op mijn straat dan verwacht ik alles in mijn straat te zien en dan beeldvullend met de rest van de punten eromheen...
+
+voorstel: 	simpel (WAAR zoek je en WELK soort bekendmaking)
+	uitgebreid; simpel met straal en wellicht verschuiving maar zal meeste gebruikers niets zeggen
+-->
+
+			<form id="geozetCoreSearch" action="#" method="post">
+
+			<p>
+			Zoek naar bekendmakingen van de afgelopen 8 weken. Dit zijn bijvoorbeeld bouwvergunningen, kapvergunningen of besluiten over bestemmingsplannen.
+			</p>
+
+			<fieldset>
+			<p>
+				<label for="locatie">Zoek locatie</label>
+				<input type="text" title="Postcode of plaatsnaam" id="locatie" name="locatie" />
+			</p>
+
+			<p>
+				<label for="straal">Bekijk bekendmakingen binnen een straal van</label> 
+				<select id="straal" name="straal">
+					<option value="297_km">297 kilometer (heel Nederland)</option>
+					<option value="148_km">148 kilometer</option>
+					<option value="74_km">74 kilometer</option>
+					<option value="37_km">37 kilometer</option>
+					<option value="18_km">18 kilometer</option>
+					<option value="9.2_km">9,2 kilometer</option>
+					<option value="4.6_km">4,6 kilometer</option>
+					<option value="2.3_km">2,3 kilometer</option>
+					<option value="1.2_km">1,2 kilometer</option>
+					<option value="580_m">580 meter</option>
+					<option value="290_m">290 meter</option>
+					<option selected="selected" value="exact">Exacte locatie</option>
+				</select>
+			</p>
+			</fieldset>
+
+
+			<fieldset id="geozetFilter">
+				<h3>Onderwerpen:</h3>
+				<ul class="geozetFilter">
+					<li class="consument"><input name="filter" value="consumentenzaken" type="checkbox" checked="checked" id="geo-consument" /><label for="geo-consument">Consumentenzaken</label> </li>
+					<li class="maatschappij"><input name="filter" value="maatschappij" type="checkbox" checked="checked" id="geo-maatschappij" /><label for="geo-maatschappij">Maatschappij en samenleving</label> </li>
+					<li class="natuur"><input name="filter" value="natuur" type="checkbox" checked="checked" id="geo-natuur" /><label for="geo-natuur">Natuur en milieu</label> </li>
+					<li class="overheid"><input name="filter" value="overheid" type="checkbox" checked="checked" id="geo-overheid" /><label for="geo-overheid">Overheid, politiek en bestuur</label> </li>
+					<li class="rechtspraak"><input name="filter" value="recht" type="checkbox" checked="checked" id="geo-rechtspraak" /><label for="geo-rechtspraak">Rechtspraak en veiligheid</label> </li>
+					<li class="verkeer"><input name="filter" value="verkeer" type="checkbox" checked="checked" id="geo-verkeer" /><label for="geo-verkeer">Verkeer, voertuigen en wegen</label> </li>
+					<li class="wonen"><input name="filter" value="wonen" type="checkbox" checked="checked" id="geo-wonen" /><label for="geo-wonen">Wonen en leefomgeving</label> </li>
+					<li class="cluster">Meerdere bekendmakingen</li>
+				</ul>
+			</fieldset>	
+
+
+			<p class="button">
+				<button type="submit">Zoek bekendmakingen</button>
+			</p>
+
+			</form>
+
+
+
+			<!-- EIND ZOEKFORMULIER -->
+
+			</div>
+			
+			<div class="section section-aside">
+
+				<h3 class="title">Uitleg</h3>
+
+				<p>U kunt zoeken op locatie waarbij u een postcode, straatnaam, woonplaats, streek, provincie of gebied kunt invoeren (of een combinatie ervan). Voorbeelden kunnen zijn;</p>
+
+				<ul class="geozetExample">
+					<li>2595 of 2595AN of 2595AN 104</li>
+					<li>Wilhelmina van Pruisenweg 104 Den Haag</li>
+					<li>Den Haag</li>
+					<li>Zuid-Holland</li>
+					<li>Drunense Duinen</li>
+				</ul>
+
+			</div>
+
+			</div>
+			
+			
+			<div id="geozetEnhanced" class="hidden">
+				<div id="geozetMap"></div>
+
+			</div>
+			
+
+		</div>
+
+		<div id="geozetAside">
+
+
+
+			<div id="geozetMiniMap">
+
+				<h2>Zoek op locatie</h2>
+
+				<div class="geozetMiniBG"><div id="geozetMiniNL"></div></div>
+
+					
+				<form id="geozetEnhancedSearch" action="#">
+
+					<p class="geozetError">Locatie niet gevonden</p>
+
+					<p>
+					<input type="text" title="Postcode of plaatsnaam" name="locatie-enhanced" id="locatie-enhanced" class="autopopulate error" /> 
+					</p>
+
+					<h3>Bedoelde u:</h3>
+
+					<ul class="geozetSuggestions">
+						<li><a href="#">Scheveningen</a></li>
+						<li><a href="#">Maui</a></li>
+						<li><a href="#">Lombok</a></li>
+					</ul>
+
+					<p class="btn">
+					<button type="submit">Zoek locatie</button>
+					</p>
+				</form>
+
+			</div>
+
+			<!-- MET JAVASCRIPT VERPLAATSEN WE DE FILTER CONTAINER HIERNAARTOE, ANDERS DUPLICATE CONTENT -->
+				
+			
+		
+
+		</div>
+
+</div>
+
+
+
+
+<!--
+
+Library Extjs: alles uiteindelijk minify en packen
+
+-->
+
+
+<!--<script type="text/javascript" src="static/js/ext-base.js"></script>-->
+<script type="text/javascript" src="static/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="static/js/ext-jquery-adapter.js"></script>
+<script type="text/javascript" src="static/js/ext-all-debug.js"></script>
+
+<script type="text/javascript" src="static/js/init.js"></script>	
+
+<script type="text/javascript" src="static/js/OpenLayers.js"></script>
+<script type="text/javascript" src="static/js/ol_overrides.js"></script>
+<script type="text/javascript" src="static/js/GeoExt.js"></script>
+<script type="text/javascript" src="static/js/LoadingPanel.js"></script>
+<script type="text/javascript" src="static/js/ScaleBar.js"></script>
+
+<script type="text/javascript" src="static/js/lib/Geozet.js"></script>
+
+<script type="text/javascript" src="static/js/kaart.js"></script>	
+<script type="text/javascript" src="static/js/settings.js"></script>
+
+</body>
+</html>

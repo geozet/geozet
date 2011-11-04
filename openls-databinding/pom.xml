@@ -21,10 +21,10 @@
 	</developers>
 	<distributionManagement>
 		<repository>
-			<id>duif-repo</id>
+			<id>github</id>
 			<uniqueVersion>false</uniqueVersion>
 			<name>release repository</name>
-			<url>svn:http://www.duif.net/geozet/repository</url>
+			<url>TODO</url>
 		</repository>
 		<site>
 			<id>developer-site</id>
@@ -135,13 +135,13 @@
 	</issueManagement>
 	<inceptionYear>2010</inceptionYear>
 	<scm>
-		<connection>scm:svn:http://www.duif.net/geozet/trunk/openls-databinding/</connection>
-		<developerConnection>scm:svn:http://www.duif.net/geozet/trunk/openls-databinding/</developerConnection>
-		<url>http://www.duif.net/geozet/trunk/openls-databinding/</url>
+		<connection>scm:git:git@github.com:git://github.com/geozet/geozet.git</connection>
+		<developerConnection>scm:git:git@github.com:git@github.com:geozet/geozet.git</developerConnection>
+		<url>https://github.com/geozet/geozet/tree/master/openls-databinding</url>
 	</scm>
 	<organization>
 		<name>team GEOZET</name>
-		<url>http://geozet.nl</url>
+		<url>https://github.com/geozet</url>
 	</organization>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

@@ -2,6 +2,7 @@ git clone git@github.com:geozet/geozet.git
 
 Prerequisites:
 * jstools: https://github.com/whitmo/jstools
+* Maven 3
 
 Download Ext 3.2.1 from http://www.sencha.com/products/extjs/download/ext-js-3.2.1
 
@@ -23,3 +24,11 @@ Copy the following adapter into lib as well (from adapter/jquery/ext-jquery-adap
 Verify that 4 js files got created:
 
 ls -l ../geozet-webapp/src/main/webapp/static/js/
+
+Build the webapp:
+
+cd openls-databinding/
+mvn
+
+cd ../geozet-webapp
+mvn

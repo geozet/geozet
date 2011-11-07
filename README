@@ -1,1 +1,25 @@
-TODO
+git clone git@github.com:geozet/geozet.git
+
+Prerequisites:
+* jstools: https://github.com/whitmo/jstools
+
+Download Ext 3.2.1 from http://www.sencha.com/products/extjs/download/ext-js-3.2.1
+
+cd jsbuild/ext
+mkdir lib
+
+Copy the following Ext packages (from pkgs subdir in download) into jsbuild/ext/lib:
+
+* data-foundation-debug.js
+* ext-foundation-debug.js
+* pkg-tips-debug.js
+* cmp-foundation-debug.js
+* ext-dd-debug.js
+
+Copy the following adapter into lib as well (from adapter/jquery/ext-jquery-adapter-debug.js):
+
+* ext-jquery-adapter-debug.js
+
+Verify that 4 js files got created:
+
+ls -l ../geozet-webapp/src/main/webapp/static/js/

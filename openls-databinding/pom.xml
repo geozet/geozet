@@ -6,7 +6,8 @@
 	<version>0.4-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>openls-databinding</name>
-	<description>GEOZET / PDOK Open Location Service databinding packages.</description>
+	<description>GEOZET Open Location Service databinding packages.</description>
+	<url>https://github.com/geozet/</url>
 	<developers>
 		<developer>
 			<id>mprins</id>
@@ -24,9 +25,14 @@
 		<repository>
 			<id>github</id>
 			<uniqueVersion>false</uniqueVersion>
-			<name>release repository</name>
-			<url>TODO</url>
+			<name>geozet releases repository</name>
+			<url>https://github.com/geozet/geozet-maven-repo/raw/master/releases</url>
 		</repository>
+		<snapshotRepository>
+			<id>snapshot-repo</id>
+			<name>geozet snapshots repository</name>
+			<url>https://github.com/geozet/geozet-maven-repo/raw/master/snapshots</url>
+		</snapshotRepository>
 		<site>
 			<id>developer-site</id>
 			<name>local developer site</name>
@@ -166,13 +172,7 @@
 		</dependency>
 	</dependencies>
 	<build>
-		<extensions>
-			<extension>
-				<groupId>org.jvnet.wagon-svn</groupId>
-				<artifactId>wagon-svn</artifactId>
-				<version>1.12</version>
-			</extension>
-		</extensions>
+		<defaultGoal>install</defaultGoal>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -400,9 +400,7 @@
 					</reportPlugins>
 				</configuration>
 			</plugin>
-
 		</plugins>
 	</build>
 	<reporting />
-
 </project>

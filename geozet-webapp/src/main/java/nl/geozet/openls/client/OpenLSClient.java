@@ -111,6 +111,66 @@ public class OpenLSClient {
     }
 
     /**
+     * post a freeform open ls request. eg. to openrouteservice.org.
+     * 
+     * @param url
+     *            the url
+     * @param getParams
+     *            the post params
+     * @return the geocode response, will be null if something went wrong in the
+     *         process of getting an openls response and parsing it
+     */
+    public GeocodeResponse doPostOpenLSRequest(String url,
+            Map<String, String> getParams) {
+        final PostMethod postMethod = new PostMethod(url);
+        try {
+            for (final Entry<String, String> getParam : getParams.entrySet()) {
+                postMethod.addParameter(
+                        URLEncoder.encode(getParam.getKey(), "UTF-8"),
+                        URLEncoder.encode(getParam.getValue(), "UTF-8"));
+            }
+        } catch (final UnsupportedEncodingException e) {
+            LOGGER.fatal("De gebruikte Java VM ondersteunt geen UTF-8 encoding: "
+                    + e);
+        }
+
+        BufferedReader br = null;
+        final StringBuilder sb = new StringBuilder();
+        try {
+            final int returnCode = this.client.executeMethod(postMethod);
+            if (returnCode == HttpStatus.SC_OK) {
+                br = new BufferedReader(new InputStreamReader(
+                        postMethod.getResponseBodyAsStream()));
+                String readLine;
+                while (((readLine = br.readLine()) != null)) {
+                    sb.append(readLine);
+                }
+            } else {
+                LOGGER.error("OpenLS server get error response: "
+                        + postMethod.getResponseBodyAsString());
+            }
+        } catch (final HttpException e) {
+            LOGGER.fatal(
+                    "Versturen get request naar OpenLS server is mislukt: ", e);
+        } catch (final IOException e) {
+            LOGGER.fatal(
+                    "Ontvangen get response van OpenLS server is mislukt: ", e);
+        } finally {
+            postMethod.releaseConnection();
+            if (br != null) {
+                try {
+                    br.close();
+                } catch (final IOException fe) {
+                    LOGGER.debug(
+                            "Fout opgetreden tijdens release van verbinding, "
+                                    + "hier is niks meer aan te doen.", fe);
+                }
+            }
+        }
+        return this.openLSResponseParser.parseOpenLSResponse(sb.toString());
+    }
+
+    /**
      * Do post open ls request.
      * 
      * @param url

@@ -27,11 +27,8 @@ ls -l ../geozet-webapp/src/main/webapp/static/js/
 
 Build the webapp:
 
-cd openls-databinding/
-mvn install
-
 cd ../geozet-webapp
-mvn install
+mvn
 
 To run the webapp locally you can do:
 
@@ -39,6 +36,6 @@ mvn jetty:run
 
 from the geozet-webapp directory
 
-To build the docs for the webapp (including UML diagrams if you have dot installed) use:
+To build the docs for the webapp (including UML diagrams if you have dot installed, if you don't omit the havedot option) use:
 
 mvn -Dhavedot=true site

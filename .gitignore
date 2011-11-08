@@ -6,3 +6,5 @@
 /geozet-webapp/.settings
 /geozet-webapp/.classpath
 /geozet-webapp/.project
+*.classpath
+*.project

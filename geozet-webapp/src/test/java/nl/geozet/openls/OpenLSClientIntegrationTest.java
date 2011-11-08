@@ -26,7 +26,7 @@ import org.junit.Test;
  * @author strampel@atlis.nl
  * @author mprins
  */
-public class OpenLSClientTest {
+public class OpenLSClientIntegrationTest {
     /** test subject. */
     private OpenLSClient openLSClient = null;
 

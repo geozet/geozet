@@ -706,8 +706,8 @@
 							<artifactId>maven-checkstyle-plugin</artifactId>
 							<version>2.6</version>
 							<configuration>
-								<configLocation>${basedir}/.settings/checkstyle-ruleset.xml</configLocation>
-								<suppressionsLocation>${basedir}/.settings/checkstyle-suppressions.xml</suppressionsLocation>
+								<configLocation>${basedir}/checkstyle-ruleset.xml</configLocation>
+								<suppressionsLocation>${basedir}/checkstyle-suppressions.xml</suppressionsLocation>
 							</configuration>
 						</plugin>
 						<plugin>
@@ -715,7 +715,7 @@
 							<artifactId>maven-pmd-plugin</artifactId>
 							<version>2.5</version>
 							<configuration>
-								<ruleset>${basedir}/.settings/pmd-ruleset.xml</ruleset>
+								<ruleset>${basedir}/pmd-ruleset.xml</ruleset>
 								<linkXref>true</linkXref>
 								<sourceEncoding>utf-8</sourceEncoding>
 								<minimumTokens>100</minimumTokens>

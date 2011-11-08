@@ -1,2 +1,8 @@
 /openls-databinding/target
+/openls-databinding/.settings
+/openls-databinding/.classpath
+/openls-databinding/.project
 /geozet-webapp/target
+/geozet-webapp/.settings
+/geozet-webapp/.classpath
+/geozet-webapp/.project

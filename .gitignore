@@ -8,3 +8,4 @@
 /geozet-webapp/.project
 *.classpath
 *.project
+/target

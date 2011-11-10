@@ -21,6 +21,8 @@ Copy the following adapter into lib as well (from adapter/jquery/ext-jquery-adap
 
 * ext-jquery-adapter-debug.js
 
+Run the build-all script (either the .sh version of de .cmd version)
+
 Verify that 4 js files got created:
 
 ls -l ../geozet-webapp/src/main/webapp/static/js/

@@ -11,6 +11,7 @@
 	</appender>
 	<appender name="rollingFileAppender" class="org.apache.log4j.RollingFileAppender">
 		<param name="Threshold" value="debug" />
+		<!-- You may need to make this point to a valid path on your system -->
 		<param name="File" value="/usr/data/geozetviewer/logs/geozetviewer.log" />
 		<param name="Append" value="true" />
 		<param name="MaxFileSize" value="5MB" />
@@ -44,11 +45,12 @@
 		<level value="error" />
 	</logger>
 	<root>
-		<!-- kies: consoleAppender voor in de ide of rollingFileAppender voor op 
-			de server 
+		<!-- kies: consoleAppender/ganymedeAppender voor in de ide of rollingFileAppender voor op 
+			de server (of een combinatie van appenders)
 			<appender-ref ref="ganymedeAppender" />
 			<appender-ref ref="consoleAppender" />
+			<appender-ref ref="rollingFileAppender" />
 			-->
-		<appender-ref ref="rollingFileAppender" />
+		<appender-ref ref="consoleAppender" />
 	</root>
 </log4j:configuration>

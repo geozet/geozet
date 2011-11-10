@@ -265,6 +265,11 @@ public class WFSDetailsServlet extends WFSClientServlet {
         final SimpleFeatureCollection features = this.source.getFeatures(query);
         LOGGER.debug("Er is/zijn " + features.size()
                 + " (max. 1!) feature(s) opgehaald.");
+        if (1 != features.size()) {
+            LOGGER.warn("Er zijn meer of minder dan één (1) features (namelijk: "
+                    + features.size()
+                    + ") opgehaald voor een bekende feature ID, dit duidt op een data integriteits probleem.");
+        }
         return (features.toArray(new SimpleFeature[1]))[0];
     }
 

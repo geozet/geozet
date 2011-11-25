@@ -2,6 +2,10 @@
     settings.js
    ====================================================================== */
 
+/* ======================================================================
+    settings.js
+   ====================================================================== */
+
 Ext.namespace('Geozet.config');
 
 // root path from where the icons for in the map can be retrieved
@@ -177,8 +181,9 @@ Geozet.config.mapPanel = {
 };
 
 Geozet.config.backgroundLayer = new OpenLayers.Layer.WMS(null, Geozet.config.WMSC,
-    {layers: 'brtachtergrondkaart', format: 'image/png8'},
-    {buffer: 1, isBaseLayer: true, attribution: 'Kaartgegevens: © CBS, Kadaster, <a href="http://openstreetmap.org">OpenStreetMap</a>-auteurs (<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>).'} 
+{layers: 'brtachtergrondkaart', format: 'image/png8'},
+{buffer: 1, isBaseLayer: true, attribution: 'Kaartgegevens: © <a href="http://www.cbs.nl">CBS</a>, <a href="http://www.kadaster.nl">Kadaster</a>, <a href="http://openstreetmap.org">OpenStreetMap</a><span class="printhide">-auteurs (<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>).</span>'}
+
 );
 
 // title will be used in popover

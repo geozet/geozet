@@ -73,6 +73,4 @@ html.js #geozetMiniMap,
 
 #geozetContent a.extern { background-image: none; border: 0; color: #000; }
 
-
-
-
+#geozetEnhanced span.printhide { display:none; }

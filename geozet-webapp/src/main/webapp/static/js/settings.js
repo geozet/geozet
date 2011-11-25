@@ -216,7 +216,8 @@ Geozet.config.clusterLayer = {
                 featureType: "prov_clr_cte_totalen",
                 geometryName: "centroid",
                 method: "GET",
-                featureNS: "http://pdok.geonovum.nl"
+                featureNS: "http://pdok.geonovum.nl",
+                outputFormat: "GML2"
             })
         },
     'gemeente':
@@ -247,7 +248,8 @@ Geozet.config.clusterLayer = {
                 featureType: "gem_clr_cte_totalen",
                 geometryName: "centroid",
                 method: "GET",
-                featureNS: "http://pdok.geonovum.nl"
+                featureNS: "http://pdok.geonovum.nl",
+                outputFormat: "GML2"
             })
         },
     'wijk': 
@@ -278,7 +280,8 @@ Geozet.config.clusterLayer = {
                 featureType: "wijk_clr_cte_totalen",
                 geometryName: "centroid",
                 method: "GET",
-                featureNS: "http://pdok.geonovum.nl"
+                featureNS: "http://pdok.geonovum.nl",
+                outputFormat: "GML2"
             })
         }
 };
@@ -299,7 +302,8 @@ Geozet.config.bekendmakingenLayer = {
         geometryName: "locatie",
         version: "1.1.0",
         method: "GET",
-        featureNS: "http://pdok.geonovum.nl"
+        featureNS: "http://pdok.geonovum.nl",
+        outputFormat: "GML2"
     }),
     maxResolution: 6.720,
     minResolution: 0.210,

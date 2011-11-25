@@ -363,7 +363,8 @@ OpenLayers.Protocol.WFS.v1_1_0.prototype.read = function(options) {
                 VERSION: this.version,
                 TYPENAME: options.featureType,
                 BBOX: (options.filter && options.filter.type === OpenLayers.Filter.Spatial.BBOX)
-                    ? options.filter.value.toBBOX() : null
+                    ? options.filter.value.toBBOX() : null,
+                OUTPUTFORMAT: options.outputFormat
             }
         });
     }      

@@ -12,9 +12,9 @@ OpenLayers.IMAGE_RELOAD_ATTEMPTS = 2;
 OpenLayers.ProxyHost = 'proxy.jsp?';
 
 // urls
-Geozet.config.bekendmakingenWFS = 'http://test.geodata.nationaalgeoregister.nl/pdok/wfs?';
-Geozet.config.WMSC = 'http://test.geodata.nationaalgeoregister.nl/wmsc?';
-Geozet.config.gazetteer = {url:"http://test.geodata.nationaalgeoregister.nl/geocoder/Geocoder?", param:"zoekterm"};
+Geozet.config.bekendmakingenWFS = 'http://geodata.nationaalgeoregister.nl/pdok/wfs?';
+Geozet.config.WMSC = 'http://geodata.nationaalgeoregister.nl/wmsc?';
+Geozet.config.gazetteer = {url:"http://geodata.nationaalgeoregister.nl/geocoder/Geocoder?", param:"zoekterm"};
 Geozet.config.vlakgerichteBekendmakingenService = "vlakbekendmakingen?";
 
 OpenLayers.Lang.nl = OpenLayers.Util.extend(

@@ -42,15 +42,14 @@ public class OpenLSClientIntegrationTest {
     @Test
     public void testDoGetOpenLSRequest() {
         final Map<String, String> openLSParams = new TreeMap<String, String>();
-        final String url = "http://geoserver.nl/geocoder/NLaddress.aspx";
-        // final String url =
-        // "http://geodata.nationaalgeoregister.nl/geocoder/Geocoder";
-        // openLSParams.put(StringConstants.OPENLS_REQ_PARAM_SEARCH.code,
-        // "hengelo");
-        openLSParams.put("UID", "put your key here");
+        // final String url = "http://geoserver.nl/geocoder/NLaddress.aspx";
+        final String url = "http://geodata.nationaalgeoregister.nl/geocoder/Geocoder";
+        openLSParams.put(StringConstants.OPENLS_REQ_PARAM_SEARCH.code,
+                "hengelo");
+        // openLSParams.put("UID", "put your key here");
         openLSParams.put(StringConstants.OPENLS_REQ_PARAM_REQUEST.code,
                 StringConstants.OPENLS_REQ_VALUE_GEOCODE.code);
-        openLSParams.put("search", "hengelo");
+        // openLSParams.put("search", "hengelo");
         final GeocodeResponse gcr = this.openLSClient.doGetOpenLSRequest(url,
                 openLSParams);
         assertNotNull(gcr);
@@ -70,11 +69,10 @@ public class OpenLSClientIntegrationTest {
                 .readFileAsString("/samplerequests/samplerequest.xml");
         final OpenLSRequestParser rp = new OpenLSRequestParser();
         final GeocodeRequest gcreq = rp.parseOpenLSRequest(requestString);
-        final GeocodeResponse gcr = this.openLSClient
-                .doPostOpenLSRequest(
-                        "http://geoserver.nl/geocoder/NLaddress.aspx?UID=<put your key here>",
-                        // "http://geodata.nationaalgeoregister.nl/geocoder/Geocoder",
-                        gcreq);
+        final GeocodeResponse gcr = this.openLSClient.doPostOpenLSRequest(
+                // "http://geoserver.nl/geocoder/NLaddress.aspx?UID=<put your key here>",
+                "http://geodata.nationaalgeoregister.nl/geocoder/Geocoder",
+                gcreq);
         assertNotNull(gcr);
         assertTrue(gcr.getGeocodeResponseListSize() == 0);
     }

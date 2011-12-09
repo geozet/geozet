@@ -603,8 +603,7 @@
 							<configuration>
 								<stylesheet>maven</stylesheet>
 								<doclet>org.umlgraph.doclet.UmlGraphDoc</doclet>
-								<additionalparam>-all -hide java.* -hide javax.* -hide org.*
-									-inferrel -inferreltype -inferdep -useimports</additionalparam>
+								<additionalparam>-all -hide java.* -hide javax.* -hide org.* -inferrel -inferreltype -inferdep -useimports</additionalparam>
 								<docletArtifact>
 									<groupId>org.umlgraph</groupId>
 									<artifactId>doclet</artifactId>
@@ -749,7 +748,7 @@
 		</plugins>
 		<pluginManagement>
 			<plugins>
-				<!--This plugin's configuration is used to store Eclipse m2e settings 
+				<!--This plugin's configuration is used to store Eclipse m2e settings
 					only. It has no influence on the Maven build itself. -->
 				<plugin>
 					<groupId>org.eclipse.m2e</groupId>

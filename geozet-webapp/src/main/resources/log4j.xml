@@ -6,19 +6,19 @@
 	<appender name="consoleAppender" class="org.apache.log4j.ConsoleAppender">
 		<param name="Threshold" value="debug" />
 		<layout class="org.apache.log4j.PatternLayout">
-			<param name="ConversionPattern" value="GEOZETOPENLS: %5p %d{HH:mm:ss} (%C#%M:%L) - %m%n" />
+			<param name="ConversionPattern" value="GEOZET: %5p %d{HH:mm:ss} (%C#%M:%L) - %m%n" />
 		</layout>
 	</appender>
 	<appender name="rollingFileAppender" class="org.apache.log4j.RollingFileAppender">
 		<param name="Threshold" value="debug" />
 		<!-- You may need to make this point to a valid path on your system -->
-		<param name="File" value="/usr/data/geozetviewer/logs/geozetviewer.log" />
+		<param name="File" value="${catalina.home}/logs/geozetviewer.log" />
 		<param name="Append" value="true" />
 		<param name="MaxFileSize" value="5MB" />
 		<param name="MaxBackupIndex" value="10" />
 		<param name="ImmediateFlush" value="true" />
 		<layout class="org.apache.log4j.PatternLayout">
-			<param name="ConversionPattern" value="%5p %d [%t :: %x] (%C#%M:%L) - %m%n" />
+			<param name="ConversionPattern" value="GEOZET: %5p %d [%t :: %x] (%C#%M:%L) - %m%n" />
 		</layout>
 	</appender>
 	<appender name="ganymedeAppender" class="org.apache.log4j.net.SocketAppender">
@@ -51,6 +51,6 @@
 			<appender-ref ref="consoleAppender" />
 			<appender-ref ref="rollingFileAppender" />
 			-->
-		<appender-ref ref="consoleAppender" />
+		<appender-ref ref="rollingFileAppender" />
 	</root>
 </log4j:configuration>

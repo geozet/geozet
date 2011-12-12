@@ -15,7 +15,7 @@
 		<description>de url voor de WFS capabilities van de bekendmakingen
 		</description>
 		<param-name>wfscapabilitiesurl</param-name>
-		<param-value>http://test.geodata.nationaalgeoregister.nl/pdok/wfs?request=GetCapabilities</param-value>
+		<param-value>http://geodata.nationaalgeoregister.nl/pdok/wfs?request=GetCapabilities</param-value>
 	</context-param>
 	<context-param>
 		<description>resourcebundle stam naam</description>
@@ -169,7 +169,7 @@
 		<init-param>
 			<description>url voor de gazetteer</description>
 			<param-name>openlsserverurl</param-name>
-			<param-value>http://test.geodata.nationaalgeoregister.nl/geocoder/Geocoder</param-value>
+			<param-value>http://geodata.nationaalgeoregister.nl/geocoder/Geocoder</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
@@ -184,7 +184,7 @@
 		<!-- geen initialisatie parameters -->
 	</servlet>
 
-	<!-- onderstaande servlet-mappings (url-pattern) moeten overeen komen met 
+	<!-- onderstaande servlet-mappings (url-pattern) moeten overeen komen met
 		die in de context parameters (XXX_url-pattern) -->
 	<servlet-mapping>
 		<servlet-name>WFSClientServlet</servlet-name>

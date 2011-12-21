@@ -30,7 +30,7 @@
 		</site>
 	</distributionManagement>
 	<properties>
-		<geotools.version>2.7.3</geotools.version>
+		<geotools.version>2.7.4</geotools.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<geozet.finalname>geozetviewer</geozet.finalname>
 		<site.dir>file://${java.io.tmpdir}/maven-sites/${project.artifactId}</site.dir>

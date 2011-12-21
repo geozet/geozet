@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="${project.name} ${project.version}" xmlns="http://maven.apache.org/DECORATION/1.0.0"
+<project name="${project.name} ${project.version}" xmlns="http://maven.apache.org/DECORATION/1.1.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/DECORATION/1.0.0 http://maven.apache.org/xsd/decoration-1.0.0.xsd">
+	xsi:schemaLocation="http://maven.apache.org/DECORATION/1.1.0 http://maven.apache.org/xsd/decoration-1.1.0.xsd">
 	<publishDate position="left" format="dd-MMMM-yyyy" />
 	<version position="left" />
 	<skin>
@@ -15,7 +15,7 @@
 		<href>http://geonovum.nl/</href>
 	</bannerLeft>
 	<bannerRight>
-		<name>GEOZET</name>
+		<name>${project.name}</name>
 	</bannerRight>
 	<poweredBy>
 		<logo name="Geotools" href="http://www.geotools.org/" img="images/geotools.png" />
@@ -25,15 +25,15 @@
 			<meta name="faq" content="geozet" />
 		</head>
 		<links>
-			<item name="Wiki" href="#" />
-			<!-- <item name="Hudson dashboard" href="#" /> -->
-			<item name="Mantis issue tracker" href="http://standaardbeheer.geonovum.nl/" />
+			<item name="Wiki" href="https://github.com/geozet/geozet/wiki" />
+			<item name="Jenkins" href="http://gisdemo.agro.nl/jenkins/" />
 		</links>
 		<menu name="Links">
-			<item name="Wiki" href="#" />
-			<!-- <item name="Trunk Build results" href="#" /> -->
-			<!-- <item name="Hudson dashboard" href="#" /> -->
-			<!-- <item name="Trunk Build deployment" href="#" /> -->
+			<item name="Wiki" href="https://github.com/geozet/geozet/wiki" />
+			<item name="Jenkins dashboard" href="http://gisdemo.agro.nl/jenkins/" />
+			<item name="Trunk Build results" href="http://gisdemo.agro.nl/jenkins/job/geozet/lastBuild/" />
+			<item name="Jenkins" href="http://gisdemo.agro.nl/jenkins/" />
+			<item name="Trunk Build deployment" href="http://gisdemo.agro.nl/geozetviewer/" />
 		</menu>
 		<menu name="Overview">
 			<item name="Release notes" href="/releasenotes.html" />
@@ -52,8 +52,6 @@
 			<item name="GEOZET webapp"
 				href="http://test.geodata.nationaalgeoregister.nl/apps/geozetviewer/" />
 		</menu>
-		<menu ref="modules" />
-		<menu ref="parent" />
 		<menu ref="reports" />
 	</body>
 </project>

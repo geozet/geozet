@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd-cpd>
+<duplication lines="22" tokens="120">
+<file line="382" path="C:\workspace\nl.geozet.geozet-webapp-TRUNK\target\checkout\src\main\java\nl\geozet\wfs\WFSClientServlet.java"/>
+<file line="245" path="C:\workspace\nl.geozet.geozet-webapp-TRUNK\target\checkout\src\main\java\nl\geozet\wfs\WFSDetailsServlet.java"/>
+<codefragment>
+<![CDATA[
+    protected SimpleFeature ophalenBekendmaking(Filter filter)
+            throws ServletException, IOException {
+        final Query query = new Query();
+        try {
+            query.setCoordinateSystem(CRS.decode("EPSG:28992"));
+            query.setTypeName(this.typeName);
+            query.setFilter(filter);
+            query.setPropertyNames(Query.ALL_NAMES);
+            query.setHandle("GEOZET-handle");
+        } catch (final NoSuchAuthorityCodeException e) {
+            LOGGER.fatal("De gevraagde CRS autoriteit is niet gevonden.", e);
+            throw new ServletException(
+                    "De gevraagde CRS autoriteit is niet gevonden.", e);
+        } catch (final FactoryException e) {
+            LOGGER.fatal(
+                    "Gevraagde GeoTools factory voor CRS is niet gevonden.", e);
+            throw new ServletException(
+                    "Gevraagde GeoTools factory voor CRS is niet gevonden.", e);
+        }
+        // data ophalen
+        final SimpleFeatureCollection features = this.source.getFeatures(query);
+        LOGGER.debug("Er is/zijn " + features.size()
+]]>
+</codefragment>
+</duplication>
+<duplication lines="14" tokens="100">
+<file line="413" path="C:\workspace\nl.geozet.geozet-webapp-TRUNK\target\checkout\src\main\java\nl\geozet\wfs\VlakGerichteWFSClientServlet.java"/>
+<file line="509" path="C:\workspace\nl.geozet.geozet-webapp-TRUNK\target\checkout\src\main\java\nl\geozet\wfs\WFSClientServlet.java"/>
+<codefragment>
+<![CDATA[
+        int currentOffset;
+        try {
+            currentOffset = Integer.parseInt(request
+                    .getParameter(REQ_PARAM_PAGEOFFSET.code));
+        } catch (final NumberFormatException e) {
+            currentOffset = 0;
+        }
+        final int renderItems = (currentOffset + this.itemsPerPage > results
+                .size() ? results.size() : currentOffset + this.itemsPerPage);
+
+        for (int index = currentOffset; index < renderItems; index++) {
+            final SimpleFeature f = results.get(index);
+            sb.append("<li>");
+            sb.append("<a href=\"").append(this._BEKENDMAKINGDETAIL)
+]]>
+</codefragment>
+</duplication>
+</pmd-cpd>

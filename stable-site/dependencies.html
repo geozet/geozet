@@ -1,0 +1,3265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>GEOZET webapp 1.1 - Project Dependencies</title>
+    <style type="text/css" media="all">
+      @import url("./css/maven-base.css");
+      @import url("./css/maven-theme.css");
+      @import url("./css/site.css");
+    </style>
+    <link rel="stylesheet" href="./css/print.css" type="text/css" media="print" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+                                                    
+<meta content="geozet" name="faq"/>
+                    </head>
+  <body class="composite">
+    <div id="banner">
+                  <a href="http://geonovum.nl/" id="bannerLeft">
+    
+                                            <img src="images/logo.png" alt="" />
+    
+            </a>
+                          <span id="bannerRight">
+    
+            GEOZET
+    
+            </span>
+            <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="breadcrumbs">
+          
+  
+
+  
+    
+            
+  
+    
+            <div class="xleft">
+        Meest recente publicatie: 15-december-2010
+                  &nbsp;| Version: 1.1
+                      </div>
+            <div class="xright">            <a href="#">Wiki</a>
+            |
+                <a href="http://standaardbeheer.geonovum.nl/" class="externalLink">Mantis issue tracker</a>
+            
+  
+
+  
+    
+            
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="leftColumn">
+      <div id="navcolumn">
+           
+  
+
+  
+    
+            
+  
+    
+                   <h5>Links</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="#">Wiki</a>
+          </li>
+          </ul>
+              <h5>Overview</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="releasenotes.html">Release notes</a>
+          </li>
+              
+    <li class="none">
+                    <a href="ontwikkelhandleiding.html">Ontwikkel handleiding</a>
+          </li>
+              
+    <li class="none">
+                    <a href="technisch_ontwerp.html">Technisch Ontwerp Core</a>
+          </li>
+              
+    <li class="none">
+                    <a href="techdoc_geozet_viewer.odt">Technisch Ontwerp Enhanced</a>
+          </li>
+              
+    <li class="none">
+                    <a href="functioneel_ontwerp.html">Functioneel Ontwerp</a>
+          </li>
+              
+    <li class="none">
+                    <a href="meldingen.html">FAQ meldingen</a>
+          </li>
+              
+    <li class="none">
+                    <a href="faq.html">FAQ algemeen</a>
+          </li>
+          </ul>
+              <h5>Installatie</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="releasenotes.html">Release notes</a>
+          </li>
+              
+    <li class="none">
+                    <a href="installatiehandleiding.html">Installatie handleiding</a>
+          </li>
+          </ul>
+              <h5>Deployed Builds</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="http://test.geodata.nationaalgeoregister.nl/apps/geozetviewer/" class="externalLink">GEOZET webapp</a>
+          </li>
+          </ul>
+                        <h5>Project documentatie</h5>
+            <ul>
+              
+                
+              
+      
+            
+            
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+            <li class="expanded">
+                    <a href="project-info.html">Project informatie</a>
+                  <ul>
+                  
+    <li class="none">
+                    <a href="integration.html">Continuous Integration</a>
+          </li>
+                  
+    <li class="none">
+              <strong>Dependencies</strong>
+        </li>
+                  
+    <li class="none">
+                    <a href="issue-tracking.html">Issue Tracking</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="plugin-management.html">Plugin Management</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="license.html">Project License</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="plugins.html">Project Plugins</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="project-summary.html">Project Summary</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="team-list.html">Project Team</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="source-repository.html">Source Repository</a>
+          </li>
+              </ul>
+        </li>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+                    <a href="project-reports.html">Project rapporten</a>
+                </li>
+          </ul>
+                                                 
+                        
+                        
+            <a href="http://www.geotools.org/" title="Geotools" class="poweredBy">
+                            <img alt="Geotools" src="images/geotools.png" />
+            </a>
+                               
+  
+
+  
+    
+            
+  
+    
+        </div>
+    </div>
+    <div id="bodyColumn">
+      <div id="contentBox">
+        <div class="section"><h2>Project Dependencies</h2>
+<div class="section"><h3>compile</h3>
+<p>The following is a list of compile dependencies for this project. These dependencies are required to compile and run the application:</p>
+<table class="bodyTable"><tr class="a"><th>GroupId</th>
+<th>ArtifactId</th>
+<th>Version</th>
+<th>Type</th>
+</tr>
+<tr class="b"><td>commons-httpclient</td>
+<td><a href="http://jakarta.apache.org/httpcomponents/httpclient-3.x/" class="externalLink">commons-httpclient</a></td>
+<td>3.1</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>log4j</td>
+<td><a href="http://logging.apache.org/log4j/1.2/" class="externalLink">log4j</a></td>
+<td>1.2.16</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>nl.geozet</td>
+<td>openls-databinding</td>
+<td>0.3</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>org.geotools</td>
+<td>gt-cql</td>
+<td>2.7-M4</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>org.geotools</td>
+<td>gt-data</td>
+<td>2.7-M4</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>org.geotools</td>
+<td>gt-epsg-hsql</td>
+<td>2.7-M4</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>org.geotools</td>
+<td>gt-main</td>
+<td>2.7-M4</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>org.geotools</td>
+<td>gt-validation</td>
+<td>2.7-M4</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>org.geotools</td>
+<td>gt-wfs</td>
+<td>2.7-M4</td>
+<td>jar</td>
+</tr>
+</table>
+</div>
+<div class="section"><h3>test</h3>
+<p>The following is a list of test dependencies for this project. These dependencies are only required to compile and run unit tests for the application:</p>
+<table class="bodyTable"><tr class="a"><th>GroupId</th>
+<th>ArtifactId</th>
+<th>Version</th>
+<th>Type</th>
+</tr>
+<tr class="b"><td>junit</td>
+<td><a href="http://junit.org" class="externalLink">junit</a></td>
+<td>4.8.2</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>org.jmock</td>
+<td>jmock-junit4</td>
+<td>2.5.1</td>
+<td>jar</td>
+</tr>
+</table>
+</div>
+<div class="section"><h3>provided</h3>
+<p>The following is a list of provided dependencies for this project. These dependencies are required to compile the application, but should be provided by default when using the library:</p>
+<table class="bodyTable"><tr class="b"><th>GroupId</th>
+<th>ArtifactId</th>
+<th>Version</th>
+<th>Type</th>
+</tr>
+<tr class="a"><td>javax.servlet</td>
+<td>servlet-api</td>
+<td>2.5</td>
+<td>jar</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="section"><h2>Project Transitive Dependencies</h2>
+<p>The following is a list of transitive dependencies for this project. Transitive dependencies are the dependencies of the project dependencies.</p>
+<div class="section"><h3>compile</h3>
+<p>The following is a list of compile dependencies for this project. These dependencies are required to compile and run the application:</p>
+<table class="bodyTable"><tr class="b"><th>GroupId</th>
+<th>ArtifactId</th>
+<th>Version</th>
+<th>Type</th>
+</tr>
+<tr class="a"><td>ant</td>
+<td>ant-optional</td>
+<td>1.5.1</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>com.vividsolutions</td>
+<td><a href="http://sourceforge.net/projects/jts-topo-suite" class="externalLink">jts</a></td>
+<td>1.11</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>commons-beanutils</td>
+<td>commons-beanutils</td>
+<td>1.4</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>commons-codec</td>
+<td>commons-codec</td>
+<td>1.2</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>commons-collections</td>
+<td>commons-collections</td>
+<td>3.1</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>commons-jxpath</td>
+<td>commons-jxpath</td>
+<td>1.2</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>commons-logging</td>
+<td><a href="http://jakarta.apache.org/commons/logging/" class="externalLink">commons-logging</a></td>
+<td>1.0.4</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>commons-pool</td>
+<td><a href="http://commons.apache.org/pool/" class="externalLink">commons-pool</a></td>
+<td>1.5.4</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>hsqldb</td>
+<td><a href="http://hsqldb.org/" class="externalLink">hsqldb</a></td>
+<td>1.8.0.7</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>it.geosolutions.imageio-ext</td>
+<td>imageio-ext-tiff</td>
+<td>1.0.8</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>it.geosolutions.imageio-ext</td>
+<td>imageio-ext-utilities</td>
+<td>1.0.8</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>java3d</td>
+<td>vecmath</td>
+<td>1.3.2</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>javax.media</td>
+<td>jai_codec</td>
+<td>1.1.3</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>javax.media</td>
+<td>jai_core</td>
+<td>1.1.3</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>javax.media</td>
+<td>jai_imageio</td>
+<td>1.1</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>jdom</td>
+<td>jdom</td>
+<td>1.0</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>net.java.dev.jsr-275</td>
+<td><a href="http://maven.apache.org" class="externalLink">jsr-275</a></td>
+<td>1.0-beta-2</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>org.eclipse.emf</td>
+<td>common</td>
+<td>2.2.1</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>org.eclipse.emf</td>
+<td>ecore</td>
+<td>2.2.2</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>org.eclipse.xsd</td>
+<td>xsd</td>
+<td>2.2.2</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>org.geotools</td>
+<td>gt-api</td>
+<td>2.7-M4</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>org.geotools</td>
+<td>gt-coverage</td>
+<td>2.7-M4</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>org.geotools</td>
+<td>gt-graph</td>
+<td>2.7-M4</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>org.geotools</td>
+<td>gt-metadata</td>
+<td>2.7-M4</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>org.geotools</td>
+<td>gt-referencing</td>
+<td>2.7-M4</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>org.geotools</td>
+<td>gt-xml</td>
+<td>2.7-M4</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>org.geotools.ogc</td>
+<td>net.opengis.ows</td>
+<td>2.7-M4</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>org.geotools.ogc</td>
+<td>net.opengis.wfs</td>
+<td>2.7-M4</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>org.geotools.ogc</td>
+<td>org.w3.xlink</td>
+<td>2.7-M4</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>org.geotools.xsd</td>
+<td>gt-xsd-core</td>
+<td>2.7-M4</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>org.geotools.xsd</td>
+<td>gt-xsd-fes</td>
+<td>2.7-M4</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>org.geotools.xsd</td>
+<td>gt-xsd-filter</td>
+<td>2.7-M4</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>org.geotools.xsd</td>
+<td>gt-xsd-gml2</td>
+<td>2.7-M4</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>org.geotools.xsd</td>
+<td>gt-xsd-gml3</td>
+<td>2.7-M4</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>org.geotools.xsd</td>
+<td>gt-xsd-ows</td>
+<td>2.7-M4</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>org.geotools.xsd</td>
+<td>gt-xsd-wfs</td>
+<td>2.7-M4</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>org.opengis</td>
+<td><a href="http://geoapi.sourceforge.net/snapshot/geoapi" class="externalLink">geoapi</a></td>
+<td>2.3-M1</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>org.opengis</td>
+<td><a href="http://geoapi.sourceforge.net/snapshot/geoapi-pending" class="externalLink">geoapi-pending</a></td>
+<td>2.3-M1</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>picocontainer</td>
+<td><a href="http://www.picocontainer.org/" class="externalLink">picocontainer</a></td>
+<td>1.2</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>xerces</td>
+<td>xercesImpl</td>
+<td>2.4.0</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>xml-apis</td>
+<td><a href="http://xml.apache.org/commons/#external" class="externalLink">xml-apis</a></td>
+<td>1.0.b2</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>xml-apis</td>
+<td>xml-apis-xerces</td>
+<td>2.7.1</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>xpp3</td>
+<td><a href="http://www.extreme.indiana.edu/xgws/xsoap/xpp/mxp1/" class="externalLink">xpp3</a></td>
+<td>1.1.3.4.O</td>
+<td>jar</td>
+</tr>
+</table>
+</div>
+<div class="section"><h3>test</h3>
+<p>The following is a list of test dependencies for this project. These dependencies are only required to compile and run unit tests for the application:</p>
+<table class="bodyTable"><tr class="b"><th>GroupId</th>
+<th>ArtifactId</th>
+<th>Version</th>
+<th>Type</th>
+</tr>
+<tr class="a"><td>junit</td>
+<td><a href="http://junit.org" class="externalLink">junit-dep</a></td>
+<td>4.4</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>org.hamcrest</td>
+<td>hamcrest-core</td>
+<td>1.1</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>org.hamcrest</td>
+<td>hamcrest-library</td>
+<td>1.1</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>org.jmock</td>
+<td>jmock</td>
+<td>2.5.1</td>
+<td>jar</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="section"><h2>Project Dependency Graph</h2>
+<script language="javascript" type="text/javascript">
+      function toggleDependencyDetail( divId, imgId )
+      {
+        var div = document.getElementById( divId );
+        var img = document.getElementById( imgId );
+        if( div.style.display == '' )
+        {
+          div.style.display = 'none';
+          img.src='./images/icon_info_sml.gif';
+        }
+        else
+        {
+          div.style.display = '';
+          img.src='./images/close.gif';
+        }
+      }
+</script>
+<div class="section"><h3>Dependency Tree</h3>
+<ul><li>nl.geozet:geozet-webapp:war:1.1 <img id="_1741336696" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_394867374', '_1741336696' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_394867374" style="display:none"><table class="bodyTable"><tr class="a"><th>GEOZET webapp</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>GEOZET viewer webapplicatie ontwikkeld door Geonovum in
+		opdracht van ICTU.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div><ul><li>nl.geozet:openls-databinding:jar:0.3 (compile) <img id="_1595592053" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_2119677697', '_1595592053' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_2119677697" style="display:none"><table class="bodyTable"><tr class="a"><th>openls-databinding</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>GEOZET / PDOK Open Location Service databinding packages.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>junit:junit:jar:4.8.2 (test) <img id="_1410520945" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_959386085', '_1410520945' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_959386085" style="display:none"><table class="bodyTable"><tr class="a"><th>JUnit</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>JUnit is a regression testing framework. It is used by the developer who implements unit tests in Java.</p>
+<p><b>URL: </b><a href="http://junit.org" class="externalLink">http://junit.org</a></p>
+<p><b>Project License: </b><a href="http://www.opensource.org/licenses/cpl1.0.txt" class="externalLink">Common Public License Version 1.0</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.jmock:jmock-junit4:jar:2.5.1 (test) <img id="_472740193" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1273828749', '_472740193' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1273828749" style="display:none"><table class="bodyTable"><tr class="a"><th>jMock JUnit 4 Extension</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Er bestaat op dit moment geen beschrijving voor dit project.</p>
+<p><b>Project License: </b><a href="http://jmock.org/license.html" class="externalLink">BSD style</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>org.jmock:jmock:jar:2.5.1 (test) <img id="_1434309688" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_133224119', '_1434309688' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_133224119" style="display:none"><table class="bodyTable"><tr class="a"><th>jMock 2 Core</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Er bestaat op dit moment geen beschrijving voor dit project.</p>
+<p><b>Project License: </b><a href="http://jmock.org/license.html" class="externalLink">BSD style</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>org.hamcrest:hamcrest-core:jar:1.1 (test) <img id="_253512327" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_762067653', '_253512327' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_762067653" style="display:none"><table class="bodyTable"><tr class="a"><th>Hamcrest Core</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Er bestaat op dit moment geen beschrijving voor dit project.</p>
+<p><b>Project License: </b><a href="http://www.opensource.org/licenses/bsd-license.php" class="externalLink">BSD style</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.hamcrest:hamcrest-library:jar:1.1 (test) <img id="_1436090928" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1772637678', '_1436090928' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1772637678" style="display:none"><table class="bodyTable"><tr class="a"><th>Hamcrest Library</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Er bestaat op dit moment geen beschrijving voor dit project.</p>
+<p><b>Project License: </b><a href="http://www.opensource.org/licenses/bsd-license.php" class="externalLink">BSD style</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>org.hamcrest:hamcrest-core:jar:1.1 (test) <img id="_1362503230" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1185707349', '_1362503230' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1185707349" style="display:none"><table class="bodyTable"><tr class="a"><th>Hamcrest Core</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Er bestaat op dit moment geen beschrijving voor dit project.</p>
+<p><b>Project License: </b><a href="http://www.opensource.org/licenses/bsd-license.php" class="externalLink">BSD style</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>junit:junit-dep:jar:4.4 (test) <img id="_856291673" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_2036476287', '_856291673' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_2036476287" style="display:none"><table class="bodyTable"><tr class="a"><th>JUnit</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>JUnit is a regression testing framework written by Erich Gamma and Kent Beck. It is used by the developer who implements unit tests in Java.
+    The junit-dep artifact is the same as the junit artifact, expect that all dependencies are explicity declared and unbundled.</p>
+<p><b>URL: </b><a href="http://junit.org" class="externalLink">http://junit.org</a></p>
+<p><b>Project License: </b><a href="http://www.opensource.org/licenses/cpl1.0.txt" class="externalLink">Common Public License Version 1.0</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>log4j:log4j:jar:1.2.16 (compile) <img id="_117902305" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1671873906', '_117902305' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1671873906" style="display:none"><table class="bodyTable"><tr class="a"><th>Apache Log4j</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Apache Log4j 1.2</p>
+<p><b>URL: </b><a href="http://logging.apache.org/log4j/1.2/" class="externalLink">http://logging.apache.org/log4j/1.2/</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>commons-httpclient:commons-httpclient:jar:3.1 (compile) <img id="_342216299" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1889515393', '_342216299' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1889515393" style="display:none"><table class="bodyTable"><tr class="a"><th>HttpClient</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>The HttpClient  component supports the client-side of RFC 1945 (HTTP/1.0)  and RFC 2616 (HTTP/1.1) , several related specifications (RFC 2109 (Cookies) , RFC 2617 (HTTP Authentication) , etc.), and provides a framework by which new request types (methods) or HTTP extensions can be created easily.</p>
+<p><b>URL: </b><a href="http://jakarta.apache.org/httpcomponents/httpclient-3.x/" class="externalLink">http://jakarta.apache.org/httpcomponents/httpclient-3.x/</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0" class="externalLink">Apache License</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>commons-logging:commons-logging:jar:1.0.4 (compile) <img id="_853818514" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_89517492', '_853818514' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_89517492" style="display:none"><table class="bodyTable"><tr class="a"><th>Logging</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Commons Logging is a thin adapter allowing configurable bridging to other,
+    well known logging systems.</p>
+<p><b>URL: </b><a href="http://jakarta.apache.org/commons/logging/" class="externalLink">http://jakarta.apache.org/commons/logging/</a></p>
+<p><b>Project License: </b><a href="/LICENSE.txt">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>commons-codec:commons-codec:jar:1.2 (compile) <img id="_711480696" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1129335035', '_711480696' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1129335035" style="display:none"><table class="bodyTable"><tr class="a"><th>Codec</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>The codec package contains simple encoder and decoders for
+   various formats such as Base64 and Hexadecimal.  In addition to these
+   widely used encoders and decoders, the codec package also maintains a
+   collection of phonetic encoding utilities.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>org.geotools:gt-main:jar:2.7-M4 (compile) <img id="_1910365217" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_775748418', '_1910365217' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_775748418" style="display:none"><table class="bodyTable"><tr class="a"><th>Main module</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>The main module contains the key interfaces and default
+    implementations that are used by other GeoTools modules.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>org.geotools:gt-api:jar:2.7-M4 (compile) <img id="_668881929" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_2075190368', '_668881929' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_2075190368" style="display:none"><table class="bodyTable"><tr class="a"><th>API interfaces</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>The api module contains the GeoTools public interfaces that are used by
+    other GeoTools modules (and GeoTools applications). Where possible
+    we make use of standard interfaces from projects such as GeoAPI
+    and JTS.
+    
+    The formal GeoTools public api consists of this module, geoapi and jts.
+    If you find yourself using implementations specific classes (such as
+    new ShapefileDataStore(...) chances are you are doing it wrong.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>com.vividsolutions:jts:jar:1.11 (compile) <img id="_1796101016" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_42952712', '_1796101016' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_42952712" style="display:none"><table class="bodyTable"><tr class="a"><th>JTS Topology Suite</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>The JTS Topology Suite is an API for modelling and
+        manipulating 2-dimensional linear geometry. It provides
+        numerous geometric predicates and functions. JTS
+        conforms to the Simple Features Specification for
+        SQL published by the Open GIS Consortium.</p>
+<p><b>URL: </b><a href="http://sourceforge.net/projects/jts-topo-suite" class="externalLink">http://sourceforge.net/projects/jts-topo-suite</a></p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.geotools:gt-referencing:jar:2.7-M4 (compile) <img id="_1959539428" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_2110729976', '_1959539428' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_2110729976" style="display:none"><table class="bodyTable"><tr class="a"><th>Referencing services</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Contains implementations of Coordinate Reference Systems (CRS),
+    conversion and transformation services.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>com.vividsolutions:jts:jar:1.11 (compile) <img id="_1118856388" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_2056105013', '_1118856388' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_2056105013" style="display:none"><table class="bodyTable"><tr class="a"><th>JTS Topology Suite</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>The JTS Topology Suite is an API for modelling and
+        manipulating 2-dimensional linear geometry. It provides
+        numerous geometric predicates and functions. JTS
+        conforms to the Simple Features Specification for
+        SQL published by the Open GIS Consortium.</p>
+<p><b>URL: </b><a href="http://sourceforge.net/projects/jts-topo-suite" class="externalLink">http://sourceforge.net/projects/jts-topo-suite</a></p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>xerces:xercesImpl:jar:2.4.0 (compile) <img id="_753613417" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_275330098', '_753613417' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_275330098" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - xerces:xercesImpl:jar:2.4.0</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Er bestaat op dit moment geen beschrijving voor dit project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>jdom:jdom:jar:1.0 (compile) <img id="_1227647027" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1432586820', '_1227647027' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1432586820" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - jdom:jdom:jar:1.0</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Er bestaat op dit moment geen beschrijving voor dit project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>org.geotools:gt-wfs:jar:2.7-M4 (compile) <img id="_1986873886" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_789745011', '_1986873886' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_789745011" style="display:none"><table class="bodyTable"><tr class="a"><th>WFS client module</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Implementation of DataStore allowing geotools code to work with an
+    OGC Web Feature Service. Offers client code for WFS 1.0 and WFS 1.1.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>org.geotools:gt-xml:jar:2.7-M4 (compile) <img id="_2143019080" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1146893469', '_2143019080' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1146893469" style="display:none"><table class="bodyTable"><tr class="a"><th>XML Parsing Support</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>XML Parser based on the XDO design.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>org.geotools:gt-api:jar:2.7-M4 (compile) <img id="_224971527" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_2005979723', '_224971527' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_2005979723" style="display:none"><table class="bodyTable"><tr class="a"><th>API interfaces</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>The api module contains the GeoTools public interfaces that are used by
+    other GeoTools modules (and GeoTools applications). Where possible
+    we make use of standard interfaces from projects such as GeoAPI
+    and JTS.
+    
+    The formal GeoTools public api consists of this module, geoapi and jts.
+    If you find yourself using implementations specific classes (such as
+    new ShapefileDataStore(...) chances are you are doing it wrong.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.geotools:gt-main:jar:2.7-M4 (compile) <img id="_33363160" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1802638502', '_33363160' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1802638502" style="display:none"><table class="bodyTable"><tr class="a"><th>Main module</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>The main module contains the key interfaces and default
+    implementations that are used by other GeoTools modules.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.geotools.xsd:gt-xsd-wfs:jar:2.7-M4 (compile) <img id="_1653572455" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_490485645', '_1653572455' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_490485645" style="display:none"><table class="bodyTable"><tr class="a"><th>WFS XML Support</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Filter XML support for Geotools.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.geotools.ogc:net.opengis.wfs:jar:2.7-M4 (compile) <img id="_557185835" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1432609646', '_557185835' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1432609646" style="display:none"><table class="bodyTable"><tr class="a"><th>Web Feature Service Model</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Web Feature Service Schema EMF Model</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>org.geotools:gt-referencing:jar:2.7-M4 (compile) <img id="_446695671" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_731755486', '_446695671' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_731755486" style="display:none"><table class="bodyTable"><tr class="a"><th>Referencing services</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Contains implementations of Coordinate Reference Systems (CRS),
+    conversion and transformation services.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>java3d:vecmath:jar:1.3.2 (compile) <img id="_394488217" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_294240370', '_394488217' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_294240370" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - java3d:vecmath:jar:1.3.2</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Er bestaat op dit moment geen beschrijving voor dit project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>commons-pool:commons-pool:jar:1.5.4 (compile) <img id="_116556087" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_130219438', '_116556087' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_130219438" style="display:none"><table class="bodyTable"><tr class="a"><th>Commons Pool</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Commons Object Pooling Library</p>
+<p><b>URL: </b><a href="http://commons.apache.org/pool/" class="externalLink">http://commons.apache.org/pool/</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.geotools:gt-metadata:jar:2.7-M4 (compile) <img id="_1548684324" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_971107939', '_1548684324' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_971107939" style="display:none"><table class="bodyTable"><tr class="a"><th>Metadata</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Contains implementations of metadata and some core utilities classes.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>java3d:vecmath:jar:1.3.2 (compile) <img id="_1516803246" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1655331155', '_1516803246' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1655331155" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - java3d:vecmath:jar:1.3.2</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Er bestaat op dit moment geen beschrijving voor dit project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.opengis:geoapi:jar:2.3-M1 (compile) <img id="_1031086149" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_461714013', '_1031086149' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_461714013" style="display:none"><table class="bodyTable"><tr class="a"><th>GeoAPI interfaces</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>The development community in building GIS solutions is sustaining an enormous
+    level of effort. The GeoAPI project aims to reduce duplication and increase
+    interoperability by providing neutral, interface-only APIs derived from OGC/ISO
+    Standards.</p>
+<p><b>URL: </b><a href="http://geoapi.sourceforge.net/snapshot/geoapi" class="externalLink">http://geoapi.sourceforge.net/snapshot/geoapi</a></p>
+<p><b>Project License: </b><a href="https://geoapi.svn.sourceforge.net/svnroot/geoapi/trunk/LICENSE.txt" class="externalLink">OGC copyright</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>net.java.dev.jsr-275:jsr-275:jar:1.0-beta-2 (compile) <img id="_604686105" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1482536280', '_604686105' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1482536280" style="display:none"><table class="bodyTable"><tr class="a"><th>jsr-275</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Er bestaat op dit moment geen beschrijving voor dit project.</p>
+<p><b>URL: </b><a href="http://maven.apache.org" class="externalLink">http://maven.apache.org</a></p>
+<p><b>Project License: </b><a href="http://jscience.org/doc/license.txt" class="externalLink">BSD License</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>org.opengis:geoapi-pending:jar:2.3-M1 (compile) <img id="_1158215182" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1700958828', '_1158215182' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1700958828" style="display:none"><table class="bodyTable"><tr class="a"><th>GeoAPI pending interfaces</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Incubator for interfaces under development. Those interfaces will migrate to the
+    main geoapi module when they will be considered ready.</p>
+<p><b>URL: </b><a href="http://geoapi.sourceforge.net/snapshot/geoapi-pending" class="externalLink">http://geoapi.sourceforge.net/snapshot/geoapi-pending</a></p>
+<p><b>Project License: </b><a href="https://geoapi.svn.sourceforge.net/svnroot/geoapi/trunk/LICENSE.txt" class="externalLink">OGC copyright</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>net.java.dev.jsr-275:jsr-275:jar:1.0-beta-2 (compile) <img id="_1200532940" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1210287844', '_1200532940' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1210287844" style="display:none"><table class="bodyTable"><tr class="a"><th>jsr-275</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Er bestaat op dit moment geen beschrijving voor dit project.</p>
+<p><b>URL: </b><a href="http://maven.apache.org" class="externalLink">http://maven.apache.org</a></p>
+<p><b>Project License: </b><a href="http://jscience.org/doc/license.txt" class="externalLink">BSD License</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.opengis:geoapi:jar:2.3-M1 (compile) <img id="_9817070" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1583837386', '_9817070' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1583837386" style="display:none"><table class="bodyTable"><tr class="a"><th>GeoAPI interfaces</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>The development community in building GIS solutions is sustaining an enormous
+    level of effort. The GeoAPI project aims to reduce duplication and increase
+    interoperability by providing neutral, interface-only APIs derived from OGC/ISO
+    Standards.</p>
+<p><b>URL: </b><a href="http://geoapi.sourceforge.net/snapshot/geoapi" class="externalLink">http://geoapi.sourceforge.net/snapshot/geoapi</a></p>
+<p><b>Project License: </b><a href="https://geoapi.svn.sourceforge.net/svnroot/geoapi/trunk/LICENSE.txt" class="externalLink">OGC copyright</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>net.java.dev.jsr-275:jsr-275:jar:1.0-beta-2 (compile) <img id="_23937872" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_860933743', '_23937872' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_860933743" style="display:none"><table class="bodyTable"><tr class="a"><th>jsr-275</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Er bestaat op dit moment geen beschrijving voor dit project.</p>
+<p><b>URL: </b><a href="http://maven.apache.org" class="externalLink">http://maven.apache.org</a></p>
+<p><b>Project License: </b><a href="http://jscience.org/doc/license.txt" class="externalLink">BSD License</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>org.geotools.xsd:gt-xsd-wfs:jar:2.7-M4 (compile) <img id="_1900712950" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1988626541', '_1900712950' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1988626541" style="display:none"><table class="bodyTable"><tr class="a"><th>WFS XML Support</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Filter XML support for Geotools.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>org.geotools.ogc:net.opengis.wfs:jar:2.7-M4 (compile) <img id="_415069710" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_512437636', '_415069710' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_512437636" style="display:none"><table class="bodyTable"><tr class="a"><th>Web Feature Service Model</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Web Feature Service Schema EMF Model</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.geotools.xsd:gt-xsd-filter:jar:2.7-M4 (compile) <img id="_373724823" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_381030541', '_373724823' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_381030541" style="display:none"><table class="bodyTable"><tr class="a"><th>Filter XML Support</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Filter XML support for Geotools.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>org.geotools:gt-api:jar:2.7-M4 (compile) <img id="_597271944" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_493253719', '_597271944' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_493253719" style="display:none"><table class="bodyTable"><tr class="a"><th>API interfaces</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>The api module contains the GeoTools public interfaces that are used by
+    other GeoTools modules (and GeoTools applications). Where possible
+    we make use of standard interfaces from projects such as GeoAPI
+    and JTS.
+    
+    The formal GeoTools public api consists of this module, geoapi and jts.
+    If you find yourself using implementations specific classes (such as
+    new ShapefileDataStore(...) chances are you are doing it wrong.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.geotools:gt-referencing:jar:2.7-M4 (compile) <img id="_1450398015" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1234433191', '_1450398015' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1234433191" style="display:none"><table class="bodyTable"><tr class="a"><th>Referencing services</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Contains implementations of Coordinate Reference Systems (CRS),
+    conversion and transformation services.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.geotools:gt-coverage:jar:2.7-M4 (compile) <img id="_1069680176" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1659159572', '_1069680176' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1659159572" style="display:none"><table class="bodyTable"><tr class="a"><th>Grid Coverage module</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Implementation of Grid Coverage specification. Provides support
+    for rasters and some image processing like reprojection.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>org.geotools:gt-api:jar:2.7-M4 (compile) <img id="_1406926887" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1516927991', '_1406926887' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1516927991" style="display:none"><table class="bodyTable"><tr class="a"><th>API interfaces</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>The api module contains the GeoTools public interfaces that are used by
+    other GeoTools modules (and GeoTools applications). Where possible
+    we make use of standard interfaces from projects such as GeoAPI
+    and JTS.
+    
+    The formal GeoTools public api consists of this module, geoapi and jts.
+    If you find yourself using implementations specific classes (such as
+    new ShapefileDataStore(...) chances are you are doing it wrong.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.geotools:gt-referencing:jar:2.7-M4 (compile) <img id="_616166602" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_805596580', '_616166602' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_805596580" style="display:none"><table class="bodyTable"><tr class="a"><th>Referencing services</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Contains implementations of Coordinate Reference Systems (CRS),
+    conversion and transformation services.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.geotools:gt-main:jar:2.7-M4 (compile) <img id="_171492131" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_2103903889', '_171492131' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_2103903889" style="display:none"><table class="bodyTable"><tr class="a"><th>Main module</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>The main module contains the key interfaces and default
+    implementations that are used by other GeoTools modules.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>com.vividsolutions:jts:jar:1.11 (compile) <img id="_479256980" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1623922801', '_479256980' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1623922801" style="display:none"><table class="bodyTable"><tr class="a"><th>JTS Topology Suite</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>The JTS Topology Suite is an API for modelling and
+        manipulating 2-dimensional linear geometry. It provides
+        numerous geometric predicates and functions. JTS
+        conforms to the Simple Features Specification for
+        SQL published by the Open GIS Consortium.</p>
+<p><b>URL: </b><a href="http://sourceforge.net/projects/jts-topo-suite" class="externalLink">http://sourceforge.net/projects/jts-topo-suite</a></p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>it.geosolutions.imageio-ext:imageio-ext-tiff:jar:1.0.8 (compile) <img id="_756589379" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_657312472', '_756589379' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_657312472" style="display:none"><table class="bodyTable"><tr class="a"><th>Improved TIFF Plugin</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Image I/O-Extensions plugin modules.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>it.geosolutions.imageio-ext:imageio-ext-utilities:jar:1.0.8 (compile) <img id="_1484884333" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_2131169475', '_1484884333' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_2131169475" style="display:none"><table class="bodyTable"><tr class="a"><th>Image I/O-Extensions - utilities classes and methods</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Image I/O-Extensions core modules.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>javax.media:jai_core:jar:1.1.3 (compile) <img id="_447297404" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1496912979', '_447297404' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1496912979" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - javax.media:jai_core:jar:1.1.3</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Er bestaat op dit moment geen beschrijving voor dit project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>javax.media:jai_codec:jar:1.1.3 (compile) <img id="_543174719" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1419338242', '_543174719' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1419338242" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - javax.media:jai_codec:jar:1.1.3</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Er bestaat op dit moment geen beschrijving voor dit project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>javax.media:jai_imageio:jar:1.1 (compile) <img id="_1380266915" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_744706916', '_1380266915' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_744706916" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - javax.media:jai_imageio:jar:1.1</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Er bestaat op dit moment geen beschrijving voor dit project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>javax.media:jai_core:jar:1.1.3 (compile) <img id="_852797662" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_486069759', '_852797662' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_486069759" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - javax.media:jai_core:jar:1.1.3</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Er bestaat op dit moment geen beschrijving voor dit project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>javax.media:jai_codec:jar:1.1.3 (compile) <img id="_1164882694" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1961120885', '_1164882694' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1961120885" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - javax.media:jai_codec:jar:1.1.3</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Er bestaat op dit moment geen beschrijving voor dit project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>javax.media:jai_imageio:jar:1.1 (compile) <img id="_2126382228" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_336740159', '_2126382228' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_336740159" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - javax.media:jai_imageio:jar:1.1</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Er bestaat op dit moment geen beschrijving voor dit project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>org.geotools:gt-main:jar:2.7-M4 (compile) <img id="_1985624880" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1094938165', '_1985624880' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1094938165" style="display:none"><table class="bodyTable"><tr class="a"><th>Main module</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>The main module contains the key interfaces and default
+    implementations that are used by other GeoTools modules.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.geotools.xsd:gt-xsd-core:jar:2.7-M4 (compile) <img id="_1244712449" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1160598408', '_1244712449' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1160598408" style="display:none"><table class="bodyTable"><tr class="a"><th>XML Parsing</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Schema based xml parsing. This module contains tools for creating 
+    bindings from xml types to java types. Schema modelling is based 
+    on Eclipse XSD.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>org.geotools:gt-graph:jar:2.7-M4 (compile) <img id="_299849336" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1142084537', '_299849336' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1142084537" style="display:none"><table class="bodyTable"><tr class="a"><th>Feature Based Graphs and Networks</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Graph classes that builds and walk networks based on Feature relationships.
+    The original graph package has been developed using the JUMP Feature API.
+    Its intension is to be able to aid automated skeletonization of water bodies
+    by computing directionality of generated skeletons. The work for the 
+    original JUMP based library has been funded by the BC Proventional 
+    Government department of BMGS. This library has been ported to geotools2 as 
+    part of the VWFS project sponcered by Geo Innovations.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>picocontainer:picocontainer:jar:1.2 (compile) <img id="_1037710952" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_528177011', '_1037710952' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_528177011" style="display:none"><table class="bodyTable"><tr class="a"><th>PicoContainer Core</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Please refer to the &lt;a href=&quot;http://picocontainer.org/&quot;&gt;main website&lt;/a&gt; for documentation.</p>
+<p><b>URL: </b><a href="http://www.picocontainer.org/" class="externalLink">http://www.picocontainer.org/</a></p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div><ul><li>xml-apis:xml-apis:jar:1.0.b2 (compile) <img id="_1437130279" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_643920268', '_1437130279' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_643920268" style="display:none"><table class="bodyTable"><tr class="a"><th>XML Commons External Components XML APIs</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>xml-commons provides an Apache-hosted set of DOM, SAX, and 
+    JAXP interfaces for use in other xml-based projects. Our hope is that we 
+    can standardize on both a common version and packaging scheme for these 
+    critical XML standards interfaces to make the lives of both our developers 
+    and users easier. The External Components portion of xml-commons contains 
+    interfaces that are defined by external standards organizations. For DOM, 
+    that's the W3C; for SAX it's David Megginson and sax.sourceforge.net; for 
+    JAXP it's Sun.</p>
+<p><b>URL: </b><a href="http://xml.apache.org/commons/#external" class="externalLink">http://xml.apache.org/commons/#external</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>xml-apis:xml-apis-xerces:jar:2.7.1 (compile) <img id="_1967243336" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1683961330', '_1967243336' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1683961330" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - xml-apis:xml-apis:jar:xerces-2.7.1</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Er bestaat op dit moment geen beschrijving voor dit project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>commons-jxpath:commons-jxpath:jar:1.2 (compile) <img id="_669844624" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1942606398', '_669844624' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1942606398" style="display:none"><table class="bodyTable"><tr class="a"><th>JXPath</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>A package of Java utility methods for accessing and modifying object properties</p>
+<p><b>URL: </b>http://jakarta.apache.org/commons/${pom.artifactId.substring(8)}/</p>
+<p><b>Project License: </b><a href="/LICENSE.txt">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>ant:ant-optional:jar:1.5.1 (compile) <img id="_1771898601" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1594400816', '_1771898601' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1594400816" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - ant:ant-optional:jar:1.5.1</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Er bestaat op dit moment geen beschrijving voor dit project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>xml-apis:xml-apis:jar:1.0.b2 (compile) <img id="_1952161762" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1548611805', '_1952161762' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1548611805" style="display:none"><table class="bodyTable"><tr class="a"><th>XML Commons External Components XML APIs</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>xml-commons provides an Apache-hosted set of DOM, SAX, and 
+    JAXP interfaces for use in other xml-based projects. Our hope is that we 
+    can standardize on both a common version and packaging scheme for these 
+    critical XML standards interfaces to make the lives of both our developers 
+    and users easier. The External Components portion of xml-commons contains 
+    interfaces that are defined by external standards organizations. For DOM, 
+    that's the W3C; for SAX it's David Megginson and sax.sourceforge.net; for 
+    JAXP it's Sun.</p>
+<p><b>URL: </b><a href="http://xml.apache.org/commons/#external" class="externalLink">http://xml.apache.org/commons/#external</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>commons-beanutils:commons-beanutils:jar:1.4 (compile) <img id="_1104555050" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1827081051', '_1104555050' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1827081051" style="display:none"><table class="bodyTable"><tr class="a"><th>BeanUtils</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Java Bean Utililities</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>commons-collections:commons-collections:jar:3.1 (compile) <img id="_1208403367" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_435436827', '_1208403367' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_435436827" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - commons-collections:commons-collections:jar:3.1</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Types that extend and augment the Java Collections Framework.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.eclipse.xsd:xsd:jar:2.2.2 (compile) <img id="_1400723896" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1202271108', '_1400723896' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1202271108" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - org.eclipse.xsd:xsd:jar:2.2.2</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Er bestaat op dit moment geen beschrijving voor dit project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.eclipse.emf:common:jar:2.2.1 (compile) <img id="_1919956353" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_220932702', '_1919956353' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_220932702" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - org.eclipse.emf:common:jar:2.2.1</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Er bestaat op dit moment geen beschrijving voor dit project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.eclipse.emf:ecore:jar:2.2.2 (compile) <img id="_68480634" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1731411959', '_68480634' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1731411959" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - org.eclipse.emf:ecore:jar:2.2.2</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Er bestaat op dit moment geen beschrijving voor dit project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>org.geotools.xsd:gt-xsd-gml2:jar:2.7-M4 (compile) <img id="_927753520" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1015259658', '_927753520' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1015259658" style="display:none"><table class="bodyTable"><tr class="a"><th>GML2 XML Support</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>GML2 XML support for Geotools.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>org.geotools:gt-api:jar:2.7-M4 (compile) <img id="_138974078" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_593477102', '_138974078' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_593477102" style="display:none"><table class="bodyTable"><tr class="a"><th>API interfaces</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>The api module contains the GeoTools public interfaces that are used by
+    other GeoTools modules (and GeoTools applications). Where possible
+    we make use of standard interfaces from projects such as GeoAPI
+    and JTS.
+    
+    The formal GeoTools public api consists of this module, geoapi and jts.
+    If you find yourself using implementations specific classes (such as
+    new ShapefileDataStore(...) chances are you are doing it wrong.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.geotools:gt-referencing:jar:2.7-M4 (compile) <img id="_57112601" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1511848191', '_57112601' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1511848191" style="display:none"><table class="bodyTable"><tr class="a"><th>Referencing services</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Contains implementations of Coordinate Reference Systems (CRS),
+    conversion and transformation services.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.geotools:gt-coverage:jar:2.7-M4 (compile) <img id="_1641355309" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_385154316', '_1641355309' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_385154316" style="display:none"><table class="bodyTable"><tr class="a"><th>Grid Coverage module</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Implementation of Grid Coverage specification. Provides support
+    for rasters and some image processing like reprojection.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.geotools:gt-main:jar:2.7-M4 (compile) <img id="_669609884" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1190145458', '_669609884' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1190145458" style="display:none"><table class="bodyTable"><tr class="a"><th>Main module</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>The main module contains the key interfaces and default
+    implementations that are used by other GeoTools modules.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.geotools.xsd:gt-xsd-core:jar:2.7-M4 (compile) <img id="_1158095345" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_220135427', '_1158095345' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_220135427" style="display:none"><table class="bodyTable"><tr class="a"><th>XML Parsing</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Schema based xml parsing. This module contains tools for creating 
+    bindings from xml types to java types. Schema modelling is based 
+    on Eclipse XSD.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>org.geotools.xsd:gt-xsd-gml3:jar:2.7-M4 (compile) <img id="_924630687" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_323980697', '_924630687' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_323980697" style="display:none"><table class="bodyTable"><tr class="a"><th>GML3 XML Support</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>GML3 XML support for Geotools.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>org.geotools:gt-api:jar:2.7-M4 (compile) <img id="_546477801" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_589663142', '_546477801' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_589663142" style="display:none"><table class="bodyTable"><tr class="a"><th>API interfaces</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>The api module contains the GeoTools public interfaces that are used by
+    other GeoTools modules (and GeoTools applications). Where possible
+    we make use of standard interfaces from projects such as GeoAPI
+    and JTS.
+    
+    The formal GeoTools public api consists of this module, geoapi and jts.
+    If you find yourself using implementations specific classes (such as
+    new ShapefileDataStore(...) chances are you are doing it wrong.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.geotools:gt-referencing:jar:2.7-M4 (compile) <img id="_1895282314" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_182873369', '_1895282314' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_182873369" style="display:none"><table class="bodyTable"><tr class="a"><th>Referencing services</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Contains implementations of Coordinate Reference Systems (CRS),
+    conversion and transformation services.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.geotools:gt-coverage:jar:2.7-M4 (compile) <img id="_1150679977" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1551716574', '_1150679977' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1551716574" style="display:none"><table class="bodyTable"><tr class="a"><th>Grid Coverage module</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Implementation of Grid Coverage specification. Provides support
+    for rasters and some image processing like reprojection.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.geotools:gt-main:jar:2.7-M4 (compile) <img id="_1362439092" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1648632280', '_1362439092' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1648632280" style="display:none"><table class="bodyTable"><tr class="a"><th>Main module</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>The main module contains the key interfaces and default
+    implementations that are used by other GeoTools modules.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.geotools.xsd:gt-xsd-core:jar:2.7-M4 (compile) <img id="_1262582949" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_679924713', '_1262582949' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_679924713" style="display:none"><table class="bodyTable"><tr class="a"><th>XML Parsing</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Schema based xml parsing. This module contains tools for creating 
+    bindings from xml types to java types. Schema modelling is based 
+    on Eclipse XSD.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.geotools.xsd:gt-xsd-gml2:jar:2.7-M4 (compile) <img id="_1157828778" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_73760272', '_1157828778' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_73760272" style="display:none"><table class="bodyTable"><tr class="a"><th>GML2 XML Support</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>GML2 XML support for Geotools.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>org.geotools.xsd:gt-xsd-fes:jar:2.7-M4 (compile) <img id="_656018583" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1603140260', '_656018583' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1603140260" style="display:none"><table class="bodyTable"><tr class="a"><th>Filter Encoding Specification XML Support</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Filter XML support for Geotools.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>org.geotools:gt-api:jar:2.7-M4 (compile) <img id="_301585960" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1914413362', '_301585960' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1914413362" style="display:none"><table class="bodyTable"><tr class="a"><th>API interfaces</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>The api module contains the GeoTools public interfaces that are used by
+    other GeoTools modules (and GeoTools applications). Where possible
+    we make use of standard interfaces from projects such as GeoAPI
+    and JTS.
+    
+    The formal GeoTools public api consists of this module, geoapi and jts.
+    If you find yourself using implementations specific classes (such as
+    new ShapefileDataStore(...) chances are you are doing it wrong.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.geotools:gt-referencing:jar:2.7-M4 (compile) <img id="_328315510" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_2126304153', '_328315510' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_2126304153" style="display:none"><table class="bodyTable"><tr class="a"><th>Referencing services</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Contains implementations of Coordinate Reference Systems (CRS),
+    conversion and transformation services.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.geotools:gt-coverage:jar:2.7-M4 (compile) <img id="_1977914889" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1660502810', '_1977914889' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1660502810" style="display:none"><table class="bodyTable"><tr class="a"><th>Grid Coverage module</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Implementation of Grid Coverage specification. Provides support
+    for rasters and some image processing like reprojection.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.geotools:gt-main:jar:2.7-M4 (compile) <img id="_1831250368" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_557646513', '_1831250368' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_557646513" style="display:none"><table class="bodyTable"><tr class="a"><th>Main module</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>The main module contains the key interfaces and default
+    implementations that are used by other GeoTools modules.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.geotools.xsd:gt-xsd-core:jar:2.7-M4 (compile) <img id="_220459960" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1513152036', '_220459960' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1513152036" style="display:none"><table class="bodyTable"><tr class="a"><th>XML Parsing</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Schema based xml parsing. This module contains tools for creating 
+    bindings from xml types to java types. Schema modelling is based 
+    on Eclipse XSD.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.geotools.xsd:gt-xsd-gml3:jar:2.7-M4 (compile) <img id="_1820168618" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_428583421', '_1820168618' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_428583421" style="display:none"><table class="bodyTable"><tr class="a"><th>GML3 XML Support</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>GML3 XML support for Geotools.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.geotools.xsd:gt-xsd-ows:jar:2.7-M4 (compile) <img id="_608164675" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1120230208', '_608164675' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1120230208" style="display:none"><table class="bodyTable"><tr class="a"><th>OWS XML Support</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Filter XML support for Geotools.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>org.geotools.xsd:gt-xsd-ows:jar:2.7-M4 (compile) <img id="_1104330651" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_910209652', '_1104330651' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_910209652" style="display:none"><table class="bodyTable"><tr class="a"><th>OWS XML Support</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Filter XML support for Geotools.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>org.geotools.ogc:net.opengis.ows:jar:2.7-M4 (compile) <img id="_1978379943" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1851582635', '_1978379943' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1851582635" style="display:none"><table class="bodyTable"><tr class="a"><th>Open Web Services Model</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Open Web Services Schema EMF Model</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.geotools.xsd:gt-xsd-filter:jar:2.7-M4 (compile) <img id="_100443384" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_2048341861', '_100443384' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_2048341861" style="display:none"><table class="bodyTable"><tr class="a"><th>Filter XML Support</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Filter XML support for Geotools.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>org.geotools.ogc:net.opengis.wfs:jar:2.7-M4 (compile) <img id="_1997794287" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_470275663', '_1997794287' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_470275663" style="display:none"><table class="bodyTable"><tr class="a"><th>Web Feature Service Model</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Web Feature Service Schema EMF Model</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>org.geotools.ogc:net.opengis.ows:jar:2.7-M4 (compile) <img id="_1892425797" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_751064391', '_1892425797' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_751064391" style="display:none"><table class="bodyTable"><tr class="a"><th>Open Web Services Model</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Open Web Services Schema EMF Model</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>org.geotools.ogc:org.w3.xlink:jar:2.7-M4 (compile) <img id="_1269324308" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_765232987', '_1269324308' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_765232987" style="display:none"><table class="bodyTable"><tr class="a"><th>Xlink Model</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Xlink Schema EMF Model</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>org.eclipse.emf:common:jar:2.2.1 (compile) <img id="_1244176692" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_328261499', '_1244176692' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_328261499" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - org.eclipse.emf:common:jar:2.2.1</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Er bestaat op dit moment geen beschrijving voor dit project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.eclipse.emf:ecore:jar:2.2.2 (compile) <img id="_573254680" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_802566908', '_573254680' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_802566908" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - org.eclipse.emf:ecore:jar:2.2.2</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Er bestaat op dit moment geen beschrijving voor dit project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>org.eclipse.emf:common:jar:2.2.1 (compile) <img id="_686367525" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_985255408', '_686367525' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_985255408" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - org.eclipse.emf:common:jar:2.2.1</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Er bestaat op dit moment geen beschrijving voor dit project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.eclipse.emf:ecore:jar:2.2.2 (compile) <img id="_436310865" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_549426047', '_436310865' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_549426047" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - org.eclipse.emf:ecore:jar:2.2.2</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Er bestaat op dit moment geen beschrijving voor dit project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>org.geotools:gt-api:jar:2.7-M4 (compile) <img id="_1278425130" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1042822618', '_1278425130' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1042822618" style="display:none"><table class="bodyTable"><tr class="a"><th>API interfaces</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>The api module contains the GeoTools public interfaces that are used by
+    other GeoTools modules (and GeoTools applications). Where possible
+    we make use of standard interfaces from projects such as GeoAPI
+    and JTS.
+    
+    The formal GeoTools public api consists of this module, geoapi and jts.
+    If you find yourself using implementations specific classes (such as
+    new ShapefileDataStore(...) chances are you are doing it wrong.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.eclipse.emf:common:jar:2.2.1 (compile) <img id="_1744235980" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1831966005', '_1744235980' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1831966005" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - org.eclipse.emf:common:jar:2.2.1</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Er bestaat op dit moment geen beschrijving voor dit project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.eclipse.emf:ecore:jar:2.2.2 (compile) <img id="_448572943" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1833361629', '_448572943' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1833361629" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - org.eclipse.emf:ecore:jar:2.2.2</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Er bestaat op dit moment geen beschrijving voor dit project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>xpp3:xpp3:jar:1.1.3.4.O (compile) <img id="_907403833" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_932444248', '_907403833' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_932444248" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - xpp3:xpp3:jar:1.1.3.4.O</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>MXP1 is a stable XmlPull parsing engine that is based on ideas from XPP and in particular XPP2 but completely revised and rewritten to take the best advantage of latest JIT JVMs such as Hotspot in JDK 1.4+.</p>
+<p><b>URL: </b><a href="http://www.extreme.indiana.edu/xgws/xsoap/xpp/mxp1/" class="externalLink">http://www.extreme.indiana.edu/xgws/xsoap/xpp/mxp1/</a></p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>commons-httpclient:commons-httpclient:jar:3.1 (compile) <img id="_382531000" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1202698696', '_382531000' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1202698696" style="display:none"><table class="bodyTable"><tr class="a"><th>HttpClient</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>The HttpClient  component supports the client-side of RFC 1945 (HTTP/1.0)  and RFC 2616 (HTTP/1.1) , several related specifications (RFC 2109 (Cookies) , RFC 2617 (HTTP Authentication) , etc.), and provides a framework by which new request types (methods) or HTTP extensions can be created easily.</p>
+<p><b>URL: </b><a href="http://jakarta.apache.org/httpcomponents/httpclient-3.x/" class="externalLink">http://jakarta.apache.org/httpcomponents/httpclient-3.x/</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0" class="externalLink">Apache License</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>org.geotools:gt-validation:jar:2.7-M4 (compile) <img id="_321506694" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_671986455', '_321506694' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_671986455" style="display:none"><table class="bodyTable"><tr class="a"><th>Validation Processor and Framework</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Validation module (and validator batch tool) for use with geotools2.
+    This library has been ported to geotools2 as part of the VWFS project
+    sponcered by Geo Innovations.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>org.geotools:gt-graph:jar:2.7-M4 (compile) <img id="_671481298" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1298448021', '_671481298' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1298448021" style="display:none"><table class="bodyTable"><tr class="a"><th>Feature Based Graphs and Networks</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Graph classes that builds and walk networks based on Feature relationships.
+    The original graph package has been developed using the JUMP Feature API.
+    Its intension is to be able to aid automated skeletonization of water bodies
+    by computing directionality of generated skeletons. The work for the 
+    original JUMP based library has been funded by the BC Proventional 
+    Government department of BMGS. This library has been ported to geotools2 as 
+    part of the VWFS project sponcered by Geo Innovations.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>org.geotools:gt-main:jar:2.7-M4 (compile) <img id="_157590370" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1779996501', '_157590370' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1779996501" style="display:none"><table class="bodyTable"><tr class="a"><th>Main module</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>The main module contains the key interfaces and default
+    implementations that are used by other GeoTools modules.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>org.geotools:gt-data:jar:2.7-M4 (compile) <img id="_674779824" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1878333474', '_674779824' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1878333474" style="display:none"><table class="bodyTable"><tr class="a"><th>DataStore Support</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Abstract datastore implementation and helper classes.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>org.geotools:gt-main:jar:2.7-M4 (compile) <img id="_1080367300" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_497637542', '_1080367300' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_497637542" style="display:none"><table class="bodyTable"><tr class="a"><th>Main module</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>The main module contains the key interfaces and default
+    implementations that are used by other GeoTools modules.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>org.geotools:gt-epsg-hsql:jar:2.7-M4 (compile) <img id="_1673892006" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1199587979', '_1673892006' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1199587979" style="display:none"><table class="bodyTable"><tr class="a"><th>EPSG Authority Service using HSQL database</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Connection to an embedded EPSG database in HSQL format.
+    This database is built from the SQL scripts delivered by EPSG.</p>
+<p><b>Project License: </b><a href="http://svn.osgeo.org/geotools/trunk/modules/plugin/epsg-hsql/LICENSE.html" class="externalLink">Lesser General Public License (LGPL)</a><a href="http://svn.osgeo.org/geotools/trunk/licenses/EPSG.html" class="externalLink">EPSG database distribution license</a><a href="http://svn.osgeo.org/geotools/trunk/licenses/HSQL.html" class="externalLink">BSD License for HSQL</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>org.geotools:gt-referencing:jar:2.7-M4 (compile) <img id="_428145062" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_842655117', '_428145062' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_842655117" style="display:none"><table class="bodyTable"><tr class="a"><th>Referencing services</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Contains implementations of Coordinate Reference Systems (CRS),
+    conversion and transformation services.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>hsqldb:hsqldb:jar:1.8.0.7 (compile) <img id="_600935033" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_897936536', '_600935033' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_897936536" style="display:none"><table class="bodyTable"><tr class="a"><th>HSQLDB</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Lightweight 100% Java SQL Database Engine</p>
+<p><b>URL: </b><a href="http://hsqldb.org/" class="externalLink">http://hsqldb.org/</a></p>
+<p><b>Project License: </b><a href="http://hsqldb.org/web/hsqlLicense.html" class="externalLink">HSQLDB License</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>org.geotools:gt-cql:jar:2.7-M4 (compile) <img id="_596879006" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1049776777', '_596879006' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1049776777" style="display:none"><table class="bodyTable"><tr class="a"><th>OGC CQL to Filter parser</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>A parser that takes an OGC Common Query Language input string and produces
+    an equivalent org.opengis.filter.Filter.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>org.geotools:gt-main:jar:2.7-M4 (compile) <img id="_1821043979" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_913871731', '_1821043979' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_913871731" style="display:none"><table class="bodyTable"><tr class="a"><th>Main module</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>The main module contains the key interfaces and default
+    implementations that are used by other GeoTools modules.</p>
+<p><b>Project License: </b><a href="http://www.gnu.org/copyleft/lesser.txt" class="externalLink">Lesser General Public License (LGPL)</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>javax.servlet:servlet-api:jar:2.5 (provided) <img id="_422269780" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_175634748', '_422269780' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_175634748" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - javax.servlet:servlet-api:jar:2.5</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Er bestaat op dit moment geen beschrijving voor dit project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section"><h2>Vergunningen</h2>
+<p><b>HSQLDB License: </b>HSQLDB</p>
+<p><b>BSD License for HSQL: </b>EPSG Authority Service using HSQL database</p>
+<p><b>Unamed: </b>BeanUtils, Codec, GEOZET webapp, PicoContainer Core, Unnamed - ant:ant-optional:jar:1.5.1, Unnamed - commons-collections:commons-collections:jar:3.1, Unnamed - java3d:vecmath:jar:1.3.2, Unnamed - javax.media:jai_codec:jar:1.1.3, Unnamed - javax.media:jai_core:jar:1.1.3, Unnamed - javax.media:jai_imageio:jar:1.1, Unnamed - javax.servlet:servlet-api:jar:2.5, Unnamed - jdom:jdom:jar:1.0, Unnamed - org.eclipse.emf:common:jar:2.2.1, Unnamed - org.eclipse.emf:ecore:jar:2.2.2, Unnamed - org.eclipse.xsd:xsd:jar:2.2.2, Unnamed - xerces:xercesImpl:jar:2.4.0, Unnamed - xml-apis:xml-apis:jar:xerces-2.7.1, Unnamed - xpp3:xpp3:jar:1.1.3.4.O, openls-databinding</p>
+<p><b>BSD style: </b>Hamcrest Core, Hamcrest Library, jMock 2 Core, jMock JUnit 4 Extension</p>
+<p><b>BSD License: </b>jsr-275</p>
+<p><b>Apache License: </b>HttpClient</p>
+<p><b>EPSG database distribution license: </b>EPSG Authority Service using HSQL database</p>
+<p><b>Common Public License Version 1.0: </b>JUnit</p>
+<p><b>OGC copyright: </b>GeoAPI interfaces, GeoAPI pending interfaces</p>
+<p><b>The Apache Software License, Version 2.0: </b>Apache Log4j, Commons Pool, JXPath, Logging, XML Commons External Components XML APIs</p>
+<p><b>Lesser General Public License (LGPL): </b>API interfaces, DataStore Support, EPSG Authority Service using HSQL database, Feature Based Graphs and Networks, Filter Encoding Specification XML Support, Filter XML Support, GML2 XML Support, GML3 XML Support, Grid Coverage module, Image I/O-Extensions - utilities classes and methods, Improved TIFF Plugin, JTS Topology Suite, Main module, Metadata, OGC CQL to Filter parser, OWS XML Support, Open Web Services Model, Referencing services, Validation Processor and Framework, WFS XML Support, WFS client module, Web Feature Service Model, XML Parsing, XML Parsing Support, Xlink Model</p>
+</div>
+<div class="section"><h2>Dependency File Details</h2>
+<table class="bodyTable"><tbody><tr class="a"><th align="left">Filename</th>
+<th align="right">Size</th>
+<th align="right">Entries</th>
+<th align="right">Classes</th>
+<th align="right">Packages</th>
+<th align="center">JDK Rev</th>
+<th align="center">Debug</th>
+<th align="center">Sealed</th>
+</tr>
+<tr class="b"><td align="left">ant-optional-1.5.1.jar</td>
+<td align="right">639,39 kB</td>
+<td align="right">382</td>
+<td align="right">330</td>
+<td align="right">39</td>
+<td align="center">1.1</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">jts-1.11.jar</td>
+<td align="right">693,65 kB</td>
+<td align="right">559</td>
+<td align="right">492</td>
+<td align="right">55</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">commons-beanutils-1.4.jar</td>
+<td align="right">79,25 kB</td>
+<td align="right">55</td>
+<td align="right">44</td>
+<td align="right">2</td>
+<td align="center">1.2</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">commons-codec-1.2.jar</td>
+<td align="right">29,38 kB</td>
+<td align="right">30</td>
+<td align="right">19</td>
+<td align="right">5</td>
+<td align="center">1.1</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">commons-collections-3.1.jar</td>
+<td align="right">546,26 kB</td>
+<td align="right">465</td>
+<td align="right">446</td>
+<td align="right">12</td>
+<td align="center">1.1</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">commons-httpclient-3.1.jar</td>
+<td align="right">297,85 kB</td>
+<td align="right">183</td>
+<td align="right">167</td>
+<td align="right">8</td>
+<td align="center">1.2</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">commons-jxpath-1.2.jar</td>
+<td align="right">278,42 kB</td>
+<td align="right">187</td>
+<td align="right">165</td>
+<td align="right">16</td>
+<td align="center">1.2</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">commons-logging-1.0.4.jar</td>
+<td align="right">37,12 kB</td>
+<td align="right">29</td>
+<td align="right">18</td>
+<td align="right">2</td>
+<td align="center">1.2</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">commons-pool-1.5.4.jar</td>
+<td align="right">93,97 kB</td>
+<td align="right">66</td>
+<td align="right">52</td>
+<td align="right">2</td>
+<td align="center">1.3</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">hsqldb-1.8.0.7.jar</td>
+<td align="right">628,64 kB</td>
+<td align="right">340</td>
+<td align="right">301</td>
+<td align="right">13</td>
+<td align="center">1.2</td>
+<td align="center">release</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">imageio-ext-tiff-1.0.8.jar</td>
+<td align="right">302,31 kB</td>
+<td align="right">261</td>
+<td align="right">243</td>
+<td align="right">2</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">imageio-ext-utilities-1.0.8.jar</td>
+<td align="right">24,93 kB</td>
+<td align="right">17</td>
+<td align="right">6</td>
+<td align="right">1</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">vecmath-1.3.2.jar</td>
+<td align="right">243,51 kB</td>
+<td align="right">54</td>
+<td align="right">45</td>
+<td align="right">1</td>
+<td align="center">1.4</td>
+<td align="center">release</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">jai_codec-1.1.3.jar</td>
+<td align="right">252,11 kB</td>
+<td align="right">102</td>
+<td align="right">95</td>
+<td align="right">4</td>
+<td align="center">1.3</td>
+<td align="center">debug</td>
+<td align="center">sealed</td>
+</tr>
+<tr class="b"><td align="left">jai_core-1.1.3.jar</td>
+<td align="right">1,81 MB</td>
+<td align="right">844</td>
+<td align="right">826</td>
+<td align="right">16</td>
+<td align="center">1.3</td>
+<td align="center">debug</td>
+<td align="center">sealed</td>
+</tr>
+<tr class="a"><td align="left">jai_imageio-1.1.jar</td>
+<td align="right">1,09 MB</td>
+<td align="right">634</td>
+<td align="right">559</td>
+<td align="right">44</td>
+<td align="center">1.4</td>
+<td align="center">debug</td>
+<td align="center">sealed</td>
+</tr>
+<tr class="b"><td align="left">servlet-api-2.5.jar</td>
+<td align="right">102,65 kB</td>
+<td align="right">68</td>
+<td align="right">42</td>
+<td align="right">2</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">jdom-1.0.jar</td>
+<td align="right">149,66 kB</td>
+<td align="right">87</td>
+<td align="right">75</td>
+<td align="right">8</td>
+<td align="center">1.1</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">junit-4.8.2.jar</td>
+<td align="right">231,78 kB</td>
+<td align="right">267</td>
+<td align="right">230</td>
+<td align="right">30</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">junit-dep-4.4.jar</td>
+<td align="right">139,07 kB</td>
+<td align="right">162</td>
+<td align="right">133</td>
+<td align="right">17</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">log4j-1.2.16.jar</td>
+<td align="right">470,25 kB</td>
+<td align="right">346</td>
+<td align="right">308</td>
+<td align="right">20</td>
+<td align="center">1.1</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">jsr-275-1.0-beta-2.jar</td>
+<td align="right">89,21 kB</td>
+<td align="right">103</td>
+<td align="right">91</td>
+<td align="right">4</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">openls-databinding-0.3.jar</td>
+<td align="right">142,67 kB</td>
+<td align="right">77</td>
+<td align="right">17</td>
+<td align="right">4</td>
+<td align="center">1.6</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">common-2.2.1.jar</td>
+<td align="right">153,26 kB</td>
+<td align="right">108</td>
+<td align="right">104</td>
+<td align="right">6</td>
+<td align="center">1.2</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">ecore-2.2.2.jar</td>
+<td align="right">736,55 kB</td>
+<td align="right">411</td>
+<td align="right">394</td>
+<td align="right">13</td>
+<td align="center">1.2</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">xsd-2.2.2.jar</td>
+<td align="right">689,27 kB</td>
+<td align="right">254</td>
+<td align="right">225</td>
+<td align="right">5</td>
+<td align="center">1.2</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">gt-api-2.7-M4.jar</td>
+<td align="right">118,85 kB</td>
+<td align="right">175</td>
+<td align="right">156</td>
+<td align="right">9</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">gt-coverage-2.7-M4.jar</td>
+<td align="right">398,70 kB</td>
+<td align="right">188</td>
+<td align="right">160</td>
+<td align="right">14</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">gt-cql-2.7-M4.jar</td>
+<td align="right">166,80 kB</td>
+<td align="right">77</td>
+<td align="right">57</td>
+<td align="right">5</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">gt-data-2.7-M4.jar</td>
+<td align="right">47,60 kB</td>
+<td align="right">36</td>
+<td align="right">24</td>
+<td align="right">2</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">gt-epsg-hsql-2.7-M4.jar</td>
+<td align="right">1,77 MB</td>
+<td align="right">28</td>
+<td align="right">7</td>
+<td align="right">1</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">gt-graph-2.7-M4.jar</td>
+<td align="right">160,04 kB</td>
+<td align="right">174</td>
+<td align="right">144</td>
+<td align="right">20</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">gt-main-2.7-M4.jar</td>
+<td align="right">1,22 MB</td>
+<td align="right">829</td>
+<td align="right">768</td>
+<td align="right">35</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">gt-metadata-2.7-M4.jar</td>
+<td align="right">473,80 kB</td>
+<td align="right">348</td>
+<td align="right">301</td>
+<td align="right">21</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">gt-referencing-2.7-M4.jar</td>
+<td align="right">1.010,78 kB</td>
+<td align="right">487</td>
+<td align="right">444</td>
+<td align="right">20</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">gt-validation-2.7-M4.jar</td>
+<td align="right">198,21 kB</td>
+<td align="right">214</td>
+<td align="right">159</td>
+<td align="right">7</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">gt-wfs-2.7-M4.jar</td>
+<td align="right">317,77 kB</td>
+<td align="right">222</td>
+<td align="right">194</td>
+<td align="right">11</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">gt-xml-2.7-M4.jar</td>
+<td align="right">538,83 kB</td>
+<td align="right">377</td>
+<td align="right">357</td>
+<td align="right">12</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">net.opengis.ows-2.7-M4.jar</td>
+<td align="right">302,49 kB</td>
+<td align="right">229</td>
+<td align="right">214</td>
+<td align="right">6</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">net.opengis.wfs-2.7-M4.jar</td>
+<td align="right">140,26 kB</td>
+<td align="right">92</td>
+<td align="right">81</td>
+<td align="right">2</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">org.w3.xlink-2.7-M4.jar</td>
+<td align="right">17,17 kB</td>
+<td align="right">20</td>
+<td align="right">9</td>
+<td align="right">2</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">gt-xsd-core-2.7-M4.jar</td>
+<td align="right">277,55 kB</td>
+<td align="right">259</td>
+<td align="right">236</td>
+<td align="right">8</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">gt-xsd-fes-2.7-M4.jar</td>
+<td align="right">15,12 kB</td>
+<td align="right">20</td>
+<td align="right">2</td>
+<td align="right">1</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">gt-xsd-filter-2.7-M4.jar</td>
+<td align="right">97,93 kB</td>
+<td align="right">96</td>
+<td align="right">75</td>
+<td align="right">5</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">gt-xsd-gml2-2.7-M4.jar</td>
+<td align="right">77,08 kB</td>
+<td align="right">60</td>
+<td align="right">47</td>
+<td align="right">2</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">gt-xsd-gml3-2.7-M4.jar</td>
+<td align="right">515,47 kB</td>
+<td align="right">218</td>
+<td align="right">94</td>
+<td align="right">13</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">gt-xsd-ows-2.7-M4.jar</td>
+<td align="right">80,83 kB</td>
+<td align="right">74</td>
+<td align="right">39</td>
+<td align="right">3</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">gt-xsd-wfs-2.7-M4.jar</td>
+<td align="right">83,01 kB</td>
+<td align="right">75</td>
+<td align="right">55</td>
+<td align="right">5</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">hamcrest-core-1.1.jar</td>
+<td align="right">74,85 kB</td>
+<td align="right">54</td>
+<td align="right">21</td>
+<td align="right">3</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">hamcrest-library-1.1.jar</td>
+<td align="right">108,89 kB</td>
+<td align="right">66</td>
+<td align="right">24</td>
+<td align="right">7</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">jmock-2.5.1.jar</td>
+<td align="right">134,96 kB</td>
+<td align="right">91</td>
+<td align="right">74</td>
+<td align="right">9</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">jmock-junit4-2.5.1.jar</td>
+<td align="right">8,37 kB</td>
+<td align="right">14</td>
+<td align="right">3</td>
+<td align="right">1</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">geoapi-2.3-M1.jar</td>
+<td align="right">165,67 kB</td>
+<td align="right">257</td>
+<td align="right">225</td>
+<td align="right">21</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">geoapi-pending-2.3-M1.jar</td>
+<td align="right">240,80 kB</td>
+<td align="right">480</td>
+<td align="right">437</td>
+<td align="right">33</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">picocontainer-1.2.jar</td>
+<td align="right">110,00 kB</td>
+<td align="right">108</td>
+<td align="right">101</td>
+<td align="right">4</td>
+<td align="center">1.3</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">xercesImpl-2.4.0.jar</td>
+<td align="right">874,93 kB</td>
+<td align="right">760</td>
+<td align="right">700</td>
+<td align="right">38</td>
+<td align="center">1.1</td>
+<td align="center">release</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">xml-apis-1.0.b2.jar</td>
+<td align="right">106,76 kB</td>
+<td align="right">217</td>
+<td align="right">184</td>
+<td align="right">17</td>
+<td align="center">1.2</td>
+<td align="center">release</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">xml-apis-xerces-2.7.1.jar</td>
+<td align="right">189,65 kB</td>
+<td align="right">341</td>
+<td align="right">301</td>
+<td align="right">25</td>
+<td align="center">1.1</td>
+<td align="center">release</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">xpp3-1.1.3.4.O.jar</td>
+<td align="right">117,08 kB</td>
+<td align="right">78</td>
+<td align="right">56</td>
+<td align="right">13</td>
+<td align="center">1.2</td>
+<td align="center">debug</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><th align="left">Total</th>
+<th align="right">Size</th>
+<th align="right">Entries</th>
+<th align="right">Classes</th>
+<th align="right">Packages</th>
+<th align="center">JDK Rev</th>
+<th align="center">Debug</th>
+<th align="center">Sealed</th>
+</tr>
+<tr class="b"><td align="right">59</td>
+<td align="right">19,78 MB</td>
+<td align="right">12.855</td>
+<td align="right">11.176</td>
+<td align="right">706</td>
+<td align="center">1.6</td>
+<td align="right">54</td>
+<td align="center">3</td>
+</tr>
+<tr class="a"><td align="right">compile: 52</td>
+<td align="right">compile: 18,99 MB</td>
+<td align="right">compile: 12.133</td>
+<td align="right">compile: 10.649</td>
+<td align="right">compile: 637</td>
+<td align="center">-</td>
+<td align="right">compile: 47</td>
+<td align="center">compile: 3</td>
+</tr>
+<tr class="b"><td align="right">test: 6</td>
+<td align="right">test: 697,91 kB</td>
+<td align="right">test: 654</td>
+<td align="right">test: 485</td>
+<td align="right">test: 67</td>
+<td align="center">-</td>
+<td align="right">test: 6</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="right">provided: 1</td>
+<td align="right">provided: 102,65 kB</td>
+<td align="right">provided: 68</td>
+<td align="right">provided: 42</td>
+<td align="right">provided: 2</td>
+<td align="center">-</td>
+<td align="right">provided: 1</td>
+<td align="center">-</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section"><h2>Dependency Repository Locations</h2>
+<table class="bodyTable"><tbody><tr class="b"><th align="left">Repo ID</th>
+<th align="left">URL</th>
+<th align="center">Release</th>
+<th align="center">Snapshot</th>
+<th align="center">Blacklisted</th>
+</tr>
+<tr class="a"><td align="left">duif-repo</td>
+<td align="left">http://www.duif.net/geozet/repository</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr class="b"><td align="left">codehaus.org</td>
+<td align="left"><a href="http://snapshots.repository.codehaus.org" class="externalLink">http://snapshots.repository.codehaus.org</a></td>
+<td align="center">-</td>
+<td align="center">Yes</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">apache.snapshots</td>
+<td align="left"><a href="http://people.apache.org/repo/m2-snapshot-repository" class="externalLink">http://people.apache.org/repo/m2-snapshot-repository</a></td>
+<td align="center">-</td>
+<td align="center">Yes</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">geotools-fr</td>
+<td align="left"><a href="http://maven.geotools.fr/repository" class="externalLink">http://maven.geotools.fr/repository</a></td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">osgeo</td>
+<td align="left"><a href="http://download.osgeo.org/webdav/geotools/" class="externalLink">http://download.osgeo.org/webdav/geotools/</a></td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">maven-repository.dev.java.net</td>
+<td align="left"><a href="http://download.java.net/maven/1" class="externalLink">http://download.java.net/maven/1</a></td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">codehaus</td>
+<td align="left"><a href="http://repository.codehaus.org/" class="externalLink">http://repository.codehaus.org/</a></td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">geosolutions</td>
+<td align="left"><a href="http://maven.geo-solutions.it/" class="externalLink">http://maven.geo-solutions.it/</a></td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">opengeo</td>
+<td align="left"><a href="http://repo.opengeo.org" class="externalLink">http://repo.opengeo.org</a></td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">maven2-repository.dev.java.net</td>
+<td align="left"><a href="http://download.java.net/maven/2" class="externalLink">http://download.java.net/maven/2</a></td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">jboss</td>
+<td align="left"><a href="http://repository.jboss.org/maven2/" class="externalLink">http://repository.jboss.org/maven2/</a></td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">central</td>
+<td align="left"><a href="http://repo1.maven.org/maven2" class="externalLink">http://repo1.maven.org/maven2</a></td>
+<td align="center">Yes</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+</tbody>
+</table>
+<p>Repository locations for each of the Dependencies.</p>
+<table class="bodyTable"><tbody><tr class="a"><th align="left">Artifact</th>
+<th align="center">codehaus.org</th>
+<th align="center">apache.snapshots</th>
+<th align="center">geotools-fr</th>
+<th align="center">osgeo</th>
+<th align="center">maven-repository.dev.java.net</th>
+<th align="center">codehaus</th>
+<th align="center">geosolutions</th>
+<th align="center">opengeo</th>
+<th align="center">maven2-repository.dev.java.net</th>
+<th align="center">jboss</th>
+<th align="center">central</th>
+</tr>
+<tr class="b"><td align="left">ant:ant-optional:jar:1.5.1</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo.opengeo.org/ant/ant-optional/1.5.1/ant-optional-1.5.1.jar" class="externalLink"><img alt="Found at http://repo.opengeo.org" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/ant/ant-optional/1.5.1/ant-optional-1.5.1.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="a"><td align="left">com.vividsolutions:jts:jar:1.11</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/com/vividsolutions/jts/1.11/jts-1.11.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="b"><td align="left">commons-beanutils:commons-beanutils:jar:1.4</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo.opengeo.org/commons-beanutils/commons-beanutils/1.4/commons-beanutils-1.4.jar" class="externalLink"><img alt="Found at http://repo.opengeo.org" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/commons-beanutils/commons-beanutils/1.4/commons-beanutils-1.4.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="a"><td align="left">commons-codec:commons-codec:jar:1.2</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repository.jboss.org/maven2//commons-codec/commons-codec/1.2/commons-codec-1.2.jar" class="externalLink"><img alt="Found at http://repository.jboss.org/maven2/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://repo1.maven.org/maven2/commons-codec/commons-codec/1.2/commons-codec-1.2.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="b"><td align="left">commons-collections:commons-collections:jar:3.1</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo.opengeo.org/commons-collections/commons-collections/3.1/commons-collections-3.1.jar" class="externalLink"><img alt="Found at http://repo.opengeo.org" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center"><a href="http://repository.jboss.org/maven2//commons-collections/commons-collections/3.1/commons-collections-3.1.jar" class="externalLink"><img alt="Found at http://repository.jboss.org/maven2/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://repo1.maven.org/maven2/commons-collections/commons-collections/3.1/commons-collections-3.1.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="a"><td align="left">commons-httpclient:commons-httpclient:jar:3.1</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repository.jboss.org/maven2//commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar" class="externalLink"><img alt="Found at http://repository.jboss.org/maven2/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://repo1.maven.org/maven2/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="b"><td align="left">commons-jxpath:commons-jxpath:jar:1.2</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.geotools.fr/repository/commons-jxpath/commons-jxpath/1.2/commons-jxpath-1.2.jar" class="externalLink"><img alt="Found at http://maven.geotools.fr/repository" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://download.osgeo.org/webdav/geotools//commons-jxpath/commons-jxpath/1.2/commons-jxpath-1.2.jar" class="externalLink"><img alt="Found at http://download.osgeo.org/webdav/geotools/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo.opengeo.org/commons-jxpath/commons-jxpath/1.2/commons-jxpath-1.2.jar" class="externalLink"><img alt="Found at http://repo.opengeo.org" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/commons-jxpath/commons-jxpath/1.2/commons-jxpath-1.2.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="a"><td align="left">commons-logging:commons-logging:jar:1.0.4</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.geotools.fr/repository/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar" class="externalLink"><img alt="Found at http://maven.geotools.fr/repository" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://download.osgeo.org/webdav/geotools//commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar" class="externalLink"><img alt="Found at http://download.osgeo.org/webdav/geotools/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo.opengeo.org/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar" class="externalLink"><img alt="Found at http://repo.opengeo.org" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center"><a href="http://repository.jboss.org/maven2//commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar" class="externalLink"><img alt="Found at http://repository.jboss.org/maven2/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://repo1.maven.org/maven2/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="b"><td align="left">commons-pool:commons-pool:jar:1.5.4</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="a"><td align="left">hsqldb:hsqldb:jar:1.8.0.7</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo.opengeo.org/hsqldb/hsqldb/1.8.0.7/hsqldb-1.8.0.7.jar" class="externalLink"><img alt="Found at http://repo.opengeo.org" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/hsqldb/hsqldb/1.8.0.7/hsqldb-1.8.0.7.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="b"><td align="left">it.geosolutions.imageio-ext:imageio-ext-tiff:jar:1.0.8</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.osgeo.org/webdav/geotools//it/geosolutions/imageio-ext/imageio-ext-tiff/1.0.8/imageio-ext-tiff-1.0.8.jar" class="externalLink"><img alt="Found at http://download.osgeo.org/webdav/geotools/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.geo-solutions.it//it/geosolutions/imageio-ext/imageio-ext-tiff/1.0.8/imageio-ext-tiff-1.0.8.jar" class="externalLink"><img alt="Found at http://maven.geo-solutions.it/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">it.geosolutions.imageio-ext:imageio-ext-utilities:jar:1.0.8</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.osgeo.org/webdav/geotools//it/geosolutions/imageio-ext/imageio-ext-utilities/1.0.8/imageio-ext-utilities-1.0.8.jar" class="externalLink"><img alt="Found at http://download.osgeo.org/webdav/geotools/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.geo-solutions.it//it/geosolutions/imageio-ext/imageio-ext-utilities/1.0.8/imageio-ext-utilities-1.0.8.jar" class="externalLink"><img alt="Found at http://maven.geo-solutions.it/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">java3d:vecmath:jar:1.3.2</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.osgeo.org/webdav/geotools//java3d/vecmath/1.3.2/vecmath-1.3.2.jar" class="externalLink"><img alt="Found at http://download.osgeo.org/webdav/geotools/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo.opengeo.org/java3d/vecmath/1.3.2/vecmath-1.3.2.jar" class="externalLink"><img alt="Found at http://repo.opengeo.org" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">javax.media:jai_codec:jar:1.1.3</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.geotools.fr/repository/javax/media/jai_codec/1.1.3/jai_codec-1.1.3.jar" class="externalLink"><img alt="Found at http://maven.geotools.fr/repository" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://download.osgeo.org/webdav/geotools//javax/media/jai_codec/1.1.3/jai_codec-1.1.3.jar" class="externalLink"><img alt="Found at http://download.osgeo.org/webdav/geotools/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo.opengeo.org/javax/media/jai_codec/1.1.3/jai_codec-1.1.3.jar" class="externalLink"><img alt="Found at http://repo.opengeo.org" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">javax.media:jai_core:jar:1.1.3</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.geotools.fr/repository/javax/media/jai_core/1.1.3/jai_core-1.1.3.jar" class="externalLink"><img alt="Found at http://maven.geotools.fr/repository" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://download.osgeo.org/webdav/geotools//javax/media/jai_core/1.1.3/jai_core-1.1.3.jar" class="externalLink"><img alt="Found at http://download.osgeo.org/webdav/geotools/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo.opengeo.org/javax/media/jai_core/1.1.3/jai_core-1.1.3.jar" class="externalLink"><img alt="Found at http://repo.opengeo.org" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">javax.media:jai_imageio:jar:1.1</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.geotools.fr/repository/javax/media/jai_imageio/1.1/jai_imageio-1.1.jar" class="externalLink"><img alt="Found at http://maven.geotools.fr/repository" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://download.osgeo.org/webdav/geotools//javax/media/jai_imageio/1.1/jai_imageio-1.1.jar" class="externalLink"><img alt="Found at http://download.osgeo.org/webdav/geotools/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo.opengeo.org/javax/media/jai_imageio/1.1/jai_imageio-1.1.jar" class="externalLink"><img alt="Found at http://repo.opengeo.org" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">javax.servlet:servlet-api:jar:2.5</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/1/javax.servlet/jars/servlet-api-2.5.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/1" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repository.jboss.org/maven2//javax/servlet/servlet-api/2.5/servlet-api-2.5.jar" class="externalLink"><img alt="Found at http://repository.jboss.org/maven2/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://repo1.maven.org/maven2/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="a"><td align="left">jdom:jdom:jar:1.0</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.geotools.fr/repository/jdom/jdom/1.0/jdom-1.0.jar" class="externalLink"><img alt="Found at http://maven.geotools.fr/repository" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://download.osgeo.org/webdav/geotools//jdom/jdom/1.0/jdom-1.0.jar" class="externalLink"><img alt="Found at http://download.osgeo.org/webdav/geotools/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo.opengeo.org/jdom/jdom/1.0/jdom-1.0.jar" class="externalLink"><img alt="Found at http://repo.opengeo.org" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center"><a href="http://repository.jboss.org/maven2//jdom/jdom/1.0/jdom-1.0.jar" class="externalLink"><img alt="Found at http://repository.jboss.org/maven2/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://repo1.maven.org/maven2/jdom/jdom/1.0/jdom-1.0.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="b"><td align="left">junit:junit:jar:4.8.2</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/junit/junit/4.8.2/junit-4.8.2.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="a"><td align="left">junit:junit-dep:jar:4.4</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repository.jboss.org/maven2//junit/junit-dep/4.4/junit-dep-4.4.jar" class="externalLink"><img alt="Found at http://repository.jboss.org/maven2/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://repo1.maven.org/maven2/junit/junit-dep/4.4/junit-dep-4.4.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="b"><td align="left">log4j:log4j:jar:1.2.16</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/log4j/log4j/1.2.16/log4j-1.2.16.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="a"><td align="left">net.java.dev.jsr-275:jsr-275:jar:1.0-beta-2</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo.opengeo.org/net/java/dev/jsr-275/jsr-275/1.0-beta-2/jsr-275-1.0-beta-2.jar" class="externalLink"><img alt="Found at http://repo.opengeo.org" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://download.java.net/maven/2/net/java/dev/jsr-275/jsr-275/1.0-beta-2/jsr-275-1.0-beta-2.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">nl.geozet:openls-databinding:jar:0.3</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">org.eclipse.emf:common:jar:2.2.1</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.geotools.fr/repository/org/eclipse/emf/common/2.2.1/common-2.2.1.jar" class="externalLink"><img alt="Found at http://maven.geotools.fr/repository" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://download.osgeo.org/webdav/geotools//org/eclipse/emf/common/2.2.1/common-2.2.1.jar" class="externalLink"><img alt="Found at http://download.osgeo.org/webdav/geotools/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo.opengeo.org/org/eclipse/emf/common/2.2.1/common-2.2.1.jar" class="externalLink"><img alt="Found at http://repo.opengeo.org" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">org.eclipse.emf:ecore:jar:2.2.2</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.geotools.fr/repository/org/eclipse/emf/ecore/2.2.2/ecore-2.2.2.jar" class="externalLink"><img alt="Found at http://maven.geotools.fr/repository" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://download.osgeo.org/webdav/geotools//org/eclipse/emf/ecore/2.2.2/ecore-2.2.2.jar" class="externalLink"><img alt="Found at http://download.osgeo.org/webdav/geotools/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo.opengeo.org/org/eclipse/emf/ecore/2.2.2/ecore-2.2.2.jar" class="externalLink"><img alt="Found at http://repo.opengeo.org" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">org.eclipse.xsd:xsd:jar:2.2.2</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.geotools.fr/repository/org/eclipse/xsd/xsd/2.2.2/xsd-2.2.2.jar" class="externalLink"><img alt="Found at http://maven.geotools.fr/repository" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://download.osgeo.org/webdav/geotools//org/eclipse/xsd/xsd/2.2.2/xsd-2.2.2.jar" class="externalLink"><img alt="Found at http://download.osgeo.org/webdav/geotools/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo.opengeo.org/org/eclipse/xsd/xsd/2.2.2/xsd-2.2.2.jar" class="externalLink"><img alt="Found at http://repo.opengeo.org" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">org.geotools:gt-api:jar:2.7-M4</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.osgeo.org/webdav/geotools//org/geotools/gt-api/2.7-M4/gt-api-2.7-M4.jar" class="externalLink"><img alt="Found at http://download.osgeo.org/webdav/geotools/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">org.geotools:gt-coverage:jar:2.7-M4</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.osgeo.org/webdav/geotools//org/geotools/gt-coverage/2.7-M4/gt-coverage-2.7-M4.jar" class="externalLink"><img alt="Found at http://download.osgeo.org/webdav/geotools/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">org.geotools:gt-cql:jar:2.7-M4</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.osgeo.org/webdav/geotools//org/geotools/gt-cql/2.7-M4/gt-cql-2.7-M4.jar" class="externalLink"><img alt="Found at http://download.osgeo.org/webdav/geotools/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">org.geotools:gt-data:jar:2.7-M4</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.osgeo.org/webdav/geotools//org/geotools/gt-data/2.7-M4/gt-data-2.7-M4.jar" class="externalLink"><img alt="Found at http://download.osgeo.org/webdav/geotools/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">org.geotools:gt-epsg-hsql:jar:2.7-M4</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.osgeo.org/webdav/geotools//org/geotools/gt-epsg-hsql/2.7-M4/gt-epsg-hsql-2.7-M4.jar" class="externalLink"><img alt="Found at http://download.osgeo.org/webdav/geotools/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">org.geotools:gt-graph:jar:2.7-M4</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.osgeo.org/webdav/geotools//org/geotools/gt-graph/2.7-M4/gt-graph-2.7-M4.jar" class="externalLink"><img alt="Found at http://download.osgeo.org/webdav/geotools/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">org.geotools:gt-main:jar:2.7-M4</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.osgeo.org/webdav/geotools//org/geotools/gt-main/2.7-M4/gt-main-2.7-M4.jar" class="externalLink"><img alt="Found at http://download.osgeo.org/webdav/geotools/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">org.geotools:gt-metadata:jar:2.7-M4</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.osgeo.org/webdav/geotools//org/geotools/gt-metadata/2.7-M4/gt-metadata-2.7-M4.jar" class="externalLink"><img alt="Found at http://download.osgeo.org/webdav/geotools/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">org.geotools:gt-referencing:jar:2.7-M4</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.osgeo.org/webdav/geotools//org/geotools/gt-referencing/2.7-M4/gt-referencing-2.7-M4.jar" class="externalLink"><img alt="Found at http://download.osgeo.org/webdav/geotools/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">org.geotools:gt-validation:jar:2.7-M4</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.osgeo.org/webdav/geotools//org/geotools/gt-validation/2.7-M4/gt-validation-2.7-M4.jar" class="externalLink"><img alt="Found at http://download.osgeo.org/webdav/geotools/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">org.geotools:gt-wfs:jar:2.7-M4</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.osgeo.org/webdav/geotools//org/geotools/gt-wfs/2.7-M4/gt-wfs-2.7-M4.jar" class="externalLink"><img alt="Found at http://download.osgeo.org/webdav/geotools/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">org.geotools:gt-xml:jar:2.7-M4</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.osgeo.org/webdav/geotools//org/geotools/gt-xml/2.7-M4/gt-xml-2.7-M4.jar" class="externalLink"><img alt="Found at http://download.osgeo.org/webdav/geotools/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">org.geotools.ogc:net.opengis.ows:jar:2.7-M4</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.osgeo.org/webdav/geotools//org/geotools/ogc/net.opengis.ows/2.7-M4/net.opengis.ows-2.7-M4.jar" class="externalLink"><img alt="Found at http://download.osgeo.org/webdav/geotools/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">org.geotools.ogc:net.opengis.wfs:jar:2.7-M4</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.osgeo.org/webdav/geotools//org/geotools/ogc/net.opengis.wfs/2.7-M4/net.opengis.wfs-2.7-M4.jar" class="externalLink"><img alt="Found at http://download.osgeo.org/webdav/geotools/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">org.geotools.ogc:org.w3.xlink:jar:2.7-M4</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.osgeo.org/webdav/geotools//org/geotools/ogc/org.w3.xlink/2.7-M4/org.w3.xlink-2.7-M4.jar" class="externalLink"><img alt="Found at http://download.osgeo.org/webdav/geotools/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">org.geotools.xsd:gt-xsd-core:jar:2.7-M4</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.osgeo.org/webdav/geotools//org/geotools/xsd/gt-xsd-core/2.7-M4/gt-xsd-core-2.7-M4.jar" class="externalLink"><img alt="Found at http://download.osgeo.org/webdav/geotools/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">org.geotools.xsd:gt-xsd-fes:jar:2.7-M4</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.osgeo.org/webdav/geotools//org/geotools/xsd/gt-xsd-fes/2.7-M4/gt-xsd-fes-2.7-M4.jar" class="externalLink"><img alt="Found at http://download.osgeo.org/webdav/geotools/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">org.geotools.xsd:gt-xsd-filter:jar:2.7-M4</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.osgeo.org/webdav/geotools//org/geotools/xsd/gt-xsd-filter/2.7-M4/gt-xsd-filter-2.7-M4.jar" class="externalLink"><img alt="Found at http://download.osgeo.org/webdav/geotools/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">org.geotools.xsd:gt-xsd-gml2:jar:2.7-M4</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.osgeo.org/webdav/geotools//org/geotools/xsd/gt-xsd-gml2/2.7-M4/gt-xsd-gml2-2.7-M4.jar" class="externalLink"><img alt="Found at http://download.osgeo.org/webdav/geotools/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">org.geotools.xsd:gt-xsd-gml3:jar:2.7-M4</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.osgeo.org/webdav/geotools//org/geotools/xsd/gt-xsd-gml3/2.7-M4/gt-xsd-gml3-2.7-M4.jar" class="externalLink"><img alt="Found at http://download.osgeo.org/webdav/geotools/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">org.geotools.xsd:gt-xsd-ows:jar:2.7-M4</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.osgeo.org/webdav/geotools//org/geotools/xsd/gt-xsd-ows/2.7-M4/gt-xsd-ows-2.7-M4.jar" class="externalLink"><img alt="Found at http://download.osgeo.org/webdav/geotools/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">org.geotools.xsd:gt-xsd-wfs:jar:2.7-M4</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.osgeo.org/webdav/geotools//org/geotools/xsd/gt-xsd-wfs/2.7-M4/gt-xsd-wfs-2.7-M4.jar" class="externalLink"><img alt="Found at http://download.osgeo.org/webdav/geotools/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">org.hamcrest:hamcrest-core:jar:1.1</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repository.jboss.org/maven2//org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar" class="externalLink"><img alt="Found at http://repository.jboss.org/maven2/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="a"><td align="left">org.hamcrest:hamcrest-library:jar:1.1</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repository.jboss.org/maven2//org/hamcrest/hamcrest-library/1.1/hamcrest-library-1.1.jar" class="externalLink"><img alt="Found at http://repository.jboss.org/maven2/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://repo1.maven.org/maven2/org/hamcrest/hamcrest-library/1.1/hamcrest-library-1.1.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="b"><td align="left">org.jmock:jmock:jar:2.5.1</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repository.codehaus.org//org/jmock/jmock/2.5.1/jmock-2.5.1.jar" class="externalLink"><img alt="Found at http://repository.codehaus.org/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/org/jmock/jmock/2.5.1/jmock-2.5.1.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="a"><td align="left">org.jmock:jmock-junit4:jar:2.5.1</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repository.codehaus.org//org/jmock/jmock-junit4/2.5.1/jmock-junit4-2.5.1.jar" class="externalLink"><img alt="Found at http://repository.codehaus.org/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/org/jmock/jmock-junit4/2.5.1/jmock-junit4-2.5.1.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="b"><td align="left">org.opengis:geoapi:jar:2.3-M1</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.osgeo.org/webdav/geotools//org/opengis/geoapi/2.3-M1/geoapi-2.3-M1.jar" class="externalLink"><img alt="Found at http://download.osgeo.org/webdav/geotools/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo.opengeo.org/org/opengis/geoapi/2.3-M1/geoapi-2.3-M1.jar" class="externalLink"><img alt="Found at http://repo.opengeo.org" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">org.opengis:geoapi-pending:jar:2.3-M1</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.osgeo.org/webdav/geotools//org/opengis/geoapi-pending/2.3-M1/geoapi-pending-2.3-M1.jar" class="externalLink"><img alt="Found at http://download.osgeo.org/webdav/geotools/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo.opengeo.org/org/opengis/geoapi-pending/2.3-M1/geoapi-pending-2.3-M1.jar" class="externalLink"><img alt="Found at http://repo.opengeo.org" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">picocontainer:picocontainer:jar:1.2</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.geotools.fr/repository/picocontainer/picocontainer/1.2/picocontainer-1.2.jar" class="externalLink"><img alt="Found at http://maven.geotools.fr/repository" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://download.osgeo.org/webdav/geotools//picocontainer/picocontainer/1.2/picocontainer-1.2.jar" class="externalLink"><img alt="Found at http://download.osgeo.org/webdav/geotools/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo.opengeo.org/picocontainer/picocontainer/1.2/picocontainer-1.2.jar" class="externalLink"><img alt="Found at http://repo.opengeo.org" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/picocontainer/picocontainer/1.2/picocontainer-1.2.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="a"><td align="left">xerces:xercesImpl:jar:2.4.0</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repository.jboss.org/maven2//xerces/xercesImpl/2.4.0/xercesImpl-2.4.0.jar" class="externalLink"><img alt="Found at http://repository.jboss.org/maven2/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://repo1.maven.org/maven2/xerces/xercesImpl/2.4.0/xercesImpl-2.4.0.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="b"><td align="left">xml-apis:xml-apis:jar:1.0.b2</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo.opengeo.org/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar" class="externalLink"><img alt="Found at http://repo.opengeo.org" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center"><a href="http://repository.jboss.org/maven2//xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar" class="externalLink"><img alt="Found at http://repository.jboss.org/maven2/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://repo1.maven.org/maven2/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="a"><td align="left">xml-apis:xml-apis-xerces:jar:2.7.1</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.geotools.fr/repository/xml-apis/xml-apis-xerces/2.7.1/xml-apis-xerces-2.7.1.jar" class="externalLink"><img alt="Found at http://maven.geotools.fr/repository" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://download.osgeo.org/webdav/geotools//xml-apis/xml-apis-xerces/2.7.1/xml-apis-xerces-2.7.1.jar" class="externalLink"><img alt="Found at http://download.osgeo.org/webdav/geotools/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo.opengeo.org/xml-apis/xml-apis-xerces/2.7.1/xml-apis-xerces-2.7.1.jar" class="externalLink"><img alt="Found at http://repo.opengeo.org" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">xpp3:xpp3:jar:1.1.3.4.O</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/xpp3/xpp3/1.1.3.4.O/xpp3-1.1.3.4.O.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="a"><th align="left">Total</th>
+<th align="center">codehaus.org</th>
+<th align="center">apache.snapshots</th>
+<th align="center">geotools-fr</th>
+<th align="center">osgeo</th>
+<th align="center">maven-repository.dev.java.net</th>
+<th align="center">codehaus</th>
+<th align="center">geosolutions</th>
+<th align="center">opengeo</th>
+<th align="center">maven2-repository.dev.java.net</th>
+<th align="center">jboss</th>
+<th align="center">central</th>
+</tr>
+<tr class="b"><td align="left">59 (compile: 52, test: 6, provided: 1)</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">11</td>
+<td align="center">38</td>
+<td align="center">1</td>
+<td align="center">2</td>
+<td align="center">2</td>
+<td align="center">20</td>
+<td align="center">1</td>
+<td align="center">11</td>
+<td align="center">23</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+      </div>
+    </div>
+    <div class="clear">
+      <hr/>
+    </div>
+    <div id="footer">
+      <div class="xright">&#169;  
+          2010
+    
+          team GEOZET
+          
+  
+
+  
+    
+            
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+  </body>
+</html>

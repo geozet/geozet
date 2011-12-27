@@ -1,0 +1,11 @@
+<map id="G" name="G">
+<area shape="rect" id="c127" href="./ServletBase.html" title="nl.geozet.common.ServletBase" alt="" coords="400,107,883,437"/>
+<area shape="rect" id="c132" href="./CoreResources.html" title="nl.geozet.common.CoreResources" alt="" coords="501,545,769,634"/>
+<area shape="rect" id="c134" href="../GeozetServlet.html" title="nl.geozet.GeozetServlet" alt="" coords="16,545,456,634"/>
+<area shape="rect" id="c138" href="../openls/servlet/OpenLSServlet.html" title="nl.geozet.openls.servlet.OpenLSServlet" alt="" coords="813,537,1253,642"/>
+<area shape="rect" id="c140" href="../wfs/WFSClientServlet.html" title="nl.geozet.wfs.WFSClientServlet" alt="" coords="1298,497,2009,682"/>
+<area shape="rect" id="n0cc127" href="./ServletBase.html" title="nl.geozet.common.ServletBase" alt="" coords="521,18,762,41"/>
+<area shape="rect" id="n0cc134" href="../GeozetServlet.html" title="nl.geozet.GeozetServlet" alt="" coords="121,261,351,283"/>
+<area shape="rect" id="n0cc138" href="../openls/servlet/OpenLSServlet.html" title="nl.geozet.openls.servlet.OpenLSServlet" alt="" coords="931,261,1135,283"/>
+<area shape="rect" id="n0cc140" href="../wfs/WFSClientServlet.html" title="nl.geozet.wfs.WFSClientServlet" alt="" coords="1519,261,1787,283"/>
+</map>

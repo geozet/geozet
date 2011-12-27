@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>GEOZET webapp 1.1 - Technisch Ontwerp GEOZET webapp</title>
+    <style type="text/css" media="all">
+      @import url("./css/maven-base.css");
+      @import url("./css/maven-theme.css");
+      @import url("./css/site.css");
+    </style>
+    <link rel="stylesheet" href="./css/print.css" type="text/css" media="print" />
+          <meta name="author" content="prinsmc@minlnv.nl" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+                                                    
+<meta content="geozet" name="faq"/>
+                    </head>
+  <body class="composite">
+    <div id="banner">
+                  <a href="http://geonovum.nl/" id="bannerLeft">
+    
+                                            <img src="images/logo.png" alt="" />
+    
+            </a>
+                          <span id="bannerRight">
+    
+            GEOZET
+    
+            </span>
+            <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="breadcrumbs">
+          
+  
+
+  
+    
+            
+  
+    
+            <div class="xleft">
+        Meest recente publicatie: 15-december-2010
+                  &nbsp;| Version: 1.1
+                      </div>
+            <div class="xright">            <a href="#">Wiki</a>
+            |
+                <a href="http://standaardbeheer.geonovum.nl/" class="externalLink">Mantis issue tracker</a>
+            
+  
+
+  
+    
+            
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="leftColumn">
+      <div id="navcolumn">
+           
+  
+
+  
+    
+            
+  
+    
+                   <h5>Links</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="#">Wiki</a>
+          </li>
+          </ul>
+              <h5>Overview</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="releasenotes.html">Release notes</a>
+          </li>
+              
+    <li class="none">
+                    <a href="ontwikkelhandleiding.html">Ontwikkel handleiding</a>
+          </li>
+              
+    <li class="none">
+              <strong>Technisch Ontwerp Core</strong>
+        </li>
+              
+    <li class="none">
+                    <a href="techdoc_geozet_viewer.odt">Technisch Ontwerp Enhanced</a>
+          </li>
+              
+    <li class="none">
+                    <a href="functioneel_ontwerp.html">Functioneel Ontwerp</a>
+          </li>
+              
+    <li class="none">
+                    <a href="meldingen.html">FAQ meldingen</a>
+          </li>
+              
+    <li class="none">
+                    <a href="faq.html">FAQ algemeen</a>
+          </li>
+          </ul>
+              <h5>Installatie</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="releasenotes.html">Release notes</a>
+          </li>
+              
+    <li class="none">
+                    <a href="installatiehandleiding.html">Installatie handleiding</a>
+          </li>
+          </ul>
+              <h5>Deployed Builds</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="http://test.geodata.nationaalgeoregister.nl/apps/geozetviewer/" class="externalLink">GEOZET webapp</a>
+          </li>
+          </ul>
+                        <h5>Project documentatie</h5>
+            <ul>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+                    <a href="project-info.html">Project informatie</a>
+                </li>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+                    <a href="project-reports.html">Project rapporten</a>
+                </li>
+          </ul>
+                                                 
+                        
+                        
+            <a href="http://www.geotools.org/" title="Geotools" class="poweredBy">
+                            <img alt="Geotools" src="images/geotools.png" />
+            </a>
+                               
+  
+
+  
+    
+            
+  
+    
+        </div>
+    </div>
+    <div id="bodyColumn">
+      <div id="contentBox">
+        <div class="section"><h2>Technisch Ontwerp</h2>
+<ul><li><a href="#Technisch_Ontwerp">Technisch Ontwerp</a><ul><li><a href="#Introductie">Introductie</a></li>
+<li><a href="#Sequence_diagrammen">Sequence diagrammen</a></li>
+<li><a href="#Klasse_diagrammen">Klasse diagrammen</a></li>
+</ul>
+</li>
+</ul>
+<div class="section"><h3><a name="Introductie">Introductie</a></h3>
+<p>De GEOZET applicatie bestaat uit een CORE en een ENHANCED versie; de core versie bestaat uit een aantal serverside WFS en OLS client servlets welke HTML pagina's renderen. De enhanced versie biedt een uitgebreide Javascript client welke dezelfde service biedt. Zie verder het <a href="./20100519_PvE_GEOZET_v1-0.pdf">PvE</a>. De servlets zijn allen volledig stateless.</p>
+<p>Om de vereiste functie te kunnen bieden zijn er vijf servlets gedefinieerd die overerven van een ouder, <a href="./apidocs/nl/geozet/common/ServletBase.html">ServletBase</a>.</p>
+<img src="./apidocs/nl/geozet/common/ServletBase.png" alt="Klasse diagram servlet overerving" /><p>Om zowel POST als GET operaties te ondersteunen is alleen de <tt>service()</tt> methode geimplementeerd; andere methoden (HEAD, TRACE, ed.) worden niet ondersteund. In de sequece diagrammen worden de typische requests getoond, primair zijn dit dus <a href="http://download.oracle.com/javaee/5/api/javax/servlet/http/HttpServlet.html#service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)" class="externalLink">service(request,response)</a> afhandelingen.</p>
+</div>
+<div class="section"><h3><a name="Sequence_diagrammen">Sequence diagrammen</a></h3>
+<p>De sequence diagramman tonen de algemene applicatie stroom voor de verschillende ingangen/servlets. In principe is voor idere applicatie actie (zoeken van een adres, ophalen van bekendmakingen, ophalen van vlak bekendmakinen, ophalen van bekendmaking details) een servlet gebouwd, daarnaast is er een dispatcher servlet voor de standaard ingang (zoeken)</p>
+<ul><li><a href="./seqdiagramvlakgericht.html">sequence diagram adres zoeken</a></li>
+<li><a href="./seqdiagramvlakgericht.html">sequence diagram bekendmakingen ophalen</a></li>
+<li><a href="./seqdiagramvlakgericht.html">sequence diagram bekendmaking details ophalen</a></li>
+<li><a href="./seqdiagramvlakgericht.html">sequence diagram vlak gerichte bekendmakingen ophalen</a></li>
+</ul>
+</div>
+<div class="section"><h3><a name="Klasse_diagrammen">Klasse diagrammen</a></h3>
+<p>De <a href="./apidocs/index.html">javadoc</a> is aangereikt met klassediagrammen welke de onderlinge verhoudingen en klasse opmaak tonen. </p>
+</div>
+</div>
+
+      </div>
+    </div>
+    <div class="clear">
+      <hr/>
+    </div>
+    <div id="footer">
+      <div class="xright">&#169;  
+          2010
+    
+          team GEOZET
+          
+  
+
+  
+    
+            
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+  </body>
+</html>

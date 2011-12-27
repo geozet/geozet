@@ -1,0 +1,319 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>GEOZET webapp 1.1 - Ontwikkelhandleiding GEOZET webapp</title>
+    <style type="text/css" media="all">
+      @import url("./css/maven-base.css");
+      @import url("./css/maven-theme.css");
+      @import url("./css/site.css");
+    </style>
+    <link rel="stylesheet" href="./css/print.css" type="text/css" media="print" />
+          <meta name="author" content="prinsmc@minlnv.nl" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+                                                    
+<meta content="geozet" name="faq"/>
+                    </head>
+  <body class="composite">
+    <div id="banner">
+                  <a href="http://geonovum.nl/" id="bannerLeft">
+    
+                                            <img src="images/logo.png" alt="" />
+    
+            </a>
+                          <span id="bannerRight">
+    
+            GEOZET
+    
+            </span>
+            <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="breadcrumbs">
+          
+  
+
+  
+    
+            
+  
+    
+            <div class="xleft">
+        Meest recente publicatie: 15-december-2010
+                  &nbsp;| Version: 1.1
+                      </div>
+            <div class="xright">            <a href="#">Wiki</a>
+            |
+                <a href="http://standaardbeheer.geonovum.nl/" class="externalLink">Mantis issue tracker</a>
+            
+  
+
+  
+    
+            
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="leftColumn">
+      <div id="navcolumn">
+           
+  
+
+  
+    
+            
+  
+    
+                   <h5>Links</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="#">Wiki</a>
+          </li>
+          </ul>
+              <h5>Overview</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="releasenotes.html">Release notes</a>
+          </li>
+              
+    <li class="none">
+              <strong>Ontwikkel handleiding</strong>
+        </li>
+              
+    <li class="none">
+                    <a href="technisch_ontwerp.html">Technisch Ontwerp Core</a>
+          </li>
+              
+    <li class="none">
+                    <a href="techdoc_geozet_viewer.odt">Technisch Ontwerp Enhanced</a>
+          </li>
+              
+    <li class="none">
+                    <a href="functioneel_ontwerp.html">Functioneel Ontwerp</a>
+          </li>
+              
+    <li class="none">
+                    <a href="meldingen.html">FAQ meldingen</a>
+          </li>
+              
+    <li class="none">
+                    <a href="faq.html">FAQ algemeen</a>
+          </li>
+          </ul>
+              <h5>Installatie</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="releasenotes.html">Release notes</a>
+          </li>
+              
+    <li class="none">
+                    <a href="installatiehandleiding.html">Installatie handleiding</a>
+          </li>
+          </ul>
+              <h5>Deployed Builds</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="http://test.geodata.nationaalgeoregister.nl/apps/geozetviewer/" class="externalLink">GEOZET webapp</a>
+          </li>
+          </ul>
+                        <h5>Project documentatie</h5>
+            <ul>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+                    <a href="project-info.html">Project informatie</a>
+                </li>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+                    <a href="project-reports.html">Project rapporten</a>
+                </li>
+          </ul>
+                                                 
+                        
+                        
+            <a href="http://www.geotools.org/" title="Geotools" class="poweredBy">
+                            <img alt="Geotools" src="images/geotools.png" />
+            </a>
+                               
+  
+
+  
+    
+            
+  
+    
+        </div>
+    </div>
+    <div id="bodyColumn">
+      <div id="contentBox">
+        <div class="section"><h2>Ontwikkel handleiding</h2>
+<ul><li><a href="#Ontwikkel_handleiding">Ontwikkel handleiding</a><ul><li><a href="#Broncode_ophalen">Broncode ophalen</a></li>
+<li><a href="#Beginnen_met_bouwen">Beginnen met bouwen</a><ul><li><a href="#Maven_commandos">Maven commando's</a></li>
+<li><a href="#live_show">live show</a></li>
+</ul>
+</li>
+<li><a href="#Issues_oplossen">Issue's oplossen</a></li>
+<li><a href="#Versie_nummering">Versie nummering</a></li>
+<li><a href="#Release_bouwen">Release bouwen</a></li>
+<li><a href="#Distributie_fileset_bouwen">Distributie fileset bouwen</a></li>
+</ul>
+</li>
+</ul>
+<div class="section"><h3><a name="Broncode_ophalen">Broncode ophalen</a></h3>
+<p>De broncode is opgeslagen in het Subversion systeem. De toegang is beschreven in het <a href="./source-repository.html">Source Repository</a> document. Om gebruik te maken van het eclipse project is het van belang dat je uitpakt naar <tt>C:\workspace\nl.geozet.geozet-webapp-TRUNK</tt>.</p>
+<div class="source"><pre>  svn checkout http://www.duif.net/geozet/trunk/geozet-webapp C:\workspace\nl.geozet.geozet-webapp-TRUNK</pre>
+</div>
+</div>
+<div class="section"><h3><a name="Beginnen_met_bouwen">Beginnen met bouwen</a></h3>
+<p>Het project gebruikt Maven 2 als build tool en eclipse 3.5 met de Subversive en Maven Integration plugins als ide; alle Maven commando's moeten in de root van het project worden uitgevoerd; in pricipe zorgt de m2eclipse plugin voor de afhandeling van de maven commando's voor oa. build. Het project is opgezet als een war artifact. Voor het maken van een .war of release is alleen een juist geconfigureerde Maven installatie nodig. Als je <tt>dot</tt> of <tt>Graphviz&gt;&gt; hebt geinstalleerd kunj je javadoc met UML klasse diagrammen genereren; dit doe je door op de commandline &lt;&lt;&lt;-Dhavedot=true</tt> mee te geven zoals in onderstaand voorbeeld om de documentatie te genereren</p>
+<div class="source"><pre>mvn -Dhavedot=true site</pre>
+</div>
+<p>In het standaard scenario wordt er periodiek een build en deploy van de webapp gedaan naar de <a href="http://localhost:8080/geozetviewer" class="externalLink">ontwikkel server</a> met behulp van de <a href="http://localhost:8080/dashboard/tab/build/detail/geozetviewer" class="externalLink">Hudson server</a>. De locatie is beschreven on de POM file. Van belang hierbij is dat in de <tt>settings.xml</tt> een server entry staat voor de duif.net repository zoals hieronder.</p>
+<div class="source"><pre>&lt;server&gt;
+  &lt;id&gt;duif-repo&lt;/id&gt;
+  &lt;username&gt;jouw subversion gebruikersnaam&lt;/username&gt;
+  &lt;password&gt;jouw subversion wachtwoord&lt;/password&gt;
+&lt;/server&gt;</pre>
+</div>
+<p>Zonder deze entry kun je geen releases doen en ook de gerelateerde maven artifacten niet ophalen. </p>
+<div class="section"><h4><a name="Maven_commandos">Maven commando's</a> </h4>
+<div class="source"><pre>mvn package</pre>
+</div>
+<p>Dit draait alle unit tests en maakt de artifact(en) bestanden aan die direct naar de ontwikkelserver kunnen worden gerold voor deploy. </p>
+<div class="source"><pre>mvn clean scm:update site-deploy install</pre>
+</div>
+<p>Dit doet een clean en update actie waarna de volledige build en packaging wordt uitgevoerd en de documentatie wordt gegenereerd.</p>
+</div>
+<div class="section"><h4><a name="live_show">live show</a></h4>
+<p>De webapp kan mbv. jetty live worden gebracht met het commando:</p>
+<div class="source"><pre>mvn jetty:run</pre>
+</div>
+<p>Dit brengt de webapp in de lucht op adres <tt>http://localhost:8080/geozetviewer</tt> Stoppen gaat dan via stoppen met <i>cntrl-c</i> of vanuit een andere terminal met commando <tt>mvn jetty:stop</tt>. Meer hierover op de wiki <a href="http://docs.codehaus.org/display/JETTY/Maven+Jetty+Plugin" class="externalLink">http://docs.codehaus.org/display/JETTY/Maven+Jetty+Plugin</a></p>
+</div>
+</div>
+<div class="section"><h3><a name="Issues_oplossen">Issue's oplossen</a></h3>
+<p>In principe worden alle issues in <a href="./issue-tracking.html">Mantis</a> vastgelegd; optioneel kun je de echte highlights in de <a href="./releasenotes.html">releasenotes</a> vastleggen. </p>
+</div>
+<div class="section"><h3><a name="Versie_nummering">Versie nummering</a></h3>
+<p>Opleveringen hebben versienummers beginnend bij 1.0, bij bugfixes wordt het cijfer achter de punt opgehoogd. Optioneel kunnen er pre-releases worden opgeleverd, die worden aangegeven met 0.1, 0.2 etc. Alle versies kunnen worden bekeken in Mantis?? Hudson?? (<a href="http://????????????:9090/" class="externalLink">Versions</a>)</p>
+</div>
+<div class="section"><h3><a name="Release_bouwen">Release bouwen</a></h3>
+<p>Met de volgende stappen kun je een release bouwen mbv Maven (<a href="http://maven.apache.org/plugins/maven-release-plugin/introduction.html" class="externalLink">meer hierover</a>). In principe worden alleen <tt>tags</tt> gebruikt omdat iedere nieuwe oplevering een tag krijgt (<i>in tags mag je dus niets meer inchecken!</i> maak daar een branch voor aan). Voordat je verder gaat zorg je dat alles is ingechecked in subversion en dat de release is vrijgegeven in ?Jira?. Ga pas daarna verder!</p>
+<dl><dt>mvn -Prelease clean scm:update</dt>
+<dd>update van de broncode in de werkdirectory</dd>
+<dt>mvn -Prelease release:prepare -DdryRun=true</dt>
+<dd>maakt een properties file aan met informatie voor de volgende stap; de dry run is een oefening om je voor te bereiden op de gestelde vragen.</dd>
+<dt>mvn -Prelease release:clean release:prepare</dt>
+<dd>Verwijderd evt. de eerder gemaakte maven-release-plugin properties (van de dry run) en maakt een tag aan in de repository en update de snapshot versie.</dd>
+<dt>mvn -Prelease release:perform</dt>
+<dd>commit en deploy de release; maven maakt een tag aan in de source repository voor deze release en deployed de release naar de gedefinieerde maven repository. <p><b>LET OP:</b> als je geen schrijfrechten hebt in de gedefinieerde maven repository (duif.net svn repository <tt>duif-repo</tt>) kun je dus geen release maken! zie ook <a href="#Beginnen_met_bouwen">hierboven</a></p>
+</dd>
+</dl>
+<p>opties tijdens <tt>release:prepare</tt> fase:</p>
+<ul><li><tt>-DpreparationGoals=clean</tt> om bijv. prep goals zoals unit test over te slaan.</li>
+<li><tt>-DdryRun=true</tt> doet een dry run van het comando; er worden geen veranderingen in de source repository gemaakt.</li>
+</ul>
+<p>Met behulp van de release notes functie in Jira kunnen release notes worden aangemaakt in verschillende formaten. Zie: <a href="http://????????????????/secure/ConfigureReleaseNote.jspa?projectId=10220" class="externalLink">hier</a>. Dit moet gedaan worden voordat de release met maven wordt gemaakt zodat eea ook netjes in subversion terecht komt. Tevens moet na het maken van de release met Maven de release worden gedaan in Jira, dit vlagt de artifacts en componenten als released. Na het maken van een release is er nog geen fileset voor distributie/installatie, dat is <a href="./ontwikkelhandleiding.html#Distributie_fileset_bouwen">hieronder</a> beschreven.</p>
+</div>
+<div class="section"><h3><a name="Distributie_fileset_bouwen">Distributie fileset bouwen</a></h3>
+<p>Er is een apart profiel aangemaakt voor het bouwen van een distributie fileset (zip) met daarin alle bestanden en documentatie die nodig zijn voor de installatie.</p>
+<dl><dt>mvn -Pdistribution,release clean scm:update install site-deploy assembly:assembly</dt>
+<dd> Dit zorgt voor een up-to-date fileset die als zipfile gepackaged wordt, inclusief alle sites van de modules.</dd>
+</dl>
+<p>Dit commando kun direct na het maken van een release uitvoeren op de broncode zoals die onder de <tt>/target/checkout/</tt> directory is te vinden.</p>
+</div>
+</div>
+
+      </div>
+    </div>
+    <div class="clear">
+      <hr/>
+    </div>
+    <div id="footer">
+      <div class="xright">&#169;  
+          2010
+    
+          team GEOZET
+          
+  
+
+  
+    
+            
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+  </body>
+</html>

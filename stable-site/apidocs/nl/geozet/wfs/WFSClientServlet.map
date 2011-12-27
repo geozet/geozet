@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="c342" href="../common/ServletBase.html" title="nl.geozet.common.ServletBase" alt="" coords="919,107,1401,437"/>
+<area shape="rect" id="c355" href="./WFSClientServlet.html" title="nl.geozet.wfs.WFSClientServlet" alt="" coords="595,497,1306,682"/>
+<area shape="rect" id="n0cc342" href="../common/ServletBase.html" title="nl.geozet.common.ServletBase" alt="" coords="1039,18,1281,41"/>
+<area shape="rect" id="c354" href="./WFSDetailsServlet.html" title="nl.geozet.wfs.WFSDetailsServlet" alt="" coords="16,966,637,1103"/>
+<area shape="rect" id="n0cc354" href="./WFSDetailsServlet.html" title="nl.geozet.wfs.WFSDetailsServlet" alt="" coords="160,578,493,601"/>
+<area shape="rect" id="c356" href="./VlakGerichteWFSClientServlet.html" title="nl.geozet.wfs.VlakGerichteWFSClientServlet" alt="" coords="1263,966,1974,1103"/>
+<area shape="rect" id="n0cc355" href="./WFSClientServlet.html" title="nl.geozet.wfs.WFSClientServlet" alt="" coords="606,261,874,283"/>
+<area shape="rect" id="n0cc356" href="./VlakGerichteWFSClientServlet.html" title="nl.geozet.wfs.VlakGerichteWFSClientServlet" alt="" coords="1486,578,1751,601"/>
+</map>

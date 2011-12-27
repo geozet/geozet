@@ -1,0 +1,13 @@
+<map id="G" name="G">
+<area shape="rect" id="c0" href="./StringConstants.html" title="nl.geozet.common.StringConstants" alt="" coords="15,209,430,1130"/>
+<area shape="rect" id="n0cc0" href="./StringConstants.html" title="nl.geozet.common.StringConstants" alt="" coords="47,69,398,91"/>
+<area shape="rect" id="c1" href="./ServletBase.html" title="nl.geozet.common.ServletBase" alt="" coords="475,505,957,834"/>
+<area shape="rect" id="c6" href="./CoreResources.html" title="nl.geozet.common.CoreResources" alt="" coords="582,1190,850,1279"/>
+<area shape="rect" id="n0cc1" href="./ServletBase.html" title="nl.geozet.common.ServletBase" alt="" coords="595,69,837,91"/>
+<area shape="rect" id="c2" href="./ProxyConfiguration.html" title="nl.geozet.common.ProxyConfiguration" alt="" coords="881,43,1130,117"/>
+<area shape="rect" id="c3" href="./NumberConstants.html" title="nl.geozet.common.NumberConstants" alt="" coords="1137,561,1562,778"/>
+<area shape="rect" id="n0cc3" href="./NumberConstants.html" title="nl.geozet.common.NumberConstants" alt="" coords="1174,69,1525,91"/>
+<area shape="rect" id="c4" href="./HttpWrappedRequest.html" title="nl.geozet.common.HttpWrappedRequest" alt="" coords="1569,11,2137,149"/>
+<area shape="rect" id="c5" href="./DataCategorieen.html" title="nl.geozet.common.DataCategorieen" alt="" coords="2182,27,2359,133"/>
+<area shape="rect" id="c7" href="./AfstandComparator.html" title="nl.geozet.common.AfstandComparator" alt="" coords="2403,35,2749,125"/>
+</map>

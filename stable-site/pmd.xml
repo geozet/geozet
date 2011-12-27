@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="4.2.5" timestamp="2010-12-15T15:21:58.468">
+<file name="C:\workspace\nl.geozet.geozet-webapp-TRUNK\target\checkout\src\main\java\nl\geozet\common\ServletBase.java">
+<violation beginline="1" endline="428" begincolumn="1" endcolumn="3" rule="TooManyStaticImports" ruleset="Import Statement Rules" package="nl.geozet.common" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#TooManyStaticImports" priority="3">
+Too many static imports may lead to messy code
+</violation>
+<violation beginline="240" endline="244" begincolumn="13" endcolumn="13" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="nl.geozet.common" class="ServletBase" method="buildPageList" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+<violation beginline="288" endline="292" begincolumn="13" endcolumn="13" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="nl.geozet.common" class="ServletBase" method="buildPageList" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+</file>
+<file name="C:\workspace\nl.geozet.geozet-webapp-TRUNK\target\checkout\src\main\java\nl\geozet\openls\servlet\OpenLSServlet.java">
+<violation beginline="1" endline="422" begincolumn="1" endcolumn="3" rule="TooManyStaticImports" ruleset="Import Statement Rules" package="nl.geozet.openls.servlet" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#TooManyStaticImports" priority="3">
+Too many static imports may lead to messy code
+</violation>
+</file>
+<file name="C:\workspace\nl.geozet.geozet-webapp-TRUNK\target\checkout\src\main\java\nl\geozet\wfs\VlakGerichteWFSClientServlet.java">
+<violation beginline="1" endline="544" begincolumn="1" endcolumn="3" rule="TooManyStaticImports" ruleset="Import Statement Rules" package="nl.geozet.wfs" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#TooManyStaticImports" priority="3">
+Too many static imports may lead to messy code
+</violation>
+<violation beginline="170" endline="172" begincolumn="13" endcolumn="13" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="nl.geozet.wfs" class="VlakGerichteWFSClientServlet" method="service" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+<violation beginline="495" endline="531" begincolumn="13" endcolumn="5" rule="UnusedFormalParameter" ruleset="Unused Code Rules" package="nl.geozet.wfs" class="VlakGerichteWFSClientServlet" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedFormalParameter" priority="3">
+Avoid unused method parameters such as 'request'.
+</violation>
+</file>
+<file name="C:\workspace\nl.geozet.geozet-webapp-TRUNK\target\checkout\src\main\java\nl\geozet\wfs\WFSClientServlet.java">
+<violation beginline="1" endline="589" begincolumn="1" endcolumn="3" rule="TooManyStaticImports" ruleset="Import Statement Rules" package="nl.geozet.wfs" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#TooManyStaticImports" priority="3">
+Too many static imports may lead to messy code
+</violation>
+</file>
+<file name="C:\workspace\nl.geozet.geozet-webapp-TRUNK\target\checkout\src\main\java\nl\geozet\wfs\WFSDetailsServlet.java">
+<violation beginline="1" endline="271" begincolumn="1" endcolumn="3" rule="TooManyStaticImports" ruleset="Import Statement Rules" package="nl.geozet.wfs" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#TooManyStaticImports" priority="3">
+Too many static imports may lead to messy code
+</violation>
+<violation beginline="63" endline="65" begincolumn="12" endcolumn="5" rule="UselessOverridingMethod" ruleset="Basic Rules" package="nl.geozet.wfs" class="WFSDetailsServlet" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#UselessOverridingMethod" priority="3">
+Overriding method merely calls super
+</violation>
+</file>
+</pmd>

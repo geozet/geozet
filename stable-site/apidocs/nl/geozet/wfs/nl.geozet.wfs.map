@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="c77" href="./WFSDetailsServlet.html" title="nl.geozet.wfs.WFSDetailsServlet" alt="" coords="65,353,687,490"/>
+<area shape="rect" id="n0cc77" href="./WFSDetailsServlet.html" title="nl.geozet.wfs.WFSDetailsServlet" alt="" coords="16,189,349,211"/>
+<area shape="rect" id="c78" href="./WFSClientServlet.html" title="nl.geozet.wfs.WFSClientServlet" alt="" coords="394,107,1105,293"/>
+<area shape="rect" id="c79" href="./VlakGerichteWFSClientServlet.html" title="nl.geozet.wfs.VlakGerichteWFSClientServlet" alt="" coords="829,353,1539,490"/>
+<area shape="rect" id="n0cc78" href="./WFSClientServlet.html" title="nl.geozet.wfs.WFSClientServlet" alt="" coords="615,18,883,41"/>
+<area shape="rect" id="n0cc79" href="./VlakGerichteWFSClientServlet.html" title="nl.geozet.wfs.VlakGerichteWFSClientServlet" alt="" coords="1149,189,1414,211"/>
+</map>
